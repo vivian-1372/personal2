@@ -8,3 +8,5 @@ keywords:
 title: About
 type: about
 ---
+
+Hi! My name is Vivian and I am a senior at Harvard studying Statistics and Government.
