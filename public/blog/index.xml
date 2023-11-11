@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on chringel - Privacy focused theme for Hugo</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on chringel - Privacy focused theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2022, Christian Engel, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lorem Markdownum</title>
+      <link>/blog/lorem-markdownum/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/lorem-markdownum/</guid>
+      <description>Link Amens nitentior vires Lorem markdownum Argo est praebebant Andros erat, tibi parte montibus erunt venis tacita spernimus more. Olim erat Aiax dixi factas potens. Perque natus ipsa potenti; nunc parte precor in mortalis manant bellica, umbrosaque et. Inrita videtur regnum, in est vulnere inductae Ilion et feruntur Latiae famulus nec dederat uteroque lenita fraternaque horrenda omnia.
+Maris Circe victum suggerit et conscia dixit Habes et undis carinae fundae lilia coniecit Tot nomine ire tot fassusque nobis ad Geminas iugales mille et ingenium magna agitantem Nemo quae sedemque Link Iunone Theseius abstulit morabar mersis Isto supremo, genitor Phoronidos, honos ibi lacus saepe rogato properus: sum an vetantis.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/blog/2020-12-01-r-rmarkdown/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/blog/2020-12-01-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>A second Post</title>
+      <link>/blog/second-post/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/second-post/</guid>
+      <description>The quick, brown fox jumps over a lazy dog.
+DJs flock by when MTV ax quiz prog.
+Junk MTV quiz graced by fox whelps.
+Bawds jog, flick quartz, vex nymphs.Waltz, bad nymph, for quick jigs vex!
+Fox nymphs grab quick-jived waltz.
+Brick quiz whangs jumpy veldt fox.
+Bright vixens jump; dozy fowl quack.
+Quick wafting zephyrs vex bold Jim.
+Quick zephyrs blow, vexing daft Jim.
+How quickly daft jumping zebras vex.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>/blog/first-post/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/first-post/</guid>
+      <description>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</description>
+    </item>
+    
+  </channel>
+</rss>

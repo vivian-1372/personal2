@@ -1,0 +1,75 @@
+title: chringel - Privacy focused theme for Hugo
+languageCode: en-us
+baseurl: https://chringel21.github.io/chringel-hugo-theme
+theme: chringel-hugo-theme
+author: Christian Engel
+copyright: Copyright © 2022, Christian Engel, all rights reserved.
+pluralizelisttitles: no
+paginate: 10
+enableEmoji: yes
+RelativeURLs: yes
+CanonifyURLs: yes
+Params:
+  description: A privacy focused theme for Hugo
+  favicon: favicon.ico
+  favicons:
+    appleTouchIcon: /apple-touch-icon.png
+    icon16: /favicon-16x16.png
+    icon32: /favicon-32x32.png
+    manifest: /site.webmanifest
+    maskIcon: /safari-pinned-tab.svg
+    msApplicationTileColor: '#5bbad5'
+    themeColor: '#ffffff'
+  footerCopyrightText: Christian Engel 2022
+  github_banner: yes
+  github_repo: https://github.com/chringel21/chringel-hugo-theme
+  github_user: chringel21
+  hcard:
+    avatar: images/index.png
+    city: Potsdam
+    country: Germany
+    fullName: Christian Engel
+    nickname: chringel
+    pronouns:
+      - he
+      - him
+    region: Brandenburg
+    showLocation: yes
+  headerTitle: 'chringel@dev: ~/$'
+  indieweb:
+    authorizationEndpoint: https://indieauth.com/auth
+    tokenEndpoint: https://tokens.indieauth.com/token
+  isso:
+    avatar: yes
+    avatar-bg: '#f0f0f0'
+    css: yes
+    data: https://comments.exmaple.com/
+    enabled: yes
+    id: thread-id
+    jsLocation: https://comments.example.com/js/embed.min.js
+    lang: en
+    replyToSelf: yes
+    requireAuthor: yes
+    requireEmail: no
+  name: chringel
+  showPrevNextPostNavigation: yes
+  titleImage: images/index.png
+  umami:
+    enabled: yes
+    jsLocation: https://analytics.example.com/umami.js
+    websiteId: 1234567-abcd-efgh-0000-abcdefg1234
+  webmention:
+    webmentionEndpoint: /example.com/webmention
+    webmentionPingbackEndpoint: /example.com/xmlrpc
+    webmentionUrl: https://webmention.io
+menu:
+  social:
+    - name: GitHub
+      url: https://github.com/chringel21
+    - name: Twitter
+      url: https://twitter.com/DeEgge
+build:
+  writeStats: yes
+markup:
+  highlight:
+    style: dracula
