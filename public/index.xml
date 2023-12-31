@@ -45,6 +45,122 @@
     </item>
     
     <item>
+      <title>Decision-making and Heuristics</title>
+      <link>/blog/2023-12-31-my-new-post/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023-12-31-my-new-post/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="introduction" class="link-owner">
+  <a href="/blog/2023-12-31-my-new-post/#introduction" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Introduction
+</h1><p>This is the first Data Exploration task of Fall 2021! Welcome. This week, my classmates of Government 1372 (Political Psychology) and I worked with our in-class survey results to observe how susceptible we are to cognitive biases and discuss how that may affect our decision-making.</p>
+<h1 id="data-details" class="link-owner">
+  <a href="/blog/2023-12-31-my-new-post/#data-details" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Data Details
+</h1><p>*File Name: bias_data.csv</p>
+<p>*Source: These data are from last week&rsquo;s in-class survey.</p>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Variable Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Unique ID for each respondent</td>
+</tr>
+<tr>
+<td>rare_disease_prog</td>
+<td>From the rare disease problem, the program chosen by the respondent (either &lsquo;Program A&rsquo; or &lsquo;Program B&rsquo;)</td>
+</tr>
+<tr>
+<td>rare_disease_cond</td>
+<td>From the rare disease problem, the framing condition to which the respondent was assigned (either &lsquo;save&rsquo; or &lsquo;die&rsquo;)</td>
+</tr>
+<tr>
+<td>linda</td>
+<td>From the Linda problem, the option the respondent thought most probable, either &ldquo;teller&rdquo; or &ldquo;teller and feminist&rdquo;</td>
+</tr>
+<tr>
+<td>cab</td>
+<td>From the cab problem, the respondent&rsquo;s estimate of the probability the car was blue</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>One of &ldquo;man&rdquo;, &ldquo;woman&rdquo;, &ldquo;non-binary&rdquo;, or &ldquo;other&rdquo;</td>
+</tr>
+<tr>
+<td>year</td>
+<td>Year at Harvard</td>
+</tr>
+<tr>
+<td>college_stats</td>
+<td>Indicator for whether or not the respondent has taken a college-level statistics course</td>
+</tr>
+</tbody>
+</table>
+<h1 id="the-linda-problem" class="link-owner">
+  <a href="/blog/2023-12-31-my-new-post/#the-linda-problem" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Linda Problem
+</h1><p>&ldquo;Linda is 31 years old, single, outspoken, and very bright. She majored in accounting. As a student, she was deeply concerned with issues of women&rsquo;s rights, and also studied economics.</p>
+<p>Which is more probable: Linda is a bank teller, or Linda is both a teller and feminist?&rdquo;</p>
+<p>70.59% of the class answered this question correctly. While the majority of our class was able to choose the right answer, many people in general tend to choose the wrong option. This occurs because many people think that given information about someone, the information makes something more likely about them. When we know that Linda is interested in social activism, we think it is not surprising for her to be a feminist. Most people, however, are not aware of the probability principles of the Linda question &ndash; or they simply ignore the principle because the seemingly logical connection between what we know about Linda and what could be true is too convincing in the moment.</p>
+<h1 id="the-cab-problem" class="link-owner">
+  <a href="/blog/2023-12-31-my-new-post/#the-cab-problem" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Cab Problem
+</h1><p>&ldquo;A cab was involved in a hit and run accident at night. Two cab companies, the Green and the Blue, operate in the city. 85% of the cabs in the city are Green and 15% are Blue.</p>
+<p>A witness identified the cab as Blue. The court tested the reliability of the witness under the same circumstances that existed on the night of the accident and concluded that the witness correctly identified each one of the two colours 80% of the time and failed 20% of the time.</p>
+<p>What is the probability that the cab involved in the accident was Blue rather than Green knowing that this witness identified it as Blue?&rdquo;</p>
+<p>That said, the most common response was 0.8.</p>
+<h2 id="extension" class="link-owner">
+  <a href="/blog/2023-12-31-my-new-post/#extension" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Extension
+</h2><p>So then, what attributes of the respondents might affect how they answered the Linda problem and why?</p>
+<p>I would guess that college statistic education, age, responses to the cab question could correlate to students&rsquo; answers to the Linda question.</p>
+<p>To explore this question, I first examined the crosstable of responses to the Linda question sorted by respondents who had taken a college statistics course versus those who had not.</p>
+<!-- raw HTML omitted -->
+<p>From this table, we see that students with at least some formal statistics knowledge are more likely to answer the Linda question correctly. 75.9% of statistics students correctly answered that Linda was more likely to be only a teller, while only 61.3% of non-statistics students were able to do so. Despite the non-statistics-student group being much smaller than its counterpart group (31 versus 54 people), both groups contain a similar quantity of students who responded incorrectly – 12 and 13. From these proportions, we can see that respondents who have not taken a college-level statistics course are more likely to use the attribution substitution shortcut to form conclusions about who Linda is. Because the question provides that Linda is outspoken about issues of activism and seems liberal, a heuristic that leads observers to a statistical fallacy – believing that Linda must then be a feminist too – is readily available. Observers don’t actually know if Linda is a feminist, so they substitute the attribute in question with more known ones, such as her activism. However, if observers pay closer attention, their System 2 may remind them of the statistical principle that states “a conjunction of two events can’t be more probable than either of the events occurring by itself.” Of course, previous students of statistics are more likely to remember this principle before allowing their intuitive heuristics to decide Linda’s character for them.</p>
+<p>Understanding that students with some statistical background fare better when facing heuristics pitfalls, I wanted to explore the relationship, if any, between responses to the Linda question and responses to the blue cab question. How likely is it that the cab is actually blue? Is Linda a teller with feminist hobbies? These questions are hard to answer with certainty, so do respondents use heuristics to form conclusions about these questions? To look at how these questions’ responses interact, I plotted the Linda responses versus the blue cab responses. I also graphed a vertical line at the actual, statistically correct probability of the identified cab being a blue cab in navy blue, p = 0.41.</p>
+<!-- raw HTML omitted -->
+<p>From this plot, I noticed that those who labeled Linda “teller and feminist” tended to believe that there was a high likelihood that the cab was actually blue. Some respondents who correctly answered the Linda question also thought that the cab was blue, with many responses concentrated over the p = 0.70 mark. However, the “teller” group had many more responses on the lower end of the cab probabilities than the “teller and feminist” group. This indicates to me that the former group perhaps had some intuition that the cab was less likely blue than the question initially would suggest. I then plotted the same data as a bar graph to get another visual.</p>
+<!-- raw HTML omitted -->
+<p>The majority of people who were correctly skeptical of the blue car ID are those at or near the navy vertical line. Those to the left of the vertical line also seem to have reason to believe that the likelihood of the car actually being blue is much closer to the base rate than 0.80, the most common response from our survey. As shown in the segmented bar graph, most of the respondents who were able to show correct or somewhat promising reasoning about the blue cab problem (those at or to the left of the vertical line shown at 0.41) are part of the “teller” group, the same students who answered the Linda question correctly. I believe there is a correlation between the ability of respondents to respond correctly to the Linda problem and the ability of those same respondents to answer the cab question correctly. Because both Linda and the cab are questions that require some statistical knowledge to figure out, the responses to these questions may be related in a way that is worth investigating. Though I do not know how to properly look at the correlation between these responses using R yet, I attempted to observe that using a crosstable of blue-cab-probability-responses versus linda-feminist-status-responses next.</p>
+<!-- raw HTML omitted -->
+<p>Sorting the responses to the cab question into intervals of width 0.10, I observed how often respondents in each interval answered the cab question correctly (T = “teller”) versus incorrectly (TaF = “teller and feminist”). As hypothesized, respondents who were correctly suspicious of the blue ID of the car (so those who answered that the cab was only ~30-50% likely to be blue) were often the same group of people to know that Linda was more likely only a teller. The higher cab guesses, p = 0.8 and up, were more often wrong about Linda. Thus, I conclude that if a respondent ignores the base rate of blue cabs and responds with a higher probability (such as p = 0.8 or p = 0.85), then they are more likely to use attribute substitution to answer the Linda question than respondents who were able to statistically reason their way to the correct estimate for the cab color’s likelihood.</p>
+<p>Investigating the traits or behaviors of respondents who answer the Linda question correctly or incorrectly was very interesting to me as an initial data exercise. The data gathered from our class survey confirms, especially with the cab problem, that humans are not always able to use our System 2’s and logically reason through confusing questions. What makes respondents more likely to answer the Linda question correctly? After this investigation, I understand that college statistics background has some pull. I also understand now that the respondents’ ability to answer different challenging questions, such as the blue cab one, may indicate their ability to statistically reason and answer our Linda question of interest. Probability and statistics skills are not the most intuitive to most humans, and yet the ability to leverage them has shown to be significant in our class’ responses to seemingly simple survey questions.</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] Kahneman (2003)</p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
       <title>Lorem Markdownum</title>
       <link>/blog/lorem-markdownum/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
@@ -188,76 +304,6 @@ pie(
 )</code></pre>
 <div class="figure"><span style="display:block;" id="fig:pie"></span>
 <img src="/blog/2020-12-01-r-rmarkdown/index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
-<p class="caption">
-Figure 1: A fancy pie chart.
-</p>
-</div>
-</div>
-
-          
-          
-          
-          
-          
-          ]]>
-      </description>
-
-
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/blog/post-2/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      
-      <guid>/blog/post-2/</guid>
-      
-      
-      
-      
-      
-      
-      
-      <description>
-          <![CDATA[ 
-          
-          
-
-
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
-</div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="/blog/post-2/#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span style="display:block;" id="fig:pie"></span>
-<img src="/blog/post-2/index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
 <p class="caption">
 Figure 1: A fancy pie chart.
 </p>

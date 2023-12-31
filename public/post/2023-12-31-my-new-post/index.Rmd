@@ -1,0 +1,10 @@
+---
+title: My New Post
+author: R package build
+date: '2023-12-31'
+slug: []
+categories: []
+tags: []
+---
+
+This is a complete test. 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Political Psychology on chringel - Privacy focused theme for Hugo</title>
+    <link>/categories/political-psychology/</link>
+    <description>Recent content in Political Psychology on chringel - Privacy focused theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, VIvian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/political-psychology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decision-making and Heuristics</title>
+      <link>/blog/2023-12-31-my-new-post/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023-12-31-my-new-post/</guid>
+      <description>Link Introduction This is the first Data Exploration task of Fall 2021! Welcome. This week, my classmates of Government 1372 (Political Psychology) and I worked with our in-class survey results to observe how susceptible we are to cognitive biases and discuss how that may affect our decision-making.
+Link Data Details *File Name: bias_data.csv
+*Source: These data are from last week&amp;rsquo;s in-class survey.
+Variable Name Variable Description id Unique ID for each respondent rare_disease_prog From the rare disease problem, the program chosen by the respondent (either &amp;lsquo;Program A&amp;rsquo; or &amp;lsquo;Program B&amp;rsquo;) rare_disease_cond From the rare disease problem, the framing condition to which the respondent was assigned (either &amp;lsquo;save&amp;rsquo; or &amp;lsquo;die&amp;rsquo;) linda From the Linda problem, the option the respondent thought most probable, either &amp;ldquo;teller&amp;rdquo; or &amp;ldquo;teller and feminist&amp;rdquo; cab From the cab problem, the respondent&amp;rsquo;s estimate of the probability the car was blue gender One of &amp;ldquo;man&amp;rdquo;, &amp;ldquo;woman&amp;rdquo;, &amp;ldquo;non-binary&amp;rdquo;, or &amp;ldquo;other&amp;rdquo; year Year at Harvard college_stats Indicator for whether or not the respondent has taken a college-level statistics course Link The Linda Problem &amp;ldquo;Linda is 31 years old, single, outspoken, and very bright.</description>
+    </item>
+    
+  </channel>
+</rss>
