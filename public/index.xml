@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hi, and welcome. on chringel - Privacy focused theme for Hugo</title>
+    <title>Welcome! on chringel - Privacy focused theme for Hugo</title>
     <link>/</link>
-    <description>Recent content in Hi, and welcome. on chringel - Privacy focused theme for Hugo</description>
+    <description>Recent content in Welcome! on chringel - Privacy focused theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2022, Christian Engel, all rights reserved.</copyright>
-    <lastBuildDate>Thu, 09 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2024, VIvian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>/about/</link>
-      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
       
@@ -24,8 +24,14 @@
       <description>
           <![CDATA[ 
           
-          <p>chringel - A lean theme for Hugo.</p>
-<p>Made by <a href="https://github.com/chringel21/" title="me" target="_blank" rel="nofollow noopener">me</a>. Based on the <strong>awesome</strong> <a href="https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter" title="Hugo Starter Theme with Tailwind CSS" target="_blank" rel="nofollow noopener">Hugo Starter Theme with Tailwind CSS</a>.</p>
+          <p><strong>Introduction</strong></p>
+<p>Hi! My name is Vivian, and I am a senior at Harvard studying Statistics and Government.</p>
+<p><strong>Current Location</strong></p>
+<p>Cambridge, MA</p>
+<p><strong>Skills</strong></p>
+<p>Data analysis, predictive modeling</p>
+<p><strong>Hobbies</strong></p>
+<p>Chess, basketball, cookings</p>
 
           
           
@@ -200,6 +206,76 @@ Figure 1: A fancy pie chart.
     </item>
     
     <item>
+      <title>Hello R Markdown</title>
+      <link>/blog/post-2/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/blog/post-2/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          
+
+
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="/blog/post-2/#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span style="display:block;" id="fig:pie"></span>
+<img src="/blog/post-2/index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
       <title>A second Post</title>
       <link>/blog/second-post/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
@@ -341,7 +417,8 @@ Figure 1: A fancy pie chart.
       <description>
           <![CDATA[ 
           
-          
+          <p>Changes</p>
+
           
           
           

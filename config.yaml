@@ -3,7 +3,7 @@ languageCode: en-us
 baseurl: https://chringel21.github.io/chringel-hugo-theme
 theme: chringel-hugo-theme
 author: Christian Engel
-copyright: Copyright © 2022, Christian Engel, all rights reserved.
+copyright: Copyright © 2024, VIvian Nguyen, all rights reserved.
 pluralizelisttitles: no
 paginate: 10
 enableEmoji: yes
@@ -20,22 +20,22 @@ Params:
     maskIcon: /safari-pinned-tab.svg
     msApplicationTileColor: '#5bbad5'
     themeColor: '#ffffff'
-  footerCopyrightText: Christian Engel 2022
+  footerCopyrightText: Vivian Nguyen 2024
   github_banner: yes
   github_repo: https://github.com/chringel21/chringel-hugo-theme
   github_user: chringel21
   hcard:
     avatar: images/index.png
-    city: Potsdam
-    country: Germany
-    fullName: Christian Engel
-    nickname: chringel
+    city: Cambridge
+    country: United States
+    fullName: Vivian Nguyen
+    nickname: Vivian
     pronouns:
       - he
       - him
-    region: Brandenburg
+    region: Boston
     showLocation: yes
-  headerTitle: 'chringel@dev: ~/$'
+  headerTitle: 'Vivian Nguyen'
   indieweb:
     authorizationEndpoint: https://indieauth.com/auth
     tokenEndpoint: https://tokens.indieauth.com/token
@@ -65,9 +65,7 @@ Params:
 menu:
   social:
     - name: GitHub
-      url: https://github.com/chringel21
-    - name: Twitter
-      url: https://twitter.com/DeEgge
+      url: https://github.com/vivian-1372
 build:
   writeStats: yes
 markup:
