@@ -46,10 +46,10 @@
     
     <item>
       <title>Decision-making and Heuristics</title>
-      <link>/blog/2023-12-31-my-new-post/</link>
+      <link>/blog/090921-decision-making-heuristics/</link>
       <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2023-12-31-my-new-post/</guid>
+      <guid>/blog/090921-decision-making-heuristics/</guid>
       
       
       
@@ -61,12 +61,12 @@
           <![CDATA[ 
           
           <h1 id="introduction" class="link-owner">
-  <a href="/blog/2023-12-31-my-new-post/#introduction" class="link">
+  <a href="/blog/090921-decision-making-heuristics/#introduction" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Introduction
 </h1><p>This is the first Data Exploration task of Fall 2021! Welcome. This week, my classmates of Government 1372 (Political Psychology) and I worked with our in-class survey results to observe how susceptible we are to cognitive biases and discuss how that may affect our decision-making.</p>
 <h1 id="data-details" class="link-owner">
-  <a href="/blog/2023-12-31-my-new-post/#data-details" class="link">
+  <a href="/blog/090921-decision-making-heuristics/#data-details" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Data Details
 </h1><p>*File Name: bias_data.csv</p>
@@ -114,14 +114,14 @@
 </tbody>
 </table>
 <h1 id="the-linda-problem" class="link-owner">
-  <a href="/blog/2023-12-31-my-new-post/#the-linda-problem" class="link">
+  <a href="/blog/090921-decision-making-heuristics/#the-linda-problem" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>The Linda Problem
 </h1><p>&ldquo;Linda is 31 years old, single, outspoken, and very bright. She majored in accounting. As a student, she was deeply concerned with issues of women&rsquo;s rights, and also studied economics.</p>
 <p>Which is more probable: Linda is a bank teller, or Linda is both a teller and feminist?&rdquo;</p>
 <p>70.59% of the class answered this question correctly. While the majority of our class was able to choose the right answer, many people in general tend to choose the wrong option. This occurs because many people think that given information about someone, the information makes something more likely about them. When we know that Linda is interested in social activism, we think it is not surprising for her to be a feminist. Most people, however, are not aware of the probability principles of the Linda question &ndash; or they simply ignore the principle because the seemingly logical connection between what we know about Linda and what could be true is too convincing in the moment.</p>
 <h1 id="the-cab-problem" class="link-owner">
-  <a href="/blog/2023-12-31-my-new-post/#the-cab-problem" class="link">
+  <a href="/blog/090921-decision-making-heuristics/#the-cab-problem" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>The Cab Problem
 </h1><p>&ldquo;A cab was involved in a hit and run accident at night. Two cab companies, the Green and the Blue, operate in the city. 85% of the cabs in the city are Green and 15% are Blue.</p>
@@ -129,7 +129,7 @@
 <p>What is the probability that the cab involved in the accident was Blue rather than Green knowing that this witness identified it as Blue?&rdquo;</p>
 <p>That said, the most common response was 0.8.</p>
 <h2 id="extension" class="link-owner">
-  <a href="/blog/2023-12-31-my-new-post/#extension" class="link">
+  <a href="/blog/090921-decision-making-heuristics/#extension" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Extension
 </h2><p>So then, what attributes of the respondents might affect how they answered the Linda problem and why?</p>
@@ -158,26 +158,26 @@
 
 
   <figure>
-    <a href="/blog/2023-12-31-my-new-post/images/lindastats.png">
+    <a href="/blog/090921-decision-making-heuristics/images/lindastats.png">
       <picture>
         <source
           media="(max-width: 376px)"
-          srcset="/blog/2023-12-31-my-new-post/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_500x0_resize_q75_h2_box_3.webp"
+          srcset="/blog/090921-decision-making-heuristics/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_500x0_resize_q75_h2_box_3.webp"
         />
 
         <source
           media="(max-width: 992px)"
-          srcset="/blog/2023-12-31-my-new-post/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_800x0_resize_q75_h2_box_3.webp"
+          srcset="/blog/090921-decision-making-heuristics/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_800x0_resize_q75_h2_box_3.webp"
         />
 
         <source
           media="(max-width: 1400px)"
-          srcset="/blog/2023-12-31-my-new-post/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_1200x0_resize_q75_h2_box_3.webp"
+          srcset="/blog/090921-decision-making-heuristics/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_1200x0_resize_q75_h2_box_3.webp"
         />
 
         <source
           media="(min-width: 1600px)"
-          srcset="/blog/2023-12-31-my-new-post/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_1500x0_resize_q75_h2_box_3.webp"
+          srcset="/blog/090921-decision-making-heuristics/images/lindastats_huf0adbb658403c13ad779a561646f55b0_46616_1500x0_resize_q75_h2_box_3.webp"
         />
 
         <img
@@ -197,14 +197,196 @@
 
 
 </p>
-<!-- raw HTML omitted -->
 <p>From this table, we see that students with at least some formal statistics knowledge are more likely to answer the Linda question correctly. 75.9% of statistics students correctly answered that Linda was more likely to be only a teller, while only 61.3% of non-statistics students were able to do so. Despite the non-statistics-student group being much smaller than its counterpart group (31 versus 54 people), both groups contain a similar quantity of students who responded incorrectly – 12 and 13. From these proportions, we can see that respondents who have not taken a college-level statistics course are more likely to use the attribution substitution shortcut to form conclusions about who Linda is. Because the question provides that Linda is outspoken about issues of activism and seems liberal, a heuristic that leads observers to a statistical fallacy – believing that Linda must then be a feminist too – is readily available. Observers don’t actually know if Linda is a feminist, so they substitute the attribute in question with more known ones, such as her activism. However, if observers pay closer attention, their System 2 may remind them of the statistical principle that states “a conjunction of two events can’t be more probable than either of the events occurring by itself.” Of course, previous students of statistics are more likely to remember this principle before allowing their intuitive heuristics to decide Linda’s character for them.</p>
 <p>Understanding that students with some statistical background fare better when facing heuristics pitfalls, I wanted to explore the relationship, if any, between responses to the Linda question and responses to the blue cab question. How likely is it that the cab is actually blue? Is Linda a teller with feminist hobbies? These questions are hard to answer with certainty, so do respondents use heuristics to form conclusions about these questions? To look at how these questions’ responses interact, I plotted the Linda responses versus the blue cab responses. I also graphed a vertical line at the actual, statistically correct probability of the identified cab being a blue cab in navy blue, p = 0.41.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  Linda Responses
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/090921-decision-making-heuristics/images/lindadot.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindadot_hu6e1f86d9094446ff8b3abc1c19c9465b_104994_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindadot_hu6e1f86d9094446ff8b3abc1c19c9465b_104994_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindadot_hu6e1f86d9094446ff8b3abc1c19c9465b_104994_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindadot_hu6e1f86d9094446ff8b3abc1c19c9465b_104994_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Linda Responses"
+          title="Linda Responses"
+          src="images/lindadot.png"
+          height="889"
+          width="1497"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Linda Responses
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>From this plot, I noticed that those who labeled Linda “teller and feminist” tended to believe that there was a high likelihood that the cab was actually blue. Some respondents who correctly answered the Linda question also thought that the cab was blue, with many responses concentrated over the p = 0.70 mark. However, the “teller” group had many more responses on the lower end of the cab probabilities than the “teller and feminist” group. This indicates to me that the former group perhaps had some intuition that the cab was less likely blue than the question initially would suggest. I then plotted the same data as a bar graph to get another visual.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  Linda x Cab
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/090921-decision-making-heuristics/images/lindabar.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindabar_hua57cd099bb044b84f08c5a192f023dc4_109437_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindabar_hua57cd099bb044b84f08c5a192f023dc4_109437_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindabar_hua57cd099bb044b84f08c5a192f023dc4_109437_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindabar_hua57cd099bb044b84f08c5a192f023dc4_109437_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Linda x Cab"
+          title="Linda x Cab"
+          src="images/lindabar.png"
+          height="865"
+          width="1416"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Linda x Cab
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>The majority of people who were correctly skeptical of the blue car ID are those at or near the navy vertical line. Those to the left of the vertical line also seem to have reason to believe that the likelihood of the car actually being blue is much closer to the base rate than 0.80, the most common response from our survey. As shown in the segmented bar graph, most of the respondents who were able to show correct or somewhat promising reasoning about the blue cab problem (those at or to the left of the vertical line shown at 0.41) are part of the “teller” group, the same students who answered the Linda question correctly. I believe there is a correlation between the ability of respondents to respond correctly to the Linda problem and the ability of those same respondents to answer the cab question correctly. Because both Linda and the cab are questions that require some statistical knowledge to figure out, the responses to these questions may be related in a way that is worth investigating. Though I do not know how to properly look at the correlation between these responses using R yet, I attempted to observe that using a crosstable of blue-cab-probability-responses versus linda-feminist-status-responses next.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  Linda x Cab 2
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/090921-decision-making-heuristics/images/lindacab.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindacab_hu9613546ec1374d025df7bc59321f7a0b_90322_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindacab_hu9613546ec1374d025df7bc59321f7a0b_90322_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindacab_hu9613546ec1374d025df7bc59321f7a0b_90322_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/090921-decision-making-heuristics/images/lindacab_hu9613546ec1374d025df7bc59321f7a0b_90322_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Linda x Cab 2"
+          title="Linda x Cab 2"
+          src="images/lindacab.png"
+          height="582"
+          width="861"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Linda x Cab 2
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>Sorting the responses to the cab question into intervals of width 0.10, I observed how often respondents in each interval answered the cab question correctly (T = “teller”) versus incorrectly (TaF = “teller and feminist”). As hypothesized, respondents who were correctly suspicious of the blue ID of the car (so those who answered that the cab was only ~30-50% likely to be blue) were often the same group of people to know that Linda was more likely only a teller. The higher cab guesses, p = 0.8 and up, were more often wrong about Linda. Thus, I conclude that if a respondent ignores the base rate of blue cabs and responds with a higher probability (such as p = 0.8 or p = 0.85), then they are more likely to use attribute substitution to answer the Linda question than respondents who were able to statistically reason their way to the correct estimate for the cab color’s likelihood.</p>
 <p>Investigating the traits or behaviors of respondents who answer the Linda question correctly or incorrectly was very interesting to me as an initial data exercise. The data gathered from our class survey confirms, especially with the cab problem, that humans are not always able to use our System 2’s and logically reason through confusing questions. What makes respondents more likely to answer the Linda question correctly? After this investigation, I understand that college statistics background has some pull. I also understand now that the respondents’ ability to answer different challenging questions, such as the blue cab one, may indicate their ability to statistically reason and answer our Linda question of interest. Probability and statistics skills are not the most intuitive to most humans, and yet the ability to leverage them has shown to be significant in our class’ responses to seemingly simple survey questions.</p>
 <hr>
