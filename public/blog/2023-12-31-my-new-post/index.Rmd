@@ -1,9 +1,9 @@
 ---
-title: Decision-making and Heuristics
-author: Vivian Nguyen
-date: 2021-09-09
-categories: ["Political Psychology"]
+title: "Decision-making and Heuristics"
+author: "Vivian Nguyen"
+date: "2021-09-09"
 tags: ["heuristics"]
+categories: ["Political Psychology"]
 ---
 
 ```{r setup, include=FALSE}
@@ -115,10 +115,10 @@ ggplot(data = bias_data, aes(x = cab)) +
 
 To explore this question, I first examined the crosstable of responses to the Linda question sorted by respondents who had taken a college statistics course versus those who had not. 
 
-<!-- ![Linda x Stats](lindastats.png) -->
+![Linda](images/lindastats.png)
 <!-- ![My Image Description](/images/lindastats.png)  --> 
 
-```{r, out.width='100%', fig.cap='Linda Statistics'}
+```{r, echo = FALSE, out.width='100%', fig.cap='Linda Statistics'}
 knitr::include_graphics("images/lindastats.png")
 ```
 
@@ -128,7 +128,7 @@ Understanding that students with some statistical background fare better when fa
 
 <!-- ![Linda Responses](lindadot.png) -->
 
-```{r, out.width='100%', fig.cap='Linda Responses'}
+```{r image 1, echo = FALSE, out.width='100%', fig.cap='Linda Responses'}
 knitr::include_graphics("images/lindadot.png")
 ```
 

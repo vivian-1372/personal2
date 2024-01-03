@@ -1,16 +1,16 @@
-title: chringel - Privacy focused theme for Hugo
+title: Vivian Nguyen
 languageCode: en-us
 baseurl: https://vivian-1372.github.io/personal2/
 theme: chringel-hugo-theme
-author: Christian Engel
-copyright: Copyright © 2024, VIvian Nguyen, all rights reserved.
+author: Vivian Nguyen
+copyright: Copyright © 2024, Vivian Nguyen, all rights reserved.
 pluralizelisttitles: no
 paginate: 10
 enableEmoji: yes
 RelativeURLs: yes
 CanonifyURLs: yes
 Params:
-  description: A privacy focused theme for Hugo
+  description: My personal website
   favicon: favicon.ico
   favicons:
     appleTouchIcon: /apple-touch-icon.png

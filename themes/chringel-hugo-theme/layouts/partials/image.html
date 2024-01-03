@@ -9,11 +9,11 @@
     />
   </figure>
   <figcaption class="text-sm italic">
-    {{ $alt | $.Page.RenderString }}
+    {{ $alt }}
   </figcaption>
 {{ else }}
   {{ $image := .Page.Resources.GetMatch .Destination }}
-  {{ $alt := $alt | $.Page.RenderString }}
+  {{ $alt }}
 
   {{ $tinyw := default "500x webp" }}
   {{ $smallw := default "800x webp" }}
@@ -66,7 +66,7 @@
       </picture>
     </a>
     <figcaption class="text-sm italic">
-      {{ $alt | $.Page.RenderString }}
+      {{ $alt }}
     </figcaption>
   </figure>
 {{ end }}
