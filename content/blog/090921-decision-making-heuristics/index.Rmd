@@ -3,7 +3,8 @@ title: "Decision-making and Heuristics"
 author: "Vivian Nguyen"
 date: "2021-09-09"
 tags: ["heuristics"]
-categories: ["Political Psychology"]
+categories: 
+  - Political Psychology
 ---
 
 ```{r setup, include=FALSE}
