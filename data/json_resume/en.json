@@ -1,29 +1,44 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
+    "name": "Vivian Nguyen",
+    "label": "Data Scientist",
     "image": "",
-    "email": "richard.hendriks@mail.com",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
+    "email": "viviannguyen@college.harvard.edu",
+    "phone": "",
+    "url": "https://vivian-1372.github.io/personal2/",
     "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "10 Cowperthwaite Street",
+      "postalCode": "MA 02138",
+      "city": "Cambridge",
       "countryCode": "US",
-      "region": "California"
+      "region": "Massachusetts"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
+        "network": "",
+        "username": "",
         "url": ""
       }
     ]
   },
   "work": [
+    {
+      "name": "Harvard Data Analytics Group",
+      "location": "Cambridge, MA",
+      "description": "Awesome compression company",
+      "position": "Associate",
+      "url": "https://harvardanalytics.org/",
+      "startDate": "2013-12-01",
+      "endDate": "2014-12-01",
+      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "highlights": [
+        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+        "Successfully won Techcrunch Disrupt",
+        "Optimized an algorithm that holds the current world record for Weisman Scores"
+      ]
+    },
     {
       "name": "Pied Piper TEST VIVIAN",
       "location": "Palo Alto, CA",
@@ -78,17 +93,17 @@
   ],
   "publications": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Data Analysis",
+      "level": "",
       "keywords": [
         "HTML",
         "CSS",
@@ -122,8 +137,8 @@
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": "",
+      "reference": ""
     }
   ],
   "projects": [
@@ -151,6 +166,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2024-02-19T15:53:00"
   }
 }
