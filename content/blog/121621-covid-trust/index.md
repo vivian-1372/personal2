@@ -1,3 +1,5 @@
+---title: "COVID-19 Concern and Citizen Trust in Different Institutions"author: "Vivian Nguyen"date: "2021-12-16"tags: ["COVID", "trust", "CDC", "partisanship", "politicization", "vaccine"]categories:   - Political Psychology---
+
 ## Overview
 
 February 2022

@@ -66,6 +66,8 @@ menu:
   social:
     - name: GitHub
       url: https://github.com/vivian-1372
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/vivian-nha-nguyen/
 build:
   writeStats: yes
 markup:
