@@ -63,11 +63,24 @@ Params:
     webmentionPingbackEndpoint: /example.com/xmlrpc
     webmentionUrl: https://webmention.io
 menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+    - identifier: blog
+      name: Blog
+      url: /posts/
+    - identifier: categories
+      name: Categories
+      url: /categories/
+    - identifier: resume
+      name: Resume
+      url: /resume/
   social:
     - name: GitHub
       url: https://github.com/vivian-1372
     - name: LinkedIn
-      url: https://www.linkedin.com/in/vivian-nha-nguyen/
+      url: https://linkedin.com/in/vivian-nha-nguyen/
 build:
   writeStats: yes
 markup:
