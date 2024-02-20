@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>
+    
+      Post-Election Reflection -
+      
+      Vivian Nguyen
+  </title>
+    <meta
+      name="description"
+      content="My personal website"
+    /><meta name="author" content="Vivian Nguyen" />
+  
+    <meta name="robots" content="index,follow" />
+  
+  <meta name="generator" content="Hugo 0.110.0">
+
+  <meta property="og:title" content="Post-Election Reflection" />
+<meta property="og:description" content="Link Overview This week, I am revisiting my final models and predictions from week 8 and reflecting on how they performed, and speculating about why, now that we’re about 2 weeks post-Election Day now.
+Link My Final Model and Predictions Link National Model My national modeling addressed two main goals: predicting the 2022 House incumbent party two-party vote share and predicting the 2022 House incumbent party seat count. My main model consisted of a linear regression built off of 4 predictors (GDP absolute growth, generic ballot support for the House incumbent party, whether or not it was a midterm year for the incumbent/President’s party, and the congressional approval rate)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/112222-post-election-reflection/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-11-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-11-22T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Post-Election Reflection"/>
+<meta name="twitter:description" content="Link Overview This week, I am revisiting my final models and predictions from week 8 and reflecting on how they performed, and speculating about why, now that we’re about 2 weeks post-Election Day now.
+Link My Final Model and Predictions Link National Model My national modeling addressed two main goals: predicting the 2022 House incumbent party two-party vote share and predicting the 2022 House incumbent party seat count. My main model consisted of a linear regression built off of 4 predictors (GDP absolute growth, generic ballot support for the House incumbent party, whether or not it was a midterm year for the incumbent/President’s party, and the congressional approval rate)."/>
+
+  
+  
+    <meta
+      name="msapplication-TileColor"
+      content="#5bbad5"
+    />
+  
+  
+    <meta name="theme-color" content="#ffffff" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
+  
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-16x16.png" />
+  
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png" />
+  
+  
+    <link rel="manifest" href="../../site.webmanifest" />
+  
+  
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5" />
+  
+
+
+  
+
+  
+  <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "blog",
+    "name": "Post-Election Reflection",
+    "headline": "Post-Election Reflection",
+    "alternativeHeadline": "",
+    "description": "Link Overview This week, I am revisiting my final models and predictions from week 8 and reflecting on how they performed, and speculating about why, now that we’re about 2 weeks post-Election Day now.\nLink My Final Model and Predictions Link National Model My national modeling addressed two main goals: predicting the 2022 House incumbent party two-party vote share and predicting the 2022 House incumbent party seat count. My main model consisted of a linear regression built off of 4 predictors (GDP absolute growth, generic ballot support for the House incumbent party, whether or not it was a midterm year for the incumbent\/President’s party, and the congressional approval rate).",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "\/blog\/112222-post-election-reflection\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Vivian Nguyen"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Vivian Nguyen"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Vivian Nguyen"
+    },
+    "copyrightHolder" : "Vivian Nguyen",
+    "copyrightYear" : "2022",
+    "dateCreated": "2022-11-22T00:00:00.00Z",
+    "datePublished": "2022-11-22T00:00:00.00Z",
+    "dateModified": "2022-11-22T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Vivian Nguyen",
+        "url": "/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "\/favicon-32x32.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "/favicon-32x32.png",
+    "url" : "\/blog\/112222-post-election-reflection\/",
+    "wordCount" : "2460",
+    "genre" : [ "Election Analytics" ],
+    "keywords" : [ "post-election" , "reflection" , "accuracy" , "evaluation" ]
+}
+</script>
+
+
+  <link
+    rel="preload"
+    href="../../fonts/Comfortaa-Light.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="../../fonts/FiraSans-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="../../fonts/Comfortaa-Bold.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  
+    <link
+      rel="authorization_endpoint"
+      href="https://indieauth.com/auth"
+    />
+    <link
+      rel="token_endpoint"
+      href="https://tokens.indieauth.com/token"
+    />
+  
+  
+    <link
+      rel="webmention"
+      href="https://webmention.io/example.com/webmention"
+    />
+    <link
+      rel="pingback"
+      href="https://webmention.io/example.com/xmlrpc"
+    />
+  
+  <link rel="canonical" href="../../blog/112222-post-election-reflection/" />
+
+  
+  
+  <link
+      rel="stylesheet"
+      href="/css/build.min.18d031cfd031d459edeabddebe324cdc79d8d4b70686bb2bde15fa5802d67894.css"
+      integrity="sha256-GNAxz9Ax1Fnt6r3evjJM3HnY1LcGhrsr3hX6WALWeJQ="
+      crossorigin="anonymous"
+    />
+  
+  <script async defer data-website-id="1234567-abcd-efgh-0000-abcdefg1234" src="https://analytics.example.com/umami.js"></script>
+
+
+</head>
+
+  <body class="flex flex-col min-h-screen dark:bg-gray-900">
+<header
+  class="w-full bg-gray-200 dark:bg-black border-t-2 border-accent-400 sticky top-0 transition-shadow duration-300 hover:shadow-lg z-10"
+>
+  
+  <style type="text/css">
+    input#nav-toggle:checked ~ label#show-button {
+      display: none;
+    }
+
+    input#nav-toggle:checked ~ label#hide-button {
+      display: flex;
+    }
+
+    input#nav-toggle:checked ~ #nav-menu {
+      display: block;
+    }
+  </style>
+
+  <nav
+    class="flex items-center sm:justify-around justify-between flex-wrap py-2 px-2"
+  >
+    <a
+      href="../../"
+      class="flex items-center text-gray-700 dark:text-gray-200 font-mono font-bold"
+    >
+      Vivian Nguyen
+      <span class="animate-blink font-mono font-bold">|</span>
+    </a>
+
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      id="show-button"
+      for="nav-toggle"
+      class="flex items-center block sm:hidden text-gray-500 dark:text-gray-200 hover:text-accent-500"
+    >
+      <svg
+        class="fill-current h-4 w-4"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
+      </svg>
+    </label>
+    <label
+      id="hide-button"
+      for="nav-toggle"
+      class="flex items-center hidden text-gray-500 dark:text-gray-200 hover:text-accent-400"
+    >
+      <svg
+        class="fill-current h-4 w-4"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"
+        />
+      </svg>
+    </label>
+
+    <ul
+      id="nav-menu"
+      class="sm:flex w-full sm:w-auto hidden sm:block mt-2 sm:mt-0 sm:space-x-2"
+    >
+      
+        <li>
+          <a
+            href="../../about/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/About</a
+          >
+        </li>
+      
+      
+        <li>
+          <a
+            href="../../resume/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/Resume</a
+          >
+        </li>
+      
+      
+        <li>
+          <a
+            href="../../blog/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/Blog</a
+          >
+        </li>
+      
+      
+        <li>
+          <a
+            href="../../archive/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/Archive</a
+          >
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
+  <div
+  class="px-6 mx-auto mb-16 prose text-gray-700 justify-self-center sm:px-4 md:px-0 lg:prose-lg dark:prose-dark"
+>
+  
+  <article class="h-entry">
+    
+    <h1 class="p-name">Post-Election Reflection</h1>
+    <div>
+      <span class="text-gray-400">
+        
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Time</title><path fill="none" d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 128v144h96"/></svg>
+    </span>
+  
+
+
+        12 minute read
+      </span>
+    </div>
+    
+    <div class="e-content">
+      <h1 id="overview" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#overview" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Overview
+</h1><p>This week, I am revisiting my final models and predictions from <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-11-07-final-prediction/" title="week 8" target="_blank" rel="nofollow noopener">week 8</a> and reflecting on how they performed, and speculating about why, now that we’re about 2 weeks post-Election Day now.</p>
+<h1 id="my-final-model-and-predictions" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#my-final-model-and-predictions" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My Final Model and Predictions
+</h1><h2 id="national-model" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#national-model" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>National Model
+</h2><p>My national modeling addressed two main goals: predicting the 2022 House incumbent party two-party vote share and predicting the 2022 House incumbent party seat count. My main model consisted of a linear regression built off of 4 predictors (GDP absolute growth, generic ballot support for the House incumbent party, whether or not it was a midterm year for the incumbent/President’s party, and the congressional approval rate). To achieve the two goals, I swapped out the response variable as needed.</p>
+<p>Ultimately, I predicted that the House incumbent party (Democrats this year) would earn 48.56% (47.36, 49.83) of the national two-party vote share and 209 (198, 221) seats.</p>
+<h2 id="district-level-models" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#district-level-models" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>District-Level Models
+</h2><p>My district-level modeling also consisted of two main goals: predict the vote share of the democratic candidate in competitive districts and predict the vote share of the democratic candidate in “non-competitive” districts. My approach was to build competitive linear regression models using average expert ratings of those races in addition to candidate incumbency status, and to build non-competitive ones using the last democratic candidate’s vote share as well as the current candidate’s incumbency.</p>
+<h1 id="evaluation" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#evaluation" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Evaluation
+</h1><h2 id="accuracy" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#accuracy" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Accuracy
+</h2><p>As of November 22, 2022, the Democrats have reportedly captured 48.47% of the two-party vote share and 213 of the 435 seats (Cook Political Report, NYTimes).</p>
+<p>A quick glance tells us that my national model’s national vote share prediction was within 0.5 percentage points of the actual, and seat count prediction was off by 4 seats.</p>
+<p>The table below provides a more detailed report on the accuracy of my national and district-level models, with measures of root mean squared error (RMSE), number of miscalled districts, classification accuracy, and the average margin by which the predicted vote shares were inaccurate.</p>
+<!-- raw HTML omitted -->
+<p>My national vote-share prediction was considerably close, with a somewhat tight confidence interval of (47.36, 49.83) and center of 48.56%. As shown above, the RMSE of my national prediction is very small. That said, it was the simpler half of my modeling, with no purview into how each district-level race would play out.</p>
+<p>The performance of my district-level models was a little less impressive, with RMSEs of 13.47 and 12.03 for the non-competitive and competitive models respectively. Though the non-competitive models had higher RMSE and average inaccuracy margin (which I define as the average difference between the actual Democratic candidate vote share and my prediction), they have a much higher classification accuracy than the competitive models. This was initially counterintuitive, but ultimately makes sense considering that the competitive models have a much harder classification task, with each race being close - even very small swings in vote share can alter each district’s outcome and classification. In contrast, the non-competitive models can afford to be less accurate in vote-share prediction so long as they correctly call the outcome. Indeed, over 90% of incumbents win re-election, so the inclusion of incumbency was expected to help call the non-competitive races accurately (OpenSecrets). Though, in retrospect, the incumbency variable wasn’t informative enough to accurately predict <em>vote share</em> with high accuracy in these districts, as reflected by their large RMSEs and inaccuracy margins.</p>
+<p>Below are maps of the congressional districts I made predictions for, the first being colored according to how close (or far) my two-party vote share predictions were, and the second being colored by correct-call or miscall status.</p>
+<!-- raw HTML omitted -->
+<p>Overall, it seems I tend to overpredict the Democratic candidate’s vote share, especially in the South. However, my single largest inaccuracy was in Maryland 6, where I severely underpredicted the (D) vote share and overpredicted the (R) vote share. Other than that miscall, my underpredictions of (D) performance were concentrated in southern California and western Arizona. In fact, 16 of my 25 non-competitive misclassifications come from California and Arizona, with 14 from California alone.</p>
+<p>I produced the map below to help evaluate my models’ classification performances at a glance. Red denotes a miscalled or misclassified district, and green denotes a correct call.</p>
+<!-- raw HTML omitted -->
+<p>My models had the most trouble predicting the outcomes and vote shares of districts in the Southwest and West, located in California, Nevada, Arizona, and New Mexico. There are also pockets of misclassification across the Great Lakes states, but they don’t appear particularly concentrated in any one area.
+Interestingly, my models did particularly well in New York, which was a state of difficulty for both FiveThirtyEight and The Economist. Both models miscalled NY-3, NY-4, NY-17, NY-19, and NY-22, but mine only did so for NY-4 and NY-17, with inaccuracy margins of just 5.5 and 0.9 percentage points.</p>
+<h2 id="inaccuracy-sources" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#inaccuracy-sources" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Inaccuracy Sources
+</h2><p>There are many ways to explain the inaccuracy of my district models. I have several hypotheses regarding redistricting, turnout, and coding decisions that I believe decreased the accuracy of my predictive models at the district level.</p>
+<h3 id="redistricting" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#redistricting" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Redistricting
+</h3><p>One of the main sources of inaccuracy in my model is likely the redistricting that occurred in 2020. All of the data I used to build out my OLS models came from 2020 and prior, so my models are not perfectly tuned to the sentiments and voting behavior of the citizens in each 2022 congressional district. In Texas, Montana, and Florida, Republicans have gained new safe districts; in Colorado, Oregon, and North Carolina, Democrats did the same (Politico). The two maps above demonstrate how poorly my models performed in these states, with the training data not properly matching the regions for which I made 2022 predictions for due to the redistricting war.</p>
+<h3 id="turnout" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#turnout" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Turnout
+</h3><p>Post-election, it is clear that including a turnout in the model in some way would’ve been very helpful in gauging who will come out to vote, and who their vote will be cast for.</p>
+<h4 id="youth-turnout" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#youth-turnout" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Youth Turnout
+</h4><p>This year, young (19-29) turned out in historic numbers (CIRCLE). Some pundits and analysts believe it is the youth vote that helped Democrats stave off a “Republican wave”, with youth turnout being the second-highest it’s been in the last 30 years and youth preferring Democratic candidates over Republican ones by a 28-point margin. In key battleground states, the margin was even larger for the youth vote in competitive senatorial and gubernatorial races. This youth vote could partially explain how Democrats overperformed what my model predicted and had a particularly strong year as the president’s party in an arguably poor economy, and I believe my lack of consideration of a youth turnout variable led to an underprediction of Democrat seat count.</p>
+<h4 id="general-turnout" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#general-turnout" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>General Turnout
+</h4><p>Another theory related to turnout is that high-profile senatorial and gubernatorial races in certain states (such as Arizona, Nevada, Pennsylvania, and Georgia) this year may have incentivized higher Democratic voter turnout than other years due to perceived threats to abortions rights, democracy, party power, and more. This increased turnout could have led to down-ballot success for the Democratic party, and again, my lack of variable to account for particularly high-profile, high-turnout races likely led to an underprediction of Democratic candidate success in affected regions and races.</p>
+<h3 id="coding" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#coding" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Coding
+</h3><p>Most of my competitive-district models were trained on low quantities of past data, since expert ratings were required and can only be found dating back to 2010 - so, 5 midterms to train on. This meant that I had to sacrifice data quantity in order to incorporate expert ratings into my competitive model. In retrospect, I believe that such low amounts of training data resulted in underfitting in some cases, as there weren’t enough consistent trends to learn from for certain districts, and overfitting in other cases, such as when certain districts had severely lopsided support for one party in all 5 training data points, but underwent redistricting and/or significant changes this election cycle. As a result, the competitive models weren’t particularly accurate at predicting the vote share and outcome of the 94 most competitive districts.</p>
+<p>I also believe that (lack of) coding for uncontested races was a source of error in my models. After developing my competitive and non-competitive models, I made predictions for this year’s Democratic candidates. However, certain races were uncontested, and yet, still treated like the other standard multi-candidate races. Failing to account for uncontested races introduced unnecessary work into my model prediction process, and allowed for inaccuracy margins that shouldn’t have existed. For example, California 15, 16, 29, 30, 34, and 37 were all uncontested (no Republican candidates) races where Democrats candidate earned all 100% of the two-party vote share. I called all of these districts correctly, but unfortunately gave non-100 vote share predictions.</p>
+<h2 id="testing-inaccuracy-hypotheses" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#testing-inaccuracy-hypotheses" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Testing Inaccuracy Hypotheses
+</h2><p>Below I propose some simple tests to quickly see if the above sources of inaccuracy were indeed difference-makers in how my models performed this year.</p>
+<h3 id="redistricting-1" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#redistricting-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Redistricting
+</h3><p>To test my hypothesis about the negative effect of redistricting on my model performance, I could run the models again after correcting for redistricting. Mapping the train data by region to the new corresponding district, or mapping the new election data to old district lines, would adequately account for redistricting changes, and my new predictions can be evaluated the same way my current predictions are. A comparison of RMSEs, classification accuracies, and average inaccuracy margins should reveal just how much redistricting threw off my 2022 models.</p>
+<h3 id="turnout-1" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#turnout-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Turnout
+</h3><p>Youth turnout percentage could have been included as a predictor in my models, assuming the data is available as far back as the training data requires. As for high-profile races, an indicator variable for Senate race in the state or variable for the number of ballot measures could’ve been included. Again, we could compare the performance of these new models to that of the current ones to see how much, if at all, turnout was predictive of race outcomes.</p>
+<h3 id="coding-1" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#coding-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Coding
+</h3><p>After adding in an indicator variable for un/contested seat in both the competitive and non-competitive versions of the district models and acquiring more longitudinal data so that the number of training data points is sufficiently large (or at least greater than the 5 we’re currently working with), we could conduct a test like a difference-in-means test to see if there’s a meaningful difference in model performance (classification accuracy, mean inaccuracy margin of vote share prediction, etc.) when we change the training data and processing of candidates.</p>
+<h1 id="looking-forward" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#looking-forward" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Looking Forward
+</h1><p>I have several ideas for improvement in model performance and creation should I do this again (which I probably will, because this has been great fun and very intellectually rewarding).</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Broadly, I’d make a few changes on the approach-side: split national vote share and national seat count into two different linear regression projects (allowing for different predictors in each model), spend more time tuning my district-level models with expert ratings and fundamental predictors, and study the experts’ models more closely. I tried my best to use the literature and lectures reviewed in Gov 1347, as well as my own insights, to build out this year’s models with the primary goal of learning, but next time, I plan to improve more directly on models from professional forecasters like The Economist and FiveThirtyEight with heavier prioritization on model performance and prediction accuracy.</p>
+<h2 id="model-choice" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#model-choice" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Model Choice
+</h2><p>Alongside those general approach improvements, I also envision some related specific technical ones regarding model choice and variable selection. I touch on model choice first; now that I’ve created, trained, validated, and predicted with over 400 OLS linear regression models, I feel ready to try more advanced modelling methods like Random Forest or bagging that don’t assume linearity. Ideally, I’d be able to get linear regression and Random Forest models up and running far in advance of the midterms to compare them. I’d also like to pool my district-level models next time around should they end up linear again.</p>
+<p>Another model-related change I’d really like to make is to run simulations to get probabilities of Democrat and/or Republican wins in each district. This should increase at-a-glance interpretability, and also allow for post-election Brier score calculations.</p>
+<h2 id="variables" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#variables" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Variables
+</h2><p>As mentioned in my discussion of potential sources of inaccuracy, I’d like to consider youth turnout, high-profile race-presence, and seat contested-ness in my next rounds of variable selection. Below are some additional variables that are interesting to consider closely.</p>
+<h3 id="economic-variables" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#economic-variables" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Economic Variables
+</h3><p>In the construction of my national model, I struggled somewhat to pick the best economic variable to include, settling finally on GDP growth in absolute terms. Though it was certainly predictive, I felt that it was hard to interpret and justify, so I hope to find better economic variable(s) in my next attempt. I also hope to find some variables that are data-dense even at the district level so that I can try to come close to a truly fundamentals-based forecast of districts.</p>
+<h3 id="candidate-quality" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#candidate-quality" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Candidate Quality
+</h3><p>There’s been a lot of chatter about the impact of Trump endorsements on the performance of Republican candidates and on how the 2022 midterms played out. I would like to consider candidate quality more closely in my 2024 attempt. This could involve many variables, such as fundraising abilities, presidential endorsements, and polling numbers. We briefly discussed the differential impacts of endorsements in class, so perhaps an interaction term of <code>presidential_endorsement</code> * <code>endorsers_last_vote_share</code> or <code>endorsers_approval_rating</code> could capture the possible effects of a presidential endorsement.</p>
+<h3 id="special-election-performance" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#special-election-performance" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Special Election Performance
+</h3><p>A week after Election Day, Elliott Morris (who we had the pleasure of hosting as a guest speaker to our course in October) and Dan Rosenheck of the Economist wrote that special election results in each midterm cycle are generally very good predictors of actual two-party vote share, being even more accurate than the generic-ballot polls (The Economist). My national model greatly benefited from the addition of generic ballot numbers, so I look forward to seeing how special election results stack up.</p>
+<h2 id="final-reflections" class="link-owner">
+  <a href="../../blog/112222-post-election-reflection/#final-reflections" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Final Reflections
+</h2><p>As I finish reflecting upon my 2022 forecasts and I look forward, I realize that I’ve learned a great deal developing these election forecasts over the past 9 weeks. It’s been a pleasure sharing my insights and lessons learned with you, and I thank you for following along. Every week’s brought a new challenge, and I’ve gained something from each one. See you next week for the last installment of this analytical blog series of the Fall 2022 semester!</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] New York Times. House Elections Results. <a href="https://www.nytimes.com/interactive/2022/11/08/us/elections/results-house.html" title="https://www.nytimes.com/interactive/2022/11/08/us/elections/results-house.html" target="_blank" rel="nofollow noopener">https://www.nytimes.com/interactive/2022/11/08/us/elections/results-house.html</a></p>
+<p>[2] Cook Political Report. National House Vote Tracker. <a href="https://www.cookpolitical.com/charts/house-charts/national-house-vote-tracker/2022" title="https://www.cookpolitical.com/charts/house-charts/national-house-vote-tracker/2022" target="_blank" rel="nofollow noopener">https://www.cookpolitical.com/charts/house-charts/national-house-vote-tracker/2022</a></p>
+<p>[3] OpenSecrets. Reelection Rates. <a href="https://www.opensecrets.org/elections-overview/reelection-rates" title="https://www.opensecrets.org/elections-overview/reelection-rates" target="_blank" rel="nofollow noopener">https://www.opensecrets.org/elections-overview/reelection-rates</a></p>
+<p>[4] Politico. How redistricting shaped the midterms. <a href="https://www.politico.com/news/2022/11/25/redistricting-midterms-00070810" title="https://www.politico.com/news/2022/11/25/redistricting-midterms-00070810" target="_blank" rel="nofollow noopener">https://www.politico.com/news/2022/11/25/redistricting-midterms-00070810</a></p>
+<p>[5] CIRLCE Tufts. 2022 Election: Young Voters Have High Midterm Turnout, Influence Critical Races. <a href="https://circle.tufts.edu/2022-election-center" title="https://circle.tufts.edu/2022-election-center" target="_blank" rel="nofollow noopener">https://circle.tufts.edu/2022-election-center</a></p>
+<p>[6] NPR. How Democrats were able to perform better than expected in midterm elections. <a href="https://www.npr.org/2022/11/14/1136423401/how-democrats-were-able-to-perform-better-than-expected-in-midterm-elections" title="https://www.npr.org/2022/11/14/1136423401/how-democrats-were-able-to-perform-better-than-expected-in-midterm-elections" target="_blank" rel="nofollow noopener">https://www.npr.org/2022/11/14/1136423401/how-democrats-were-able-to-perform-better-than-expected-in-midterm-elections</a></p>
+<p>[7] The Economist. Off the Charts. <a href="https://view.e.economist.com/?qs=7500b25b1dd36174acf4cb8d6b52bfe7af9fb996a5e035e6098c9807d71053a6be4b87bbd44d0a5af6dbdd6c6924c8d13a914d9d45452f4966d3df19d5cd02c3c9d0aae0cb5443269594ef72e4e5d926" title="https://view.e.economist.com/?qs=7500b25b1dd36174acf4cb8d6b52bfe7af9fb996a5e035e6098c9807d71053a6be4b87bbd44d0a5af6dbdd6c6924c8d13a914d9d45452f4966d3df19d5cd02c3c9d0aae0cb5443269594ef72e4e5d926" target="_blank" rel="nofollow noopener">https://view.e.economist.com/?qs=7500b25b1dd36174acf4cb8d6b52bfe7af9fb996a5e035e6098c9807d71053a6be4b87bbd44d0a5af6dbdd6c6924c8d13a914d9d45452f4966d3df19d5cd02c3c9d0aae0cb5443269594ef72e4e5d926</a></p>
+
+    </div>
+    <hr />
+    
+
+
+  <div class="pb-2 text-gray-500">
+    <span class="font-bold">
+      
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Calendar</title><rect fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" x="48" y="80" width="416" height="384" rx="48"/><circle cx="296" cy="232" r="24"/><circle cx="376" cy="232" r="24"/><circle cx="296" cy="312" r="24"/><circle cx="376" cy="312" r="24"/><circle cx="136" cy="312" r="24"/><circle cx="216" cy="312" r="24"/><circle cx="136" cy="392" r="24"/><circle cx="216" cy="392" r="24"/><circle cx="296" cy="392" r="24"/><path fill="none" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" stroke-linecap="round" d="M128 48v32M384 48v32"/><path fill="none" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M464 160H48"/></svg>
+    </span>
+  
+
+
+      Posted:
+    </span>
+    
+    <time class="dt-published" datetime="2022-11-22 00:00:00 &#43;0000 UTC">
+      <a class="u-url" href="../../blog/112222-post-election-reflection/">November 22, 2022</a>
+    </time>
+  </div>
+  
+
+
+    
+    
+      <div class="pb-2 text-gray-500">
+        <span class="font-bold">
+          
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Person</title><path fill="none" d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+    </span>
+  
+
+
+          Posted By:
+        </span>
+        <a rel="author" class="p-author h-card" href="../../about"
+          >Vivian Nguyen
+          
+            
+            <img
+              class="u-photo hidden"
+              src="../../images/index_hud5b3ec7adeb56dfdc58fb2c348ec5240_451035_200x200_fit_q75_h2_box_3.webp"
+              width="200"
+              height="200"
+              alt="Vivian Nguyen"
+            />
+          </a
+        >
+      </div>
+    
+    
+      <div class="pb-2 text-gray-500">
+        <span class="font-bold">
+          
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Folder Open</title><path fill="none" d="M64 192v-72a40 40 0 0140-40h75.89a40 40 0 0122.19 6.72l27.84 18.56a40 40 0 0022.19 6.72H408a40 40 0 0140 40v40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" d="M479.9 226.55L463.68 392a40 40 0 01-39.93 40H88.25a40 40 0 01-39.93-40L32.1 226.55A32 32 0 0164 192h384.1a32 32 0 0131.8 34.55z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    </span>
+  
+
+
+          Categories:
+        </span>
+        
+          
+          <a
+            href="../../categories/election-analytics"
+            class="p-category"
+            >Election Analytics</a
+          >
+      </div>
+    
+    
+      <div class="pb-2 text-gray-500">
+        <span class="font-bold">
+          
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Pricetags</title><path fill="none" d="M403.29 32H280.36a14.46 14.46 0 00-10.2 4.2L24.4 281.9a28.85 28.85 0 000 40.7l117 117a28.86 28.86 0 0040.71 0L427.8 194a14.46 14.46 0 004.2-10.2v-123A28.66 28.66 0 00403.29 32z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" d="M352 144a32 32 0 1132-32 32 32 0 01-32 32z"/><path fill="none" d="M230 480l262-262a13.81 13.81 0 004-10V80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    </span>
+  
+
+
+          Tags:
+        </span>
+        
+          <a
+            href="../../tags/post-election"
+            class="
+            rounded-md 
+            text-base 
+            border 
+            border-gray-300 
+            hover:bg-gray-100 
+            w-1/2 
+            p-1 
+            items-center 
+            justify-center 
+            no-underline
+            text-gray-500"
+            >post-election</a
+          >
+          <a
+            href="../../tags/reflection"
+            class="
+            rounded-md 
+            text-base 
+            border 
+            border-gray-300 
+            hover:bg-gray-100 
+            w-1/2 
+            p-1 
+            items-center 
+            justify-center 
+            no-underline
+            text-gray-500"
+            >reflection</a
+          >
+          <a
+            href="../../tags/accuracy"
+            class="
+            rounded-md 
+            text-base 
+            border 
+            border-gray-300 
+            hover:bg-gray-100 
+            w-1/2 
+            p-1 
+            items-center 
+            justify-center 
+            no-underline
+            text-gray-500"
+            >accuracy</a
+          >
+          <a
+            href="../../tags/evaluation"
+            class="
+            rounded-md 
+            text-base 
+            border 
+            border-gray-300 
+            hover:bg-gray-100 
+            w-1/2 
+            p-1 
+            items-center 
+            justify-center 
+            no-underline
+            text-gray-500"
+            >evaluation</a
+          >
+      </div>
+    
+    <hr />
+  </article>
+  
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+  <script
+      data-isso="https://comments.exmaple.com/"
+      data-isso-id="thread-id"
+      data-isso-css="true"
+      data-isso-lang="en"
+      data-isso-reply-to-self="true"
+      data-isso-require-author="true"
+      data-isso-require-email="false"
+      data-isso-avatar="true"
+      data-isso-avatar-bg=""
+      src="https://comments.example.com/js/embed.min.js">
+  </script>
+  <noscript
+    >Please enable JavaScript to view the comments powered by
+    <a href="https://posativ.org/isso/">Isso</a>.</noscript
+  >
+  <div>
+    <section id="isso-thread"></section>
+  </div>
+
+
+</div>
+
+
+    </main>
+<footer
+  class="bottom-0 w-full bg-gray-200 dark:bg-black p-4 text-xs text-center text-gray-700 dark:text-gray-200"
+>
+  <p>
+    made with
+    <a href="https://gohugo.io" class="underline hover:text-accent-400">Hugo</a>
+    and
+    <a href="https://tailwindcss.com" class="underline hover:text-accent-400"
+      >TailwindCSS</a
+    >
+  </p>
+  <p class="footer-copyright">
+    Vivian Nguyen 2024
+  </p>
+  <div class="hidden"></div>
+  
+    <div class="h-card hidden">
+  <p>
+    
+    
+    <a class="u-url" href="../../">Vivian Nguyen</a>
+    created by
+    
+      
+      <img
+        class="u-photo"
+        src="../../images/index_hud5b3ec7adeb56dfdc58fb2c348ec5240_451035_200x200_fit_q75_h2_box_3.webp"
+        width="200"
+        height="200"
+        alt="Vivian Nguyen"
+      />
+    <span class="p-name" rel="me"
+      >Vivian Nguyen</span
+    >
+    
+    (<span class="u-pronoun">he</span>/<span class="u-pronoun">him</span> pronouns, also known as <span class="p-nickname">Vivian</span> some places)
+    
+    in
+    
+     <span class="p-locality">Cambridge</span>,
+    
+     <span class="p-region">Boston</span>,
+    
+     <span class="p-country-name">United States</span>.
+    
+  </p>
+  
+</div>
+
+  
+</footer>
+
+  
+  
+
+  
+  
+
+  
+    <script src="../../js/bundle.min.2fada14b944debc1e3dfaa1a285d7faabeadb55081bdccfd9c74dbe6fae43c8d.js" integrity="sha256-L62hS5RN68Hj36oaKF1/qr6ttVCBvcz9nHTb5vrkPI0="></script>
+
+
+</body>
+</html>

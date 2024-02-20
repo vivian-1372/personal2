@@ -45,6 +45,1947 @@
     </item>
     
     <item>
+      <title>Final Remarks</title>
+      <link>/blog/120622-final-remarks/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/120622-final-remarks/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="the-plan-today" class="link-owner">
+  <a href="/blog/120622-final-remarks/#the-plan-today" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Plan Today
+</h1><p>I couldn&rsquo;t end this series without saying a few final remarks, so here we are! It&rsquo;s been a long and rewarding journey of learning and adapting, so I wanted to summarize a few of the top lessons learned, give thanks, and look forward.</p>
+<!-- raw HTML omitted -->
+<h1 id="final-remarks" class="link-owner">
+  <a href="/blog/120622-final-remarks/#final-remarks" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Final Remarks
+</h1><p>I&rsquo;ve learned a lot this semester, and much of it has been through guided trial-and-error. Looking back, I feel very proud of all the work I&rsquo;ve done, and how accurate my models were, especially given that they were my first real shots at forecasting U.S. elections. Looking forward to the predictive challenges to come in 2024, and generally, what else data science can tell us about government and people.</p>
+<h2 id="lessons-learned" class="link-owner">
+  <a href="/blog/120622-final-remarks/#lessons-learned" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Lessons Learned
+</h2><ol>
+<li>Good data is pretty hard to come by, still. For me, some of the best resources so far have came from the GOV 1347 teaching team, FiveThirtyEight, PewResearch, Dave Leip, and Wikipedia.</li>
+<li>Build out national seat share and national vote share models separately. When switching out independent variables, consider different combinations of dependent ones, even if the independent variables are closely related.</li>
+<li>Fundamentals (incumbency, past electoral history, the economy) are highly, highly predictive for district-level models. This is especially important in relation to lesson #1, since there&rsquo;s generally more historical fundamentals data available than campaign or dynamics data.</li>
+<li>Incorporate more creative predictors. Drawing directly or indirectly from the literature, don&rsquo;t be afraid to create new variables that may be predictive. For example, in House races, try an indicator variable for a Senate or gubernatorial race being on the ballot. In any race, test Vavreck&rsquo;s campaign messaging theory by incorporating a variable that speaks to the campaign&rsquo;s success at conveying an insurgent or clarifying message.</li>
+<li>Stay open minded and adaptive. As a great professor once told me, social science is hard. Elections are, in many ways, predictable. But it&rsquo;s very, very difficult to get it right on the nose, with all the forces and factors in the world influencing how people think and vote. Additionally, the elections we try to forecast only happen once every two or four years, so not only is data scarce, but so are trials. There will always be new predictors to consider, like The Economist&rsquo;s suggestion of special election performance or a newly popular insurgent campaign issue like abortion, so keep an eye out, try new methods and predictors, and stay committed to good science (confidence intervals, probabilistic forecasting).</li>
+</ol>
+<h2 id="thank-yous" class="link-owner">
+  <a href="/blog/120622-final-remarks/#thank-yous" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Thank Yous
+</h2><p>I want to thank Professor <a href="https://www.ryandenos.com/" title="Ryan Enos" target="_blank" rel="nofollow noopener">Ryan Enos</a> and Teaching Fellows <a href="https://gov.harvard.edu/people/kiara-hernandez" title="Kiara Hernandez" target="_blank" rel="nofollow noopener">Kiara Hernandez</a> and <a href="https://itsyaoyu.com/" title="Yao Yu" target="_blank" rel="nofollow noopener">Yao Yu</a> for their compassion and patience, hard work providing us with data for analysis, and most importantly, delivery of the tools and knowledge we needed to learn the science, and art, of election analytics. From paired discussions to technical labs to the coolest guest speakers, every learning opportunity has been appreciated.</p>
+<p>Thank you to all of my <a href="https://itsyaoyu.github.io/Harvard-ElectionAnalytics-2022/" title="classmates" target="_blank" rel="nofollow noopener">classmates</a> in GOV 1347: Election Analytics, who came from many different academic backgrounds, for their insights and support as we&rsquo;ve built out our models together.</p>
+<p>It&rsquo;s been a genuine pleasure learning from you all!</p>
+<h2 id="onto-the-next" class="link-owner">
+  <a href="/blog/120622-final-remarks/#onto-the-next" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Onto the Next!
+</h2><p>As of December 7, 2022, I plan to commit to this forecasting journey again for the 2024 elections. The presidency, all 435 House seats, and 34 Senate seats will be up for grabs, and I hope to go bigger and better, with (probabilistic) forecasts for all, or most, of them. I will also have freshly graduated Harvard College by then, so it will really be an interesting time.</p>
+<p>Hopefully, talk to again you then!</p>
+<p>Best wishes,</p>
+<p>Vivian</p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Campaign Narrative</title>
+      <link>/blog/120722-campaign-narrative/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/120722-campaign-narrative/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="overview" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#overview" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Overview
+</h1><p>After months of studying the midterm elections at the national and district levels, we&rsquo;ve gained a more complete understanding of the factors that predict incumbent party performance in terms of two-party vote share and seat wins. This week, I will take a deep dive into Washington&rsquo;s 8th congressional district to carefully analyze how its House race went after a brief review of the general characteristics of the district (including geography, demographics, candidates, electoral history) and its forecasted outcome per my models and those of the experts. I will then evaluate the forecasts&rsquo; accuracies and the race&rsquo;s actual outcome, commenting on the campaigns ran and how they may have contributed to the outcome deviations from the forecasts.</p>
+<h1 id="washingtons-8th-congressional-district" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#washingtons-8th-congressional-district" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Washington&rsquo;s 8th Congressional District
+</h1><!-- raw HTML omitted -->
+<p>As of the 2021 American Community Survey, WA-8 has a population of over 780,000 and is home to 284,410 households. The median age is 39.2, slightly higher than the U.S. median of 38.8. The sex ratio is 49:51 female:male. The average income is $50,047 and the median household income is $103,625, both considerably higher than the U.S. average and median of $38,332 and $69,717. This aligns with the heightened educational attainment of the district, with 92.7% of the population being high school graduates or higher and 39% holding bachelor&rsquo;s degrees or higher (compared to the U.S. averages of 89.4% and 35%) (Census Reporter). As of 2020, the district is 68.5% white, 9.6% Asian, 5.3% multiracial (non-Hispanic), 5% other (Hispanic), 4.8% white (Hispanic), 3% African American, 1.6% multiracial (Hispanic), 1% Native Hawaiian and PI, and 1% American Indian and Alaska Native (Data USA).</p>
+<p>WA-8 was created in the post-1980-Census redistricting cycle. Until 2003, it was mostly comprised of King and Pierce Counties. Between 2003 and 2013, the district was grew larger with the addition of Samarnish County. From 2013 until 2020, the district grew even larger with Chelan and Kittatas being added. CNN tracked the most recent changes after the 2020 redistricting cycle, shown below.</p>
+<!-- raw HTML omitted -->
+<p>Up until 2018, the district was a Republican stronghold for the House despite consistently electing a Democratic nominee for presidency since 1992 (Ballotpedia). In 2018, Kim Schrier (D) became the first Democrat to represent WA-8 after winning the race for the newly open seat against Republican Dino Rossi. Today, the district is described as &ldquo;Washington&rsquo;s swingiest congressional district&rdquo; (Seattle Times).</p>
+<h2 id="2022-campaigns" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#2022-campaigns" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>2022 Campaigns
+</h2><p>For the 2022 midterms, WA-8 saw two major campaigns from Democratic incumbent Kim Schrier and Republican challenger Matt Larkin.</p>
+<!-- raw HTML omitted -->
+<h3 id="background-and-key-issues" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#background-and-key-issues" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Background and Key Issues
+</h3><p>Prior to serving in the House of Representatives, Kim Schrier, M.D., graduated from U.C. Berkeley with a degree in Astrophysics and had a successful career as a pediatrician in the Puget Sound region (<a href="https://schrier.house.gov/" title="House site" target="_blank" rel="nofollow noopener">House site</a> and <a href="https://www.drkimschrier.com/" title="campaign site" target="_blank" rel="nofollow noopener">campaign site</a>). For her 2022 re-election bid, she emphasized her efforts to increase affordable, quality healthcare, to protect women&rsquo;s rights, and to build a &ldquo;middle-class centered economy.&rdquo; Whilst labeling herself a &ldquo;pragmatic centrist&rdquo; and emphasizing her ability to work with both parties, Schrier champions women&rsquo;s rights to abortion and reproductive care, as well as clean energy policies (Seattle Times).</p>
+<p>Matt Larkin, J.D., is a Washington native, with a deep family history of 165+ years in the state. He graduated from Westmont College, and is a licensed attorney in both Washington and Oregon. After briefly serving in the White House as a speechwriter for President George W. Bush, he returned to Washington to his family manufacturing business (<a href="https://larkin4congress.com/" title="campaign site" target="_blank" rel="nofollow noopener">campaign site</a>). His 2022 campaign featured a central message of &ldquo;Make crime illegal again&rdquo;, calling attention to Washington&rsquo;s rising crime with a nod to President Trump&rsquo;s infamous &ldquo;Make America Great Again&rdquo; presidential slogan. In his submitted biography to Ballotpedia, he also highlights the rising inflation in the U.S. and his plan &ldquo;to reign in federal spending, fix our supply chains, get wages rising again, and restore prosperity for everyday Americans.&rdquo; The last of his 3 key messages is that he is the right candidate for the everyday Washingtonian - he is a not a career politican, but rather, an active community member endorsed by healthcare workers, law enforcement groups, and local officeholders.</p>
+<h3 id="the-air-war" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#the-air-war" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Air War
+</h3><p>As a <a href="https://www.opensecrets.org/races/summary?cycle=2022&amp;id=WA08" title="well-funded incumbent" target="_blank" rel="nofollow noopener">well-funded incumbent</a> - $8,551,740 versus Larkin&rsquo;s $2,141,608 of raised funds -, Schrier enjoyed a large airwaves advantage. According to the Wesleyan Media Project, the pro-Democrat airings totaled 11,431 in comparison to the pro-Republican count of 6,190 from September 5 through October 30, 2022. This Democrat advantage is only second to that of VA-02.</p>
+<p>One advertisement that landed Schrier in a bit of controversy was an attacking one that proclaimed Larkin was dangerous, intending to cut Veterans&rsquo; healthcare and support a national ban on abortion (see ad <a href="https://www.drkimschrier.com/2022/10/12/dr-kim-schrier-for-congress-releases-new-ad-definition/" title="here" target="_blank" rel="nofollow noopener">here</a>). The <a href="https://washingtonveteransvotepac.org/?fbclid=IwAR0UzBd0FsJ-hI8mni7DNXKWNRyMl4vz4gsqG-C3VJoB7nLrkQ_WlGA03Gg" title="Washington Veterans Vote PAC" target="_blank" rel="nofollow noopener">Washington Veterans Vote PAC</a>, an endorser of Larkin, soon <a href="https://www.facebook.com/WAVetsVotePAC?__cft__[0]=AZVsrJAxNvCYKKHln8bCyWr-ermT5oRGx_EYO1-KqFSHfXbbTnTKCgoi3J5HcrtS61D0o-6KbCv7aBaSWyBsWhu8rmtcoDLy2dfJsZJS1ShkZ_6frV35OC72uORlVf7JSrPqNub246VoJhFJ6LYBrRREzExDLVmg6SzKj7KlrYOaww1GOKui4O9DTsWfS7g8Z7sZ8OVOG-HR5qXo-eS9KqKH&amp;__tn__=-UC%2CP-R" title="posted" target="_blank" rel="nofollow noopener">posted</a> to its Facebook page that the ad was deceitful and maintains that &ldquo;Matt is dedicated to ensuring all Veterans receive the medical support they need and the well-earned benefits they deserve. This ad clearly shows Kim Schrier lacks the integrity to represent our veterans or our country at the national level.&rdquo; An astute commentator remarks, &ldquo;Every republican is promising to reverse inflation by cutting spending&hellip;just not the spending the people they are pandering to want&hellip;.. increased spending for veterans is Part of that out of control spending he keeps promising to cut&rdquo;.</p>
+<p>A whopping $7,346,778 was spent by outside groups to oppose Larkin (Open Secrets), and one example of this spending is this <a href="https://youtu.be/Fo2-L0Vv-FA" title="ad" target="_blank" rel="nofollow noopener">ad</a> paid for by the pro-environment <a href="https://www.lcv.org/" title="League of Conservation Voters" target="_blank" rel="nofollow noopener">League of Conservation Voters</a>. The ad categorizes Larkin as an extremist-sympathizer, strong supporter of Donald Trump, and anti-abortion candidate.</p>
+<p>As for Larkin, he kept true to his central slogan of &ldquo;Make crime illegal again,&rdquo; making crime the central theme of this <a href="https://youtu.be/ULaEWTNtHg8" title="attacking ad" target="_blank" rel="nofollow noopener">attacking ad</a>.</p>
+<p>In a <a href="https://omny.fm/shows/the-jason-rantz-show/matt-larkin-wa-08" title="summer interview" target="_blank" rel="nofollow noopener">summer interview</a> with conservative radio host Jason Rantz, Larkin described his stance on climate issues as non-urgent, responding to President Biden&rsquo;s earlier speech on climate change in Somerset, MA that emphasized that the latest climate report is a &ldquo;code red for humanity.&rdquo; Instead, Larkin affirms that inflation is a more pressing issue than climate change for voters, as &ldquo;people are hurting&hellip; they can&rsquo;t fill their gas tanks, they can&rsquo;t afford groceries, they don&rsquo;t feel safe going into their local park.&rdquo;</p>
+<p>According to a <a href="https://www.kuow.org/stories/takeaways-from-the-larkin-schrier-debate-for-the-8th-congressional-district-race" title="post-debate report" target="_blank" rel="nofollow noopener">post-debate report</a> by KUOW, &ldquo;Puget Sound&rsquo;s #1 radio station for news&rdquo;, despite Larkin&rsquo;s reiterated beliefs in federal spending cuts and strong pro-life stance, he did not specify where the cuts would occur or whether or not he supports any specific exceptions should there be a federal abortion ban. Schrier declined to comment on the limits of abortion rights herself. Ultimately, the article labeled the candidates&rsquo; responses in the October 28th <a href="https://youtu.be/4avOZE9w4Jk" title="debate" target="_blank" rel="nofollow noopener">debate</a> as evasive.</p>
+<h2 id="forecasts" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#forecasts" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Forecasts
+</h2><p>As of November 7, 2022, <a href="https://www.cookpolitical.com/ratings/house-race-ratings" title="The Cook Political Report" target="_blank" rel="nofollow noopener">The Cook Political Report</a> called WA-8 a Democrat Toss Up. Despite that competitive rating, polls were scarce in the district, with RMG Research&rsquo;s <a href="https://www.termlimits.com/wp-content/uploads/2022/08/USTL-WA08-Toplines.pdf" title="mid-August poll" target="_blank" rel="nofollow noopener">mid-August poll</a> being the most recent and only one; it reported 47% support for Schrier and 43% for Larkin, with a sample of 400 likely voters and 4.9% margin of error.</p>
+<p><a href="https://projects.fivethirtyeight.com/2022-election-forecast/house/washington/8/" title="FiveThirtyEight" target="_blank" rel="nofollow noopener">FiveThirtyEight</a> predicted that Schrier wins 72 out of 100 simulated races, with an average two-party popular vote share of 51.2%. <a href="https://www.economist.com/interactive/us-midterms-2022/forecast/house/washington#8" title="The Economist" target="_blank" rel="nofollow noopener">The Economist</a> was a little more optimistic for Schrier, giving her a 81% chance of winning, with 53.3% of the two-party vote share. As for my own models, the competitive one (which considered incumbency and pollster ratings) predicted that Schrier would win 47.24% of the vote share, and the non-competitive one (which considered incumbency and previous Democrat vote share) predicted that she would win 51.5% of the vote share. In the latter, my confidence interval was very wide for WA-8 in comparison to other WA districts, at (37.01, 66.01).</p>
+<h2 id="outcome" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#outcome" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Outcome
+</h2><p>In actuality, Schrier won 53.4% of the two-party vote with 179,003 of the 334,979 total votes (New York Times). Larkin finished with 46.6% of the vote share and 155,976 raw votes. The majority of the Democratic support came from King County, where Schrier led by 24 points. In contrast, Larkin led in all 5 other counties, whose total votes (152,542) were outnumbered by King County&rsquo;s (182,437) alone.</p>
+<p>The Cook Political Report was perhaps overly conservative in rating the race as a Democrat Toss Up rather than Lean or Likely. The early polls gave us an understated evaluation of the Democrat win margin, which ended up being 6.8 percentage points rather than 4. My competitive model underpredicted Schrier&rsquo;s vote share by 6.16 percentage points, which I will investigate further below. Both FiveThirtyEight and my non-competitive model predicted vote-shares for Schrier 2 percentage points shy of the true value. Though of course, FiveThirtyEight and The Economist were considerably confident that Schrier would secure the seat with their probablistic forecasts. The Economist came remarkably close to reality with their vote-share prediction, missing the mark by only 0.1 percentage point.</p>
+<h2 id="the-interaction-of-campaigns-candidates-and-outcome" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#the-interaction-of-campaigns-candidates-and-outcome" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Interaction of Campaigns, Candidates, and Outcome
+</h2><p>While all of the aforementioned forecasts, with the exception of that of my competitive district model, were able to call the winner of the WA-8 race, the forecasts varied widely by magnitude of vote-share accuracy. I will reflect on these variations below, drawing on literature and what I&rsquo;ve learned in GOV 1347 to speculate on how the WA-8 campaigns and candidates may have contributed to the district&rsquo;s deviation from the predicted outcomes.</p>
+<p>As the 2022 midterms drew near and I built out my own models, I considered both FiveThirtyEight&rsquo;s and The Economist&rsquo;s methodologies. In <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-26-polls-and-pollsters/" title="week 3" target="_blank" rel="nofollow noopener">week 3</a>, I noted that The Economist relies more on generic ballot polling data, while FiveThirtyEight utilizes district-level candidate polls and concluded that I&rsquo;d draw more inspiration from FiveThirtyEight modeling due to the (presumably advantageous) inclusion of expert ratings. In retrospect, FiveThirtyEight and my own competitive model (which unlike my non-competitive model, made use of expert ratings) underpredicted Schrier&rsquo;s performance.</p>
+<p>So then, did the polls and expert ratings underestimate Schrier&rsquo;s electoral chances this election cycle? Did Larkin underperform as a challenger in a poor economy? Is it the case that both were true? I think both Schrier succeeded and Larkin underperformed, and I have three main hypotheses: Schrier ran &ldquo;the right type&rdquo; of campaign, turnout and the issues on the ballot favored the Democrats, and Larkin&rsquo;s Trump ties hindered his electoral bid.</p>
+<h3 id="campaign-messaging-makes-a-difference" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#campaign-messaging-makes-a-difference" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Campaign Messaging Makes A Difference
+</h3><p>&ldquo;A rational candidate will exploit the electoral context to his or her advantage&hellip; For something about a candidate to be important to the electoral context, it must be something that the candidate cannot change or manipulate easily; and obviously, it must be something about which the voters care or can be made to care&rdquo; (Vavreck, 2009).</p>
+<p>Schrier&rsquo;s attempt at running the right type of campaign involved focused promotion of her pro-choice stance as a female physician (in comparison to her opponent&rsquo;s anti-choice stance as a male non-doctor), promise of increased healthcare access and middle-class-friendly policies, and emphasis on the environment. Post-hoc, it&rsquo;s clear that Schrier and her team ran the right campaign &ndash; an insurgent one, per Vavreck&rsquo;s campaign typology &ndash;, as an incumbent in a bad economy who&rsquo;s focusing on issues that benefit from public opinion, such as women&rsquo;s reproductive rights and continued funding of Medicare. Both issues are overwhelming popular amongst Washingtonians (Pew Research Center, Northwest Progressive Institute). Abortion was an especially salient issue this election cycle across the country after the Dobbs decision in late June 2022, and according to this <a href="https://www.surveyusa.com/client/PollReport.aspx?g=3ad7fc15-da46-4af6-89d6-2925928e0d04" title="late October poll" target="_blank" rel="nofollow noopener">late October poll</a> of WA adults, was the most important issue for Washingtonians too, followed closely by inflation. When broken down by sex or party affiliation, abortion becomes overwhelmingly salient for females and Democrats. Thus, Schrier&rsquo;s messaging on this issue was critical to her surmounting of the incumbent punishment that would normally be expected with the poor economic conditions of the past year, defined by high inflation, high gas prices, and supply chain issues.</p>
+<p>If consulted, Vavreck&rsquo;s best advice for a candidate in Larkin&rsquo;s position &ndash; a challenging party in a bad economy &ndash; would be to run a clarifying campaign that focuses strongly on the economy so that voters are certain about his relationship to the current economic situation. While Larkin did include the federal spending problem as one of his key issues, his primary focus was encapsulated in and made explicit by his slogan - &ldquo;make crime illegal again.&rdquo; Crime is generally an issue Republicans do well on, but according to Vavreck&rsquo;s theory, as a clarifying campaign, Larkin&rsquo;s should have directed more attention and time toward inflation, especially after it became clear via polls that other than abortion, inflation was the top issue for Washington voters. Amongst independents, it was an even bigger issue than abortion! It appears that Larkin failed to run a clarifying campaign, and Schrier ran a successful insurgent one.</p>
+<h3 id="turnout" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#turnout" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Turnout
+</h3><p>This year, like most midterms, saw decreased turnout compared to two years ago. That said, turnout favored Schrier. In King County&rsquo;s portion of District 8, the major source of support for Schrier, turnout was 3 percentage points higher, at 68%, than the county average. In contrast, Pierce County, an important source of support for Larkin, saw decreased turnout since the last midterm (Crosscut). Additionally, Democrat Senate incumbent Murray won 53% of the vote in Pierce County this cycle, so it may also be possible that the turnout of pro-Democratic senatorial voters in Pierce County worked against Larkin down-ballot.</p>
+<p>WA-8&rsquo;s population shares of 50+ year olds and households with $100,000+ income are larger than the national average, which are all Washingtonian groups that disproportionately support abortion rights (Pew Research Center). WA-8&rsquo;s population share of Latinos is also lower than the national average, which works well for Schrier, as Latinos in Washington are twice as likely to be anti-abortion than not.</p>
+<h3 id="the-trump-card" class="link-owner">
+  <a href="/blog/120722-campaign-narrative/#the-trump-card" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Trump Card
+</h3><p>Trump endorsed over 250 candidates in this year&rsquo;s midterms, and 82% of them won. However, once we filter the races for competitiveness, a Trump endorsement is not so clearly predictive of candidate performance. In fact, Trump endorsed the Republican candidate in 5 of the 36 most competitive House races, and 0 of them won their race (New York Times). While Larkin never secured an official Trump endorsement, he still ran a campaign marred by Trump rhetoric - &ldquo;make crime illegal again&rdquo;, &ldquo;<a href="https://www.facebook.com/watch/?v=426029279580947" title="build the wall" target="_blank" rel="nofollow noopener">build the wall</a>&rdquo;, and &ldquo;political outsider.&rdquo; Ultimately, I believe Larkin failed to oust Schrier not only because he failed to run a proper clarifying campaign, but he also because he modeled his campaign after a pretty unpopular ex-President.</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] CNN. Redistricting in Washington. <a href="https://www.cnn.com/interactive/2022/politics/us-redistricting/washington-redistricting-map/" title="https://www.cnn.com/interactive/2022/politics/us-redistricting/washington-redistricting-map/" target="_blank" rel="nofollow noopener">https://www.cnn.com/interactive/2022/politics/us-redistricting/washington-redistricting-map/</a></p>
+<p>[2] Choose Washington. Washington’s diverse climate and geography. <a href="http://choosewashingtonstate.com/research-resources/about-washington/climate-geography/" title="http://choosewashingtonstate.com/research-resources/about-washington/climate-geography/" target="_blank" rel="nofollow noopener">http://choosewashingtonstate.com/research-resources/about-washington/climate-geography/</a></p>
+<p>[3] Census Reporter. Congressional District 8, WA. <a href="https://censusreporter.org/profiles/50000US5308-congressional-district-8-wa/" title="https://censusreporter.org/profiles/50000US5308-congressional-district-8-wa/" target="_blank" rel="nofollow noopener">https://censusreporter.org/profiles/50000US5308-congressional-district-8-wa/</a></p>
+<p>[4] Data USA. Congressional District 8, WA. <a href="https://datausa.io/profile/geo/congressional-district-8-wa" title="https://datausa.io/profile/geo/congressional-district-8-wa" target="_blank" rel="nofollow noopener">https://datausa.io/profile/geo/congressional-district-8-wa</a></p>
+<p>[5] Ballotpedia. Washington&rsquo;s 8th Congressional District. <a href="https://ballotpedia.org/Washington%27s_8th_Congressional_District" title="https://ballotpedia.org/Washington%27s_8th_Congressional_District" target="_blank" rel="nofollow noopener">https://ballotpedia.org/Washington%27s_8th_Congressional_District</a></p>
+<p>[6] Seattle Times. Rep. Kim Schrier, challenger Matt Larkin battle for control of Congress. <a href="https://www.seattletimes.com/seattle-news/politics/rep-kim-schrier-and-challenger-matt-larkin-battle-for-control-of-congress/" title="https://www.seattletimes.com/seattle-news/politics/rep-kim-schrier-and-challenger-matt-larkin-battle-for-control-of-congress/" target="_blank" rel="nofollow noopener">https://www.seattletimes.com/seattle-news/politics/rep-kim-schrier-and-challenger-matt-larkin-battle-for-control-of-congress/</a></p>
+<p>[7] Washington&rsquo;s 8th Congressional District election, 2022. <a href="https://ballotpedia.org/Washington%27s_8th_Congressional_District_election,_2022" title="https://ballotpedia.org/Washington%27s_8th_Congressional_District_election,_2022" target="_blank" rel="nofollow noopener">https://ballotpedia.org/Washington%27s_8th_Congressional_District_election,_2022</a></p>
+<p>[8] Open Secrets. Washington District 08 2022 Race. <a href="https://www.opensecrets.org/races/summary?cycle=2022&amp;id=WA08" title="https://www.opensecrets.org/races/summary?cycle=2022&id=WA08" target="_blank" rel="nofollow noopener">https://www.opensecrets.org/races/summary?cycle=2022&id=WA08</a></p>
+<p>[9] Wesleyan Media Project. 4.3M TV ADS WITH SPENDING NEARING $3B. <a href="https://mediaproject.wesleyan.edu/releases-110322/" title="https://mediaproject.wesleyan.edu/releases-110322/" target="_blank" rel="nofollow noopener">https://mediaproject.wesleyan.edu/releases-110322/</a></p>
+<p>[10] New York Times. Washington Eighth Congressional District Election Results. <a href="https://www.nytimes.com/interactive/2022/11/08/us/elections/results-washington-us-house-district-8.html" title="https://www.nytimes.com/interactive/2022/11/08/us/elections/results-washington-us-house-district-8.html" target="_blank" rel="nofollow noopener">https://www.nytimes.com/interactive/2022/11/08/us/elections/results-washington-us-house-district-8.html</a></p>
+<p>[11] Lynn Vavreck. The message matters: the economy and presidential campaigns. Princeton
+University Press, 2009. URL. {finish with real citation}</p>
+<p>[12] Pew Research Center. Views about abortion among adults in Washington. <a href="https://www.pewresearch.org/religion/religious-landscape-study/state/washington/views-about-abortion/" title="https://www.pewresearch.org/religion/religious-landscape-study/state/washington/views-about-abortion/" target="_blank" rel="nofollow noopener">https://www.pewresearch.org/religion/religious-landscape-study/state/washington/views-about-abortion/</a></p>
+<p>[13] Northwest Progressive Institute. Washingtonians strongly support Medicare For All and oppose Trumpcuts, NPI poll finds. <a href="https://www.nwprogressive.org/weblog/2017/06/washingtonians-strongly-support-medicare-for-all-and-oppose-trumpcuts-npi-poll-finds.html" title="https://www.nwprogressive.org/weblog/2017/06/washingtonians-strongly-support-medicare-for-all-and-oppose-trumpcuts-npi-poll-finds.html" target="_blank" rel="nofollow noopener">https://www.nwprogressive.org/weblog/2017/06/washingtonians-strongly-support-medicare-for-all-and-oppose-trumpcuts-npi-poll-finds.html</a></p>
+<p>[14] Crosscut. WA sees higher voter turnout but a drop east of the Cascades. <a href="https://crosscut.com/politics/2022/11/wa-sees-higher-voter-turnout-drop-east-cascades" title="https://crosscut.com/politics/2022/11/wa-sees-higher-voter-turnout-drop-east-cascades" target="_blank" rel="nofollow noopener">https://crosscut.com/politics/2022/11/wa-sees-higher-voter-turnout-drop-east-cascades</a></p>
+<p>[15] New York Times. The key statistics about Trump’s endorsement track record this year. <a href="https://www.nytimes.com/2022/12/06/us/politics/trump-candidate-endorsement-georgia.html" title="https://www.nytimes.com/2022/12/06/us/politics/trump-candidate-endorsement-georgia.html" target="_blank" rel="nofollow noopener">https://www.nytimes.com/2022/12/06/us/politics/trump-candidate-endorsement-georgia.html</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Post-Election Reflection</title>
+      <link>/blog/112222-post-election-reflection/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/112222-post-election-reflection/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="overview" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#overview" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Overview
+</h1><p>This week, I am revisiting my final models and predictions from <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-11-07-final-prediction/" title="week 8" target="_blank" rel="nofollow noopener">week 8</a> and reflecting on how they performed, and speculating about why, now that we’re about 2 weeks post-Election Day now.</p>
+<h1 id="my-final-model-and-predictions" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#my-final-model-and-predictions" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My Final Model and Predictions
+</h1><h2 id="national-model" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#national-model" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>National Model
+</h2><p>My national modeling addressed two main goals: predicting the 2022 House incumbent party two-party vote share and predicting the 2022 House incumbent party seat count. My main model consisted of a linear regression built off of 4 predictors (GDP absolute growth, generic ballot support for the House incumbent party, whether or not it was a midterm year for the incumbent/President’s party, and the congressional approval rate). To achieve the two goals, I swapped out the response variable as needed.</p>
+<p>Ultimately, I predicted that the House incumbent party (Democrats this year) would earn 48.56% (47.36, 49.83) of the national two-party vote share and 209 (198, 221) seats.</p>
+<h2 id="district-level-models" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#district-level-models" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>District-Level Models
+</h2><p>My district-level modeling also consisted of two main goals: predict the vote share of the democratic candidate in competitive districts and predict the vote share of the democratic candidate in “non-competitive” districts. My approach was to build competitive linear regression models using average expert ratings of those races in addition to candidate incumbency status, and to build non-competitive ones using the last democratic candidate’s vote share as well as the current candidate’s incumbency.</p>
+<h1 id="evaluation" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#evaluation" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Evaluation
+</h1><h2 id="accuracy" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#accuracy" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Accuracy
+</h2><p>As of November 22, 2022, the Democrats have reportedly captured 48.47% of the two-party vote share and 213 of the 435 seats (Cook Political Report, NYTimes).</p>
+<p>A quick glance tells us that my national model’s national vote share prediction was within 0.5 percentage points of the actual, and seat count prediction was off by 4 seats.</p>
+<p>The table below provides a more detailed report on the accuracy of my national and district-level models, with measures of root mean squared error (RMSE), number of miscalled districts, classification accuracy, and the average margin by which the predicted vote shares were inaccurate.</p>
+<!-- raw HTML omitted -->
+<p>My national vote-share prediction was considerably close, with a somewhat tight confidence interval of (47.36, 49.83) and center of 48.56%. As shown above, the RMSE of my national prediction is very small. That said, it was the simpler half of my modeling, with no purview into how each district-level race would play out.</p>
+<p>The performance of my district-level models was a little less impressive, with RMSEs of 13.47 and 12.03 for the non-competitive and competitive models respectively. Though the non-competitive models had higher RMSE and average inaccuracy margin (which I define as the average difference between the actual Democratic candidate vote share and my prediction), they have a much higher classification accuracy than the competitive models. This was initially counterintuitive, but ultimately makes sense considering that the competitive models have a much harder classification task, with each race being close - even very small swings in vote share can alter each district’s outcome and classification. In contrast, the non-competitive models can afford to be less accurate in vote-share prediction so long as they correctly call the outcome. Indeed, over 90% of incumbents win re-election, so the inclusion of incumbency was expected to help call the non-competitive races accurately (OpenSecrets). Though, in retrospect, the incumbency variable wasn’t informative enough to accurately predict <em>vote share</em> with high accuracy in these districts, as reflected by their large RMSEs and inaccuracy margins.</p>
+<p>Below are maps of the congressional districts I made predictions for, the first being colored according to how close (or far) my two-party vote share predictions were, and the second being colored by correct-call or miscall status.</p>
+<!-- raw HTML omitted -->
+<p>Overall, it seems I tend to overpredict the Democratic candidate’s vote share, especially in the South. However, my single largest inaccuracy was in Maryland 6, where I severely underpredicted the (D) vote share and overpredicted the (R) vote share. Other than that miscall, my underpredictions of (D) performance were concentrated in southern California and western Arizona. In fact, 16 of my 25 non-competitive misclassifications come from California and Arizona, with 14 from California alone.</p>
+<p>I produced the map below to help evaluate my models’ classification performances at a glance. Red denotes a miscalled or misclassified district, and green denotes a correct call.</p>
+<!-- raw HTML omitted -->
+<p>My models had the most trouble predicting the outcomes and vote shares of districts in the Southwest and West, located in California, Nevada, Arizona, and New Mexico. There are also pockets of misclassification across the Great Lakes states, but they don’t appear particularly concentrated in any one area.
+Interestingly, my models did particularly well in New York, which was a state of difficulty for both FiveThirtyEight and The Economist. Both models miscalled NY-3, NY-4, NY-17, NY-19, and NY-22, but mine only did so for NY-4 and NY-17, with inaccuracy margins of just 5.5 and 0.9 percentage points.</p>
+<h2 id="inaccuracy-sources" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#inaccuracy-sources" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Inaccuracy Sources
+</h2><p>There are many ways to explain the inaccuracy of my district models. I have several hypotheses regarding redistricting, turnout, and coding decisions that I believe decreased the accuracy of my predictive models at the district level.</p>
+<h3 id="redistricting" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#redistricting" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Redistricting
+</h3><p>One of the main sources of inaccuracy in my model is likely the redistricting that occurred in 2020. All of the data I used to build out my OLS models came from 2020 and prior, so my models are not perfectly tuned to the sentiments and voting behavior of the citizens in each 2022 congressional district. In Texas, Montana, and Florida, Republicans have gained new safe districts; in Colorado, Oregon, and North Carolina, Democrats did the same (Politico). The two maps above demonstrate how poorly my models performed in these states, with the training data not properly matching the regions for which I made 2022 predictions for due to the redistricting war.</p>
+<h3 id="turnout" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#turnout" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Turnout
+</h3><p>Post-election, it is clear that including a turnout in the model in some way would’ve been very helpful in gauging who will come out to vote, and who their vote will be cast for.</p>
+<h4 id="youth-turnout" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#youth-turnout" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Youth Turnout
+</h4><p>This year, young (19-29) turned out in historic numbers (CIRCLE). Some pundits and analysts believe it is the youth vote that helped Democrats stave off a “Republican wave”, with youth turnout being the second-highest it’s been in the last 30 years and youth preferring Democratic candidates over Republican ones by a 28-point margin. In key battleground states, the margin was even larger for the youth vote in competitive senatorial and gubernatorial races. This youth vote could partially explain how Democrats overperformed what my model predicted and had a particularly strong year as the president’s party in an arguably poor economy, and I believe my lack of consideration of a youth turnout variable led to an underprediction of Democrat seat count.</p>
+<h4 id="general-turnout" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#general-turnout" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>General Turnout
+</h4><p>Another theory related to turnout is that high-profile senatorial and gubernatorial races in certain states (such as Arizona, Nevada, Pennsylvania, and Georgia) this year may have incentivized higher Democratic voter turnout than other years due to perceived threats to abortions rights, democracy, party power, and more. This increased turnout could have led to down-ballot success for the Democratic party, and again, my lack of variable to account for particularly high-profile, high-turnout races likely led to an underprediction of Democratic candidate success in affected regions and races.</p>
+<h3 id="coding" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#coding" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Coding
+</h3><p>Most of my competitive-district models were trained on low quantities of past data, since expert ratings were required and can only be found dating back to 2010 - so, 5 midterms to train on. This meant that I had to sacrifice data quantity in order to incorporate expert ratings into my competitive model. In retrospect, I believe that such low amounts of training data resulted in underfitting in some cases, as there weren’t enough consistent trends to learn from for certain districts, and overfitting in other cases, such as when certain districts had severely lopsided support for one party in all 5 training data points, but underwent redistricting and/or significant changes this election cycle. As a result, the competitive models weren’t particularly accurate at predicting the vote share and outcome of the 94 most competitive districts.</p>
+<p>I also believe that (lack of) coding for uncontested races was a source of error in my models. After developing my competitive and non-competitive models, I made predictions for this year’s Democratic candidates. However, certain races were uncontested, and yet, still treated like the other standard multi-candidate races. Failing to account for uncontested races introduced unnecessary work into my model prediction process, and allowed for inaccuracy margins that shouldn’t have existed. For example, California 15, 16, 29, 30, 34, and 37 were all uncontested (no Republican candidates) races where Democrats candidate earned all 100% of the two-party vote share. I called all of these districts correctly, but unfortunately gave non-100 vote share predictions.</p>
+<h2 id="testing-inaccuracy-hypotheses" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#testing-inaccuracy-hypotheses" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Testing Inaccuracy Hypotheses
+</h2><p>Below I propose some simple tests to quickly see if the above sources of inaccuracy were indeed difference-makers in how my models performed this year.</p>
+<h3 id="redistricting-1" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#redistricting-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Redistricting
+</h3><p>To test my hypothesis about the negative effect of redistricting on my model performance, I could run the models again after correcting for redistricting. Mapping the train data by region to the new corresponding district, or mapping the new election data to old district lines, would adequately account for redistricting changes, and my new predictions can be evaluated the same way my current predictions are. A comparison of RMSEs, classification accuracies, and average inaccuracy margins should reveal just how much redistricting threw off my 2022 models.</p>
+<h3 id="turnout-1" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#turnout-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Turnout
+</h3><p>Youth turnout percentage could have been included as a predictor in my models, assuming the data is available as far back as the training data requires. As for high-profile races, an indicator variable for Senate race in the state or variable for the number of ballot measures could’ve been included. Again, we could compare the performance of these new models to that of the current ones to see how much, if at all, turnout was predictive of race outcomes.</p>
+<h3 id="coding-1" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#coding-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Coding
+</h3><p>After adding in an indicator variable for un/contested seat in both the competitive and non-competitive versions of the district models and acquiring more longitudinal data so that the number of training data points is sufficiently large (or at least greater than the 5 we’re currently working with), we could conduct a test like a difference-in-means test to see if there’s a meaningful difference in model performance (classification accuracy, mean inaccuracy margin of vote share prediction, etc.) when we change the training data and processing of candidates.</p>
+<h1 id="looking-forward" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#looking-forward" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Looking Forward
+</h1><p>I have several ideas for improvement in model performance and creation should I do this again (which I probably will, because this has been great fun and very intellectually rewarding).</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Broadly, I’d make a few changes on the approach-side: split national vote share and national seat count into two different linear regression projects (allowing for different predictors in each model), spend more time tuning my district-level models with expert ratings and fundamental predictors, and study the experts’ models more closely. I tried my best to use the literature and lectures reviewed in Gov 1347, as well as my own insights, to build out this year’s models with the primary goal of learning, but next time, I plan to improve more directly on models from professional forecasters like The Economist and FiveThirtyEight with heavier prioritization on model performance and prediction accuracy.</p>
+<h2 id="model-choice" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#model-choice" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Model Choice
+</h2><p>Alongside those general approach improvements, I also envision some related specific technical ones regarding model choice and variable selection. I touch on model choice first; now that I’ve created, trained, validated, and predicted with over 400 OLS linear regression models, I feel ready to try more advanced modelling methods like Random Forest or bagging that don’t assume linearity. Ideally, I’d be able to get linear regression and Random Forest models up and running far in advance of the midterms to compare them. I’d also like to pool my district-level models next time around should they end up linear again.</p>
+<p>Another model-related change I’d really like to make is to run simulations to get probabilities of Democrat and/or Republican wins in each district. This should increase at-a-glance interpretability, and also allow for post-election Brier score calculations.</p>
+<h2 id="variables" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#variables" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Variables
+</h2><p>As mentioned in my discussion of potential sources of inaccuracy, I’d like to consider youth turnout, high-profile race-presence, and seat contested-ness in my next rounds of variable selection. Below are some additional variables that are interesting to consider closely.</p>
+<h3 id="economic-variables" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#economic-variables" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Economic Variables
+</h3><p>In the construction of my national model, I struggled somewhat to pick the best economic variable to include, settling finally on GDP growth in absolute terms. Though it was certainly predictive, I felt that it was hard to interpret and justify, so I hope to find better economic variable(s) in my next attempt. I also hope to find some variables that are data-dense even at the district level so that I can try to come close to a truly fundamentals-based forecast of districts.</p>
+<h3 id="candidate-quality" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#candidate-quality" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Candidate Quality
+</h3><p>There’s been a lot of chatter about the impact of Trump endorsements on the performance of Republican candidates and on how the 2022 midterms played out. I would like to consider candidate quality more closely in my 2024 attempt. This could involve many variables, such as fundraising abilities, presidential endorsements, and polling numbers. We briefly discussed the differential impacts of endorsements in class, so perhaps an interaction term of <code>presidential_endorsement</code> * <code>endorsers_last_vote_share</code> or <code>endorsers_approval_rating</code> could capture the possible effects of a presidential endorsement.</p>
+<h3 id="special-election-performance" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#special-election-performance" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Special Election Performance
+</h3><p>A week after Election Day, Elliott Morris (who we had the pleasure of hosting as a guest speaker to our course in October) and Dan Rosenheck of the Economist wrote that special election results in each midterm cycle are generally very good predictors of actual two-party vote share, being even more accurate than the generic-ballot polls (The Economist). My national model greatly benefited from the addition of generic ballot numbers, so I look forward to seeing how special election results stack up.</p>
+<h2 id="final-reflections" class="link-owner">
+  <a href="/blog/112222-post-election-reflection/#final-reflections" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Final Reflections
+</h2><p>As I finish reflecting upon my 2022 forecasts and I look forward, I realize that I’ve learned a great deal developing these election forecasts over the past 9 weeks. It’s been a pleasure sharing my insights and lessons learned with you, and I thank you for following along. Every week’s brought a new challenge, and I’ve gained something from each one. See you next week for the last installment of this analytical blog series of the Fall 2022 semester!</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] New York Times. House Elections Results. <a href="https://www.nytimes.com/interactive/2022/11/08/us/elections/results-house.html" title="https://www.nytimes.com/interactive/2022/11/08/us/elections/results-house.html" target="_blank" rel="nofollow noopener">https://www.nytimes.com/interactive/2022/11/08/us/elections/results-house.html</a></p>
+<p>[2] Cook Political Report. National House Vote Tracker. <a href="https://www.cookpolitical.com/charts/house-charts/national-house-vote-tracker/2022" title="https://www.cookpolitical.com/charts/house-charts/national-house-vote-tracker/2022" target="_blank" rel="nofollow noopener">https://www.cookpolitical.com/charts/house-charts/national-house-vote-tracker/2022</a></p>
+<p>[3] OpenSecrets. Reelection Rates. <a href="https://www.opensecrets.org/elections-overview/reelection-rates" title="https://www.opensecrets.org/elections-overview/reelection-rates" target="_blank" rel="nofollow noopener">https://www.opensecrets.org/elections-overview/reelection-rates</a></p>
+<p>[4] Politico. How redistricting shaped the midterms. <a href="https://www.politico.com/news/2022/11/25/redistricting-midterms-00070810" title="https://www.politico.com/news/2022/11/25/redistricting-midterms-00070810" target="_blank" rel="nofollow noopener">https://www.politico.com/news/2022/11/25/redistricting-midterms-00070810</a></p>
+<p>[5] CIRLCE Tufts. 2022 Election: Young Voters Have High Midterm Turnout, Influence Critical Races. <a href="https://circle.tufts.edu/2022-election-center" title="https://circle.tufts.edu/2022-election-center" target="_blank" rel="nofollow noopener">https://circle.tufts.edu/2022-election-center</a></p>
+<p>[6] NPR. How Democrats were able to perform better than expected in midterm elections. <a href="https://www.npr.org/2022/11/14/1136423401/how-democrats-were-able-to-perform-better-than-expected-in-midterm-elections" title="https://www.npr.org/2022/11/14/1136423401/how-democrats-were-able-to-perform-better-than-expected-in-midterm-elections" target="_blank" rel="nofollow noopener">https://www.npr.org/2022/11/14/1136423401/how-democrats-were-able-to-perform-better-than-expected-in-midterm-elections</a></p>
+<p>[7] The Economist. Off the Charts. <a href="https://view.e.economist.com/?qs=7500b25b1dd36174acf4cb8d6b52bfe7af9fb996a5e035e6098c9807d71053a6be4b87bbd44d0a5af6dbdd6c6924c8d13a914d9d45452f4966d3df19d5cd02c3c9d0aae0cb5443269594ef72e4e5d926" title="https://view.e.economist.com/?qs=7500b25b1dd36174acf4cb8d6b52bfe7af9fb996a5e035e6098c9807d71053a6be4b87bbd44d0a5af6dbdd6c6924c8d13a914d9d45452f4966d3df19d5cd02c3c9d0aae0cb5443269594ef72e4e5d926" target="_blank" rel="nofollow noopener">https://view.e.economist.com/?qs=7500b25b1dd36174acf4cb8d6b52bfe7af9fb996a5e035e6098c9807d71053a6be4b87bbd44d0a5af6dbdd6c6924c8d13a914d9d45452f4966d3df19d5cd02c3c9d0aae0cb5443269594ef72e4e5d926</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Final Prediction</title>
+      <link>/blog/110722-final-prediction/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/110722-final-prediction/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="overview" class="link-owner">
+  <a href="/blog/110722-final-prediction/#overview" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Overview
+</h1><p>Welcome to the final election forecasting update of this election cycle! It’s been a long journey of election research and data analysis, but alas, we are one day out from Election Day. In today’s blog post, I am going to present my final predictions in detail, which will involve model formulas, model descriptions, model coefficients, model interpretations, model validation, prediction confidence intervals, and visualizations for my national and district-level models.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="national-model" class="link-owner">
+  <a href="/blog/110722-final-prediction/#national-model" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>National Model
+</h1><p>Starting in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-19-local-and-national-economy/" title="week 2" target="_blank" rel="nofollow noopener">week 2</a>, I wanted to build out a good national model with a mix of fundamental variables to predict the national two-party vote shares of the parties. I ultimately chose to stick with fundamentals because in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-10-the-air-war/" title="weeks 5" target="_blank" rel="nofollow noopener">weeks 5</a> and <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-19-the-ground-game/" title="6" target="_blank" rel="nofollow noopener">6</a>, I found that campaign activity, whether it be on air or on the ground, didn’t significantly or directly impact electoral outcomes. In <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-24-shocks/" title="week 7" target="_blank" rel="nofollow noopener">week 7</a>, I reached the same conclusion regarding shocks during the election cycle.</p>
+<p>The best iteration of my model is the most recent one, which includes only 4 predictors: absolute GDP growth (Quarter 8, the last of the election cycle), the average generic ballot support of the House incumbent party (weighted by recency of the poll), an indicator for whether or not the House incumbent party is also the president’s party during a midterm year, and the average congressional approval rate. Absolute GDP growth is the economic variable I chose to capture how voters reward and punish the incumbent House party, and it came about after multiple considerations of other economic variables like unemployment rate, GDP growth percentage, and RDI change percentage. Average generic ballot support of the party in control of the House, introduced in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-26-polls-and-pollsters/" title="week 3" target="_blank" rel="nofollow noopener">week 3</a>, reflects how much the nation wants the currently-leading party to retain that congressional power. The binary indicator for <code>President's-Party-House-Incumbent-Midterm</code> is my attempt to capture the well-known fact that the president’s party consistently performs poorly in midterm elections, which I covered in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-15-analzying-2020-house-vote-shares/" title="week 1" target="_blank" rel="nofollow noopener">week 1</a>. The indicator is equal to 1 if the party in control of the House happens to be the president’s party in a midterm year, and to 0 otherwise. Lastly, the average congressional approval rate was included because I believe it gives us a sense of how satisfied voters are with Congress, generally. This is distinct from the generic ballot support metric, with the former telling us how much voters like Congress’s performance, which (perhaps unintuitively) doesn’t match 1-to-1 with how much voters want the incumbent party to stay in power.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>As shown above, generic ballot support for the incumbent party in the House doesn’t move with general approval of Congress! This was surprising to me at first, but was a good sign that I wasn’t introducing too much collinearity into my model by including both measures.</p>
+<h2 id="model-details" class="link-owner">
+  <a href="/blog/110722-final-prediction/#model-details" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Model Details
+</h2><h3 id="vote-share-formula" class="link-owner">
+  <a href="/blog/110722-final-prediction/#vote-share-formula" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Vote Share Formula
+</h3><p>I wanted to use this model to predict both national incumbent two-party vote share and national incumbent seat count, so I came up with two final regression formulas that incorporated the aforementioned fundamental predictors.</p>
+<!-- raw HTML omitted -->
+<h3 id="vote-share-regression" class="link-owner">
+  <a href="/blog/110722-final-prediction/#vote-share-regression" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Vote Share Regression
+</h3><p>In modeling the incumbent party’s two-party vote share, which is the Democrat’s vote share this election, we get some interesting coefficients. See below for this model’s coefficient values, variable significance, and the model’s overall evaluation metrics (like R-squared and adjusted R-squared).</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>The small, but negative, coefficient attached to absolute GDP is rather unintuitive, but my hypothesis is that for GDP, voters respond to levels and relative change differently. Previous weeks’ work has shown that positive percentage change is associated with higher incumbent vote share, as we’d expect, but positive absolute change is negatively correlated with incumbent party vote share perhaps because voters slightly punish incumbents when they deem the absolute change is not “large enough.” For every additional billion dollars of GDP change between the 7th and 8th quarters, the incumbent party loses 0.014 percentage points.</p>
+<p>The generic ballot support variable has a coefficient of 0.472, which makes sense - if voters generally support the incumbent party in polls, the party can expect to do well on Election Day. For every percentage point higher the generic ballot support is for the incumbent party in polls, the incumbent party earns an additional 0.472 percentage point of vote share.</p>
+<p>The only variable with a larger coefficient than generic ballot support is the president’s-party-incumbent-midterm variable. Midterm years in which the incumbent party is the president’s party see the incumbent party losing 2.788 percentage points of vote share. This is consistent with the decades of poor president’s party House performance we’ve observed.</p>
+<p>Lastly, with every 1 percentage point increase in congressional approval, the incumbent party gains 0.092 percentage points in vote share. Again, this makes sense, as more voter satisfaction with the current Congress should be correlated with higher electoral support for the House incumbent party to remain in power.</p>
+<p>I would like to quickly note my model’s final adjusted R-squared, 0.872, which is a nice improvement from <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-19-local-and-national-economy/" title="week 2’s" target="_blank" rel="nofollow noopener">week 2’s</a> 0.292. This value indicates that the model, with its 4 predictors, can explain about 87.2% of the variance in incumbent party vote share.</p>
+<h3 id="vote-share-validation" class="link-owner">
+  <a href="/blog/110722-final-prediction/#vote-share-validation" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Vote Share Validation
+</h3><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model. The distribution looks roughly normally distributed, with a mean a little below 0, tiny tails, and most residuals within [-2, 2].</p>
+<h3 id="seat-count-formula" class="link-owner">
+  <a href="/blog/110722-final-prediction/#seat-count-formula" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Seat Count Formula
+</h3><p>Next, I ran the same model again, but this time with incumbent party seat count as the response variable. Below are the regression formula and regression output for this model.
+
+
+  
+  National Democratic Party Seat Count Regression Formula.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/110722-final-prediction/nat_S_formula.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/110722-final-prediction/nat_S_formula_hua5d2afd10a02794b58df0ec0a7165d85_37765_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/110722-final-prediction/nat_S_formula_hua5d2afd10a02794b58df0ec0a7165d85_37765_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/110722-final-prediction/nat_S_formula_hua5d2afd10a02794b58df0ec0a7165d85_37765_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/110722-final-prediction/nat_S_formula_hua5d2afd10a02794b58df0ec0a7165d85_37765_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="National Democratic Party Seat Count Regression Formula."
+          title="National Democratic Party Seat Count Regression Formula."
+          src="nat_S_formula.png"
+          height="168"
+          width="938"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      National Democratic Party Seat Count Regression Formula.
+    </figcaption>
+  </figure>
+
+
+</p>
+<h3 id="seat-count-regression" class="link-owner">
+  <a href="/blog/110722-final-prediction/#seat-count-regression" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Seat Count Regression
+</h3><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>The model coefficients of the seat count model have the same signs as those of the vote share model, but different magnitudes because of the switch from predicting vote share, which can only be in the interval [0, 100], to predicting seat count, which can be [0, 435]. It is really the sign of the coefficients that matter for interpretation, and since those haven’t changed, I will only briefly comment on this regression output.</p>
+<p>It’s helpful to see the relationship between the president’s-party-incumbent-midterm effect and <em>seat count</em> because now, it becomes clear that when the president’s party is trying to defend its House incumbency in midterm years, like this year, it faces a steep uphill battle - when the indicator variable is 1, and everything else is held constant, the incumbent party is predicted to lose around 29 seats.</p>
+<h3 id="seat-count-validation" class="link-owner">
+  <a href="/blog/110722-final-prediction/#seat-count-validation" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Seat Count Validation
+</h3><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model again, this time for prediction of incumbent seat count. The distribution looks roughly normally distributed, with a mean at around 0 and most residuals within [-20, 20]. Neither our vote share nor our seat count model seem to perform poorly when tested with out-of-sample data, so we may move forward with prediction now!</p>
+<h2 id="national-predictions" class="link-owner">
+  <a href="/blog/110722-final-prediction/#national-predictions" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>National Predictions
+</h2><p>Using the two models above, and the newest data for the 2022 midterms, I predict that the House incumbent (Democratic Party) two-party vote share will be <strong>48.56%</strong> (47.36, 49.83) and the seat count will be <strong>209</strong> (198, 221).</p>
+<p>The GDP data comes from <a href="https://fred.stlouisfed.org/series/GDPC1" title="FRED" target="_blank" rel="nofollow noopener">FRED</a>, the generic ballot data comes from <a href="https://projects.fivethirtyeight.com/polls/generic-ballot/" title="FiveThirtyEight" target="_blank" rel="nofollow noopener">FiveThirtyEight</a>, and the congressional approval numbers come from <a href="https://news.gallup.com/poll/1600/congress-public.aspx" title="Gallup" target="_blank" rel="nofollow noopener">Gallup</a>.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="district-models" class="link-owner">
+  <a href="/blog/110722-final-prediction/#district-models" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>District Models
+</h1><p>Since <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-03-incumbency/" title="week 4" target="_blank" rel="nofollow noopener">week 4</a>, I have been slowly working towards building 435 models for the 435 district races. After much consideration, I decided to build two types of models: (1) the competitive type, which involves the average of many expert predictions and incumbency, and (2) the non-competitive type, which involves past election results and incumbency.</p>
+<p>Most expert ratings were pulled from Wikipedia’s election ratings pages for each election (see this year’s page <a href="https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_election_ratings" title="here" target="_blank" rel="nofollow noopener">here</a>), and districts are determined to be competitive if one of the major rating groups considered them not “safe” or “solid”.</p>
+<h2 id="model-details-1" class="link-owner">
+  <a href="/blog/110722-final-prediction/#model-details-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Model Details
+</h2><p>The main difference in variable selection between the competitive and non-competitive models boils down to the fact that naturally, there is a lot more coverage of the competitive ones, meaning more expert rating availability. Because of this, the competitive district models feature an average of about 7 expert ratings, whereas the non-competitive ones feature none.</p>
+<p>For the competitive districts, I used the following regression formula:
+
+
+  
+  Competitive District Model Formula.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/110722-final-prediction/dist_formula.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/110722-final-prediction/dist_formula_huc7a80357d461ad95d56e2c36a870a469_17335_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/110722-final-prediction/dist_formula_huc7a80357d461ad95d56e2c36a870a469_17335_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/110722-final-prediction/dist_formula_huc7a80357d461ad95d56e2c36a870a469_17335_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/110722-final-prediction/dist_formula_huc7a80357d461ad95d56e2c36a870a469_17335_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Competitive District Model Formula."
+          title="Competitive District Model Formula."
+          src="dist_formula.png"
+          height="54"
+          width="1046"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Competitive District Model Formula.
+    </figcaption>
+  </figure>
+
+
+
+These models ended up with an average R-squared of 0.88 and average adjusted R-squared of 0.49.</p>
+<p>Developing models for the non-competitive models was a journey - over the weeks, I realized that good district-level data is hard to come by, and with Election Day drawing near, I felt there was a choice between building out a self-made model and building a highly predictive one to be made. In the end, I decided to go with the former, in the name of learning. The models then are fundamentals-based than the competitive ones, using the major vote share of the last Democrat candidate in addition to the incumbency of the current candidate.</p>
+<!-- raw HTML omitted -->
+<p>I chose to use these variables because House elections have historically favored incumbent candidates, and I believe that how the Democrat performed in each district in previous years can tell us a lot about how the Democratic candidate will perform this year.</p>
+<p>
+
+  
+  Coefficients for Incumbent Variable.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/110722-final-prediction/dist_incumb_coef.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/110722-final-prediction/dist_incumb_coef_huf7cdab7c7c88f6296fa63810d822134f_32280_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/110722-final-prediction/dist_incumb_coef_huf7cdab7c7c88f6296fa63810d822134f_32280_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/110722-final-prediction/dist_incumb_coef_huf7cdab7c7c88f6296fa63810d822134f_32280_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/110722-final-prediction/dist_incumb_coef_huf7cdab7c7c88f6296fa63810d822134f_32280_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Coefficients for Incumbent Variable."
+          title="Coefficients for Incumbent Variable."
+          src="dist_incumb_coef.png"
+          height="422"
+          width="682"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Coefficients for Incumbent Variable.
+    </figcaption>
+  </figure>
+
+
+
+The histogram above illustrates the coefficient values for the incumbent variable over the many non-competitive districts. The average coefficient value is a little under 16, and it indicates that on average, when a Democratic candidate is an incumbent, their vote share is expected to be about 16 points higher than had they not been an incumbent. This definitely tracks with what we know about the incumbency advantage for House members.</p>
+<p>
+
+  
+  Coefficients for Last Democrat Vote Share Variable.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/110722-final-prediction/dist_VS_coef.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/110722-final-prediction/dist_VS_coef_hu2ba41cb5ae7b2749d18fd85aa68cc820_33406_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/110722-final-prediction/dist_VS_coef_hu2ba41cb5ae7b2749d18fd85aa68cc820_33406_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/110722-final-prediction/dist_VS_coef_hu2ba41cb5ae7b2749d18fd85aa68cc820_33406_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/110722-final-prediction/dist_VS_coef_hu2ba41cb5ae7b2749d18fd85aa68cc820_33406_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Coefficients for Last Democrat Vote Share Variable."
+          title="Coefficients for Last Democrat Vote Share Variable."
+          src="dist_VS_coef.png"
+          height="437"
+          width="696"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Coefficients for Last Democrat Vote Share Variable.
+    </figcaption>
+  </figure>
+
+
+
+This histogram shows the coefficient values for the last Democrat’s vote share (in the previous election), and the mean is value is 0.36. The numerical interpretation of this one is a little confusing, but the main takeaway is that the vast majority of these coefficients are positive, indicating that the higher the last Democrat’s vote share, the higher we can expect this year’s Democratic vote share to be.</p>
+<p>These models have an average R-squared of 0.50 and average adjusted R-squared of 0.45.</p>
+<h2 id="district-predictions" class="link-owner">
+  <a href="/blog/110722-final-prediction/#district-predictions" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>District Predictions
+</h2><p>Below are my predictions for the 94 most competitive districts, using expert ratings and incumbency:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Both my national and district-level work has indicated that the Republicans are likely to win the House back once the votes have all been counted. We will see soon if these predictions are correct, and precisely how correct or incorrect they were. Below you can find the rest of the district predictions, complete with 95% confidence intervals.</p>
+<p>It’s been a great 8 weeks, see you on the other side of the 2022 midterms!</p>
+<!-- raw HTML omitted -->
+<hr>
+<p><strong>References</strong></p>
+<p>[1] U.S. Bureau of Economic Analysis, Real Gross Domestic Product [GDPC1], retrieved from FRED, Federal Reserve Bank of St. Louis; <a href="https://fred.stlouisfed.org/series/GDPC1" title="https://fred.stlouisfed.org/series/GDPC1" target="_blank" rel="nofollow noopener">https://fred.stlouisfed.org/series/GDPC1</a>.</p>
+<p>[2] FiveThirtyEight, Generic Ballot. <a href="https://projects.fivethirtyeight.com/polls/generic-ballot/" title="https://projects.fivethirtyeight.com/polls/generic-ballot/" target="_blank" rel="nofollow noopener">https://projects.fivethirtyeight.com/polls/generic-ballot/</a></p>
+<p>[3] Gallup, Congress and the Public. <a href="https://news.gallup.com/poll/1600/congress-public.aspx" title="https://news.gallup.com/poll/1600/congress-public.aspx" target="_blank" rel="nofollow noopener">https://news.gallup.com/poll/1600/congress-public.aspx</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>The Ground Game</title>
+      <link>/blog/101922-ground-game/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/101922-ground-game/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <p>This is blog post #6 in a series of analytical posts about the 2022 midterms. This post is affiliated with Gov 1347: Election Analytics, a course at Harvard University in the Government department.</p>
+<hr>
+<h1 id="the-plan-this-week" class="link-owner">
+  <a href="/blog/101922-ground-game/#the-plan-this-week" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Plan This Week
+</h1><p>Last week, I investigated the impact of television advertisements on party success at the district level, and found a small, arguably negligible, effect. This week, I delve into the other major side of campaign activities – “the ground game.” Do the phone banks, text banks, rallies, door knockers, and more matter? I will incorporate these findings and retroactive ones (expert predictions from <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-03-incumbency" title="week 4" target="_blank" rel="nofollow noopener">week 4</a>) to make updates to my district-level model, newly featuring the effect of the ground game, expert predictions, and candidate incumbency. This will produce new district-level predictions for the races finalizing in the next 3 weeks!</p>
+<h1 id="the-ground-game" class="link-owner">
+  <a href="/blog/101922-ground-game/#the-ground-game" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Ground Game
+</h1><p>As mentioned in my discussion of campaigns last week, political campaigns aim to mobilize supporters to vote, persuade potential voters to cast their ballot in favor of certain candidates, and encourage donations. In a 2018 study, it was found that across 49 field experiments, “the best estimate of the effects of campaign contact and advertising on Americans’ candidates choices in general elections is zero” (Kalla and Broockman). At the end of this research paper, Kalla and Broockman assert that though the ground game doesn’t seem to persuade voters to change their vote choice, these ground campaigns matter in other ways.</p>
+<p>The consensus from the literature and pundit commentary is that the ground game – the fundraising, voter mobilization, person-to-person contact, field offices, and bottom-up political strategy of campaigns – does indeed matter. It certainly did for Obama, whose campaigns were studied extensively by political scientists. In 2012, turnout increased by about 7 percentage points in states that were highly-targeted by the ground arm of the major campaigns (Enos and Fowler, 2018). Even as early as 2008, President Obama’s campaigns were notably strong. <a href="https://www.theatlantic.com/politics/archive/2012/10/obamas-edge-the-ground-game-that-could-put-him-over-the-top/264031/" title="The Atlantic" target="_blank" rel="nofollow noopener">The Atlantic</a> praised Obama’s “sophisticated organization,” which debuted in 2008 as “the largest grassroots organization in the history of American politics” (Ball, 2012). A 2009 study found that counties with Obama campaign field offices had disproportionate increases in Democratic vote share (Masket), and a 2014 study found that the field offices increased county-level vote share by 1%, which in turn scored Obama ~275,000 votes in the 2008 election (Darr and Levendusky).</p>
+<p>These findings suggest that successful ground campaigns increase turnout. In the remainder of my blog post this week, I want to explore the question of how increased turnout at the district level affects the parties’ respective vote shares, if at all? Does higher Democrat turnout correlate with better Democrat major vote share – which is rather intuitive –, or no – maybe higher Democrat turnout occurs with more Republican turnout, so there’s a “cancel-out” effect?</p>
+<h1 id="my-2022-model-and-forecast-updated" class="link-owner">
+  <a href="/blog/101922-ground-game/#my-2022-model-and-forecast-updated" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My 2022 Model and Forecast, Updated
+</h1><p>My previous district-level model was basic, relying on only average expert predictions. Though the predictions themselves consider many important electoral predictors, their aggregation and then averaging render them basic. This week, I aim to Incorporate turnout, incumbency and the generic ballot into my district-level model of Democratic major vote share.</p>
+<h2 id="my-new-models" class="link-owner">
+  <a href="/blog/101922-ground-game/#my-new-models" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My New Models
+</h2><p>I took two shots at redesigning my district-level model: one incorporated candidate incumbency, district-level turnout, and generic ballot support (Model A: <code>DemVoteShare ~ incumbency + turnout + support</code>), and the other incorporated the aforementioned with the exception of turnout (Model B: <code>DemVoteShare ~ incumbency + support</code>). I also prioritized producing 435 models, so that limited my data to only 2012-present day data, but I aim to reconsider this in the next blog post as I grapple with the decision of including expert predictions in my district-level models.</p>
+<p>Below is a histogram of the adjusted R-squareds of Model A.
+
+
+  
+  Model A R-squareds.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/101922-ground-game/histA.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/101922-ground-game/histA_hud3a415403ca198b27e8e91a23ac93f38_27266_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/101922-ground-game/histA_hud3a415403ca198b27e8e91a23ac93f38_27266_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/101922-ground-game/histA_hud3a415403ca198b27e8e91a23ac93f38_27266_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/101922-ground-game/histA_hud3a415403ca198b27e8e91a23ac93f38_27266_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Model A R-squareds."
+          title="Model A R-squareds."
+          src="histA.png"
+          height="397"
+          width="644"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Model A R-squareds.
+    </figcaption>
+  </figure>
+
+
+
+As shown, there&rsquo;s generally a lot of room for improvement, with many R-squareds being 0 or even negative. Considering turnout, the generic ballot, and incumbency is at times worse than just using the mean Democratic vote share to predict the race outcomes!</p>
+<p>I was curious if the turnout variable, which is this week&rsquo;s proxy for the effect of the ground game, had significant predictive power. To test this quickly, I removed turnout as a predictor variable and developed a new set of 435 models. Below is the histogram of the adjusted R-squareds of Model B.
+
+
+  
+  Model B R-squareds.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/101922-ground-game/histB.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/101922-ground-game/histB_hu712d6b6c216d2e5ac285f9e7a7a78154_28565_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/101922-ground-game/histB_hu712d6b6c216d2e5ac285f9e7a7a78154_28565_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/101922-ground-game/histB_hu712d6b6c216d2e5ac285f9e7a7a78154_28565_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/101922-ground-game/histB_hu712d6b6c216d2e5ac285f9e7a7a78154_28565_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Model B R-squareds."
+          title="Model B R-squareds."
+          src="histB.png"
+          height="387"
+          width="648"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Model B R-squareds.
+    </figcaption>
+  </figure>
+
+
+</p>
+<p>This histogram, again, demonstrates the models have much room for improvement. Interestingly, removing the turnout predictor has not greatly reduced our R-squareds, with the average adjusted R-squared for Model B actually being higher than that of Model A. This one rudimentary test seems to suggest that turnout is not a great predictor of Democrat vote share; changes in turnout are not highly correlated with better or worse Democrat performance.</p>
+<p>I also tried to incorporate turnout into my national model. Below is the Stargazer table showing my regression outputs. On the left is the previous national model I developed in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-26-polls-and-pollsters/" title="week 3" target="_blank" rel="nofollow noopener">week 3</a>, the middle is the new model with turnout incorporated, and on the right is the final national model I chose to come away from this week with.</p>
+<p>
+
+  
+  National Regression Models
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/101922-ground-game/natmodels.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/101922-ground-game/natmodels_hud17ea4f2bfa15d85fc5a126ac018e85b_89445_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/101922-ground-game/natmodels_hud17ea4f2bfa15d85fc5a126ac018e85b_89445_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/101922-ground-game/natmodels_hud17ea4f2bfa15d85fc5a126ac018e85b_89445_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/101922-ground-game/natmodels_hud17ea4f2bfa15d85fc5a126ac018e85b_89445_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="National Regression Models"
+          title="National Regression Models"
+          src="natmodels.png"
+          height="649"
+          width="771"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      National Regression Models
+    </figcaption>
+  </figure>
+
+
+</p>
+<p>The upside of my national models regression is that 3 models is much easier to interpret and compare than 435. The first two columns show the coefficients for the old model, and the old model with turnout. As shown, adding turnout does not significantly change the adjusted R-squared of the model; in fact, adding turnout drives up the residual standard error. Additionally, turnout does not appear to be a significant predictor (0 stars) of House incumbent party (Democrats) vote share. I took these findings, as well as the observation that unemployment appears to be another poor predictor of vote share, to form my newest national model, which predicts House vote share for the incumbent House party using GDP growth %, RDI change %, GDP absolute growth %, the president&rsquo;s-party-midterm interaction, and generic ballot support.</p>
+<h2 id="my-new-forecast" class="link-owner">
+  <a href="/blog/101922-ground-game/#my-new-forecast" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My New Forecast
+</h2><p>Next week, I hope to improve my district-level models by re-incorporating expert predictions. After some final touch-ups, I will produce new district-level predictions in time for Election Day.</p>
+<p>As for the national model, I was able to come up with new predictions using the newest iteration of my national model and the newest economic and generic ballot support data available online. The Democrats, as the incumbent majority party of the House, is expected to win 47.35% of the two-party major vote share, with 95% confidence interval (46.01, 48.68). I also built a model to predict incumbent seats using the same exact predictor variables, and predict taht the Democrats will win ~203 seats in a few weeks&rsquo; time, with a confidence interval of (193, 213).</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] Kalla, &amp; Broockman, D. E. (2018). The Minimal Persuasive Effects of Campaign Contact in General Elections: Evidence from 49 Field Experiments. The American Political Science Review, 112(1), 148–166. <a href="https://doi.org/10.1017/S0003055417000363" title="https://doi.org/10.1017/S0003055417000363" target="_blank" rel="nofollow noopener">https://doi.org/10.1017/S0003055417000363</a></p>
+<p>[2] Ball, M. (2012, October 25). Obama&rsquo;s edge: The ground game that could put him over the top. The Atlantic. <a href="https://www.theatlantic.com/politics/archive/2012/10/obamas-edge-the-ground-game-that-could-put-him-over-the-top/264031/" title="https://www.theatlantic.com/politics/archive/2012/10/obamas-edge-the-ground-game-that-could-put-him-over-the-top/264031/" target="_blank" rel="nofollow noopener">https://www.theatlantic.com/politics/archive/2012/10/obamas-edge-the-ground-game-that-could-put-him-over-the-top/264031/</a>)</p>
+<p>[3] Enos, &amp; Fowler, A. (2018). Aggregate Effects of Large-Scale Campaigns on Voter Turnout. Political Science Research and Methods, 6(4), 733–751. <a href="https://doi.org/10.1017/psrm.2016.21" title="https://doi.org/10.1017/psrm.2016.21" target="_blank" rel="nofollow noopener">https://doi.org/10.1017/psrm.2016.21</a></p>
+<p>[4] Masket, Seth E. (2009). Did Obama’s Ground Game Matter? The Influence of Local Field Offices During the 2008 Presidential Election, Public Opinion Quarterly, 73(5), 1023–1039. <a href="https://doi.org/10.1093/poq/nfp077" title="https://doi.org/10.1093/poq/nfp077" target="_blank" rel="nofollow noopener">https://doi.org/10.1093/poq/nfp077</a></p>
+<p>[5] Darr, &amp; Levendusky, M. S. (2014). Relying on the Ground Game. American Politics Research, 42(3), 529–548. <a href="https://doi.org/10.1177/1532673X13500520" title="https://doi.org/10.1177/1532673X13500520" target="_blank" rel="nofollow noopener">https://doi.org/10.1177/1532673X13500520</a></p>
+<p>[6] FiveThirtyEight. Generic Ballot. <a href="https://projects.fivethirtyeight.com/polls/generic-ballot/" title="https://projects.fivethirtyeight.com/polls/generic-ballot/" target="_blank" rel="nofollow noopener">https://projects.fivethirtyeight.com/polls/generic-ballot/</a></p>
+<p>[7] FRED. GDPC1. <a href="https://fred.stlouisfed.org/series/GDPC1" title="https://fred.stlouisfed.org/series/GDPC1" target="_blank" rel="nofollow noopener">https://fred.stlouisfed.org/series/GDPC1</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>The Air War</title>
+      <link>/blog/101022-air-war/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/101022-air-war/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h2 id="the-plan-this-week" class="link-owner">
+  <a href="/blog/101022-air-war/#the-plan-this-week" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Plan This Week
+</h2><p>We are about 4 weeks out from Election Day, and thus far I&rsquo;ve created a national forecasting model that incorporates national economic conditions (Gross Domestic Product, Real Disposable Income, and unemployment), generic ballot polling (partisan preference), and the midterm-president&rsquo;s-party effect. I&rsquo;ve also created a simple district-level forecasting model based on expert ratings ([Cook Political Report](<a href="https://www.cookpolitical.com/ratings/house-race" title="https://www.cookpolitical.com/ratings/house-race" target="_blank" rel="nofollow noopener">https://www.cookpolitical.com/ratings/house-race</a>
+-ratings), <a href="https://insideelections.com/ratings/house" title="Inside Elections" target="_blank" rel="nofollow noopener">Inside Elections</a>, and <a href="https://centerforpolitics.org/crystalball/2022-house/" title="Sabato&rsquo;s Crystal Ball" target="_blank" rel="nofollow noopener">Sabato&rsquo;s Crystal Ball</a>).<br>
+This week I plan to explore the impact of advertisements (volume, cost) on the outcomes of congressional races. After evaluating the historical impact of &ldquo;the Air War&rdquo; on elections, I plan to update my simple district-level model from last week.</p>
+<h2 id="are-advertisements-impactful" class="link-owner">
+  <a href="/blog/101022-air-war/#are-advertisements-impactful" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Are Advertisements Impactful?
+</h2><p>To explore this week’s central question, I took a look at data from the <a href="https://mediaproject.wesleyan.edu/" title="Wesleyan Media Project" target="_blank" rel="nofollow noopener">Wesleyan Media Project</a> about political campaign advertisements for campaigns from 2006 through 2018.</p>
+<p>I first wanted to visually inspect the relationship between advertisement volume and party major vote share at the district level for House races, and found unpromising results.
+
+
+  
+  Republican Ad Volume vs. Vote Share.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/101022-air-war/rep_ads.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/101022-air-war/rep_ads_hucff2b5987b36d0682d96b560bff3ae3b_171524_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/101022-air-war/rep_ads_hucff2b5987b36d0682d96b560bff3ae3b_171524_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/101022-air-war/rep_ads_hucff2b5987b36d0682d96b560bff3ae3b_171524_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/101022-air-war/rep_ads_hucff2b5987b36d0682d96b560bff3ae3b_171524_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Republican Ad Volume vs. Vote Share."
+          title="Republican Ad Volume vs. Vote Share."
+          src="rep_ads.png"
+          height="876"
+          width="1414"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Republican Ad Volume vs. Vote Share.
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  Democrat Ad Volume vs. Vote Share.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/101022-air-war/dem_ads.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/101022-air-war/dem_ads_hu0118ad8a919abeb49e97a7bef55d12fe_144299_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/101022-air-war/dem_ads_hu0118ad8a919abeb49e97a7bef55d12fe_144299_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/101022-air-war/dem_ads_hu0118ad8a919abeb49e97a7bef55d12fe_144299_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/101022-air-war/dem_ads_hu0118ad8a919abeb49e97a7bef55d12fe_144299_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Democrat Ad Volume vs. Vote Share."
+          title="Democrat Ad Volume vs. Vote Share."
+          src="dem_ads.png"
+          height="878"
+          width="1426"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Democrat Ad Volume vs. Vote Share.
+    </figcaption>
+  </figure>
+
+
+</p>
+<p>As shown in the above 2 plots, there’s no clear correlation between the number of partisan advertisements run and the party’s major vote share in a given district. As the number of advertisements run for each party increases, the party’s major vote share doesn’t increase or decrease.</p>
+<p>Though there’s no positive or negative correlation that immediately jumps out from these plots, there are still valuable insights to note. For one, there’s great variability in party vote share when there are a low number of advertisements run in that district - with close to 0 ads run for the Democrat candidate in a district, the candidate can have anywhere from 25% to 100% of the vote share. The same is true for Republican candidates and lack of Republican advertisements.  As the numbers of advertisement run increases, towards the magnitudes of 15,000 and beyond, the races become much more competitive, with each party securing about 50% of the major party vote share. This finding is intuitive, in a way, because we could imagine the reason these districts were sites of unprecedented advertisement war was because their races were highly competitive and anticipated.</p>
+<p>I was also curious about spending on advertisements versus the promoted candidate’s vote share. Below is the plot of the total estimated cost of advertisements promoting a Democratic candidate against the amount of money spent on their advertising campaign. The same trends from above apply here – at the lower end of advertisement campaign strength and cost, the Democrat major vote share varies widely across different House races. At the higher end of spending, the races remain competitive, with Democrats just edging out their competitors with vote shares hovering slightly above 50%.<br>
+
+
+  
+  (D) Advertisement Spending vs. (D) Vote Share.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/101022-air-war/ads_spending.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/101022-air-war/ads_spending_hu2095b4a8895e9369d18a30c6a2156b5b_171293_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/101022-air-war/ads_spending_hu2095b4a8895e9369d18a30c6a2156b5b_171293_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/101022-air-war/ads_spending_hu2095b4a8895e9369d18a30c6a2156b5b_171293_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/101022-air-war/ads_spending_hu2095b4a8895e9369d18a30c6a2156b5b_171293_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="(D) Advertisement Spending vs. (D) Vote Share."
+          title="(D) Advertisement Spending vs. (D) Vote Share."
+          src="ads_spending.png"
+          height="882"
+          width="1424"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      (D) Advertisement Spending vs. (D) Vote Share.
+    </figcaption>
+  </figure>
+
+
+</p>
+<p>To formally check the relationship between advertisement volume and party major vote share in a district, I ran linear regressions across the districts with available data, predicting Democrat major vote share on the ratio of Democrat:Republican advertisements ran in that cycle.
+
+
+  
+  Advertisement Volume vs. (D) Vote Share.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/101022-air-war/ads_regression.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/101022-air-war/ads_regression_hu95882dfb75d90c071435b14b311e25f4_70715_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/101022-air-war/ads_regression_hu95882dfb75d90c071435b14b311e25f4_70715_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/101022-air-war/ads_regression_hu95882dfb75d90c071435b14b311e25f4_70715_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/101022-air-war/ads_regression_hu95882dfb75d90c071435b14b311e25f4_70715_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Advertisement Volume vs. (D) Vote Share."
+          title="Advertisement Volume vs. (D) Vote Share."
+          src="ads_regression.png"
+          height="650"
+          width="720"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Advertisement Volume vs. (D) Vote Share.
+    </figcaption>
+  </figure>
+
+
+
+The results are interesting. The first observation is that the ratio of partisan advertisement volume alone is a poor predictor of Democrat vote share – my model only has an adjusted R-squared of 0.054. Another is that when the ratio of Democrat:Republican advertisements moves from 0 to 1, the Democrat vote share increases by ~6.2 percentage points.</p>
+<h2 id="evaluation-and-looking-forward" class="link-owner">
+  <a href="/blog/101022-air-war/#evaluation-and-looking-forward" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Evaluation and Looking Forward
+</h2><p>6.2 is, of course, a huge increase in major vote share, but the way I built my model hinders interpretability and generalization because I can only make the +6.2 p.p. claim when the advertisement situation goes from no Democrat advertisements to all Democrat advertisements in a district. All things considered, I plan to rethink the way I evaluate advertisement data as a predictor of historical races before incorporating it into my district-level model. Right now, I hesitate to add it to my model in addition to expert ratings because it may be better to scrap the variable altogether, considering the low predictive power advertisement volume has as a feature in my model. For now, I will refrain from making changes to my national and district-level models from last week, and I look forward to perhaps incorporating advertisement data in tandem with district-level candidate incumbency, or with other forms of candidate campaigning, like the ground game and its field offices, volunteers, rallies, and person-to-person contacts in the future. This week&rsquo;s exploration has revealed to me that the &ldquo;Air War&rdquo; is very real, but it&rsquo;s unclear how impactful it really is on candidate success in House races.</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] Cook Political Report. (2002). House Race Ratings. <a href="https://www.cookpolitical.com/ratings/house-race-ratings" title="https://www.cookpolitical.com/ratings/house-race-ratings" target="_blank" rel="nofollow noopener">https://www.cookpolitical.com/ratings/house-race-ratings</a></p>
+<p>[2] Inside Elections. (2022). House Ratings. <a href="https://insideelections.com/ratings/house" title="https://insideelections.com/ratings/house" target="_blank" rel="nofollow noopener">https://insideelections.com/ratings/house</a></p>
+<p>[3] Sabato&rsquo;s Crystal Ball. (2022). House Race Ratings. <a href="https://centerforpolitics.org/crystalball/2022-house/" title="https://centerforpolitics.org/crystalball/2022-house/" target="_blank" rel="nofollow noopener">https://centerforpolitics.org/crystalball/2022-house/</a></p>
+<p>[4] Wesleyan Media Project. <a href="https://mediaproject.wesleyan.edu/" title="https://mediaproject.wesleyan.edu/" target="_blank" rel="nofollow noopener">https://mediaproject.wesleyan.edu/</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Expert Ratings</title>
+      <link>/blog/100322-incumbency/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/100322-incumbency/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="the-plan-this-week" class="link-owner">
+  <a href="/blog/100322-incumbency/#the-plan-this-week" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Plan This Week
+</h1><p>Last week, I took a close look at The Economist’s and FiveThirtyEight’s House forecast models and their methodology, and compared them. With these models in mind, I updated my own 2022 midterm forecast and model to include national economic conditions (Gross Domestic Product, Real Disposable Income, and unemployment), generic ballot polls (partisan preference), and the midterm-president’s-party effect.</p>
+<p>One of the most interesting differences between the two models was that FiveThirtyEight explicitly mentions their use of expert forecasts (<a href="https://www.cookpolitical.com/ratings/house-race-ratings" title="Cook Political Report" target="_blank" rel="nofollow noopener">Cook Political Report</a>, <a href="https://insideelections.com/ratings/house" title="Inside Elections" target="_blank" rel="nofollow noopener">Inside Elections</a>, and <a href="https://centerforpolitics.org/crystalball/2022-house/" title="Sabato’s Crystal Ball" target="_blank" rel="nofollow noopener">Sabato’s Crystal Ball</a>) to predict future elections. Expert forecasts are intuitively a strong predictor of the race outcomes, as they are the best predictions elections experts have given all they data they gathered. This week, I wanted to investigate how accurate these expert predictions really are, specifically for the 2018 midterms.</p>
+<h1 id="how-accurate-are-expert-predictions" class="link-owner">
+  <a href="/blog/100322-incumbency/#how-accurate-are-expert-predictions" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>How Accurate Are Expert Predictions?
+</h1><p>To conduct this week’s investigation, I compare the actual results of the 2018 midterm elections to the average election ratings of experts. The 2018 results shown below are Democrat vote shares in each district. The 2018 expert election ratings come from <a href="https://ballotpedia.org/Main_Page" title="Ballotpedia" target="_blank" rel="nofollow noopener">Ballotpedia</a>, with the election ratings taking on integer values 1 through 7 – 1 represents a Solid/Safe Democrat prediction and 7 represents a Solid/Safe Republican average expert prediction for each district.</p>
+<h2 id="actual-vote-share-in-2018-by-district" class="link-owner">
+  <a href="/blog/100322-incumbency/#actual-vote-share-in-2018-by-district" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Actual Vote Share in 2018, by District
+</h2><p>Below is the actual (D) vote share in the 2018 midterm elections at the district level.</p>
+<!-- raw HTML omitted -->
+<p>Most of the map is either red or white, which seems to suggest that most district vote share results were in the Republican party’s favor or close between the two major parties. However, it is important to remember that for the House of Representatives, land is not proportional to representation, population is. Also, the president’s party often performs poorly in midterm years, as discussed in detail in the <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-15-analzying-2020-house-vote-shares/" title="first blog post" target="_blank" rel="nofollow noopener">first blog post</a> of this series. Those two reminders considered, it then makes sense that the Democrats actually took the House in the 2018 midterms, with 235 seats going to Democrats and 199 going to Republicans (New York Times 2018).</p>
+<h2 id="expert-predictions-for-vote-share-in-2018-by-district" class="link-owner">
+  <a href="/blog/100322-incumbency/#expert-predictions-for-vote-share-in-2018-by-district" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Expert Predictions for Vote Share in 2018, by District
+</h2><p>Below are the expert ratings for the 2018 midterms, which I call predictions because the ratings reflect what the experts believed would happen in each congressional district election. Red areas represent high expert confidence that the region will go to Republicans, while blue areas represent high confidence that the region will go to Democrats.
+
+
+  
+  Expert Ratings for 2018 Midterms.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/100322-incumbency/expert_ratings_2018.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/100322-incumbency/expert_ratings_2018_hu8972c42d60cce28afd3874b8a101f057_320624_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/100322-incumbency/expert_ratings_2018_hu8972c42d60cce28afd3874b8a101f057_320624_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/100322-incumbency/expert_ratings_2018_hu8972c42d60cce28afd3874b8a101f057_320624_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/100322-incumbency/expert_ratings_2018_hu8972c42d60cce28afd3874b8a101f057_320624_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Expert Ratings for 2018 Midterms."
+          title="Expert Ratings for 2018 Midterms."
+          src="expert_ratings_2018.png"
+          height="1152"
+          width="1920"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Expert Ratings for 2018 Midterms.
+    </figcaption>
+  </figure>
+
+
+</p>
+<h2 id="evaluation" class="link-owner">
+  <a href="/blog/100322-incumbency/#evaluation" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Evaluation
+</h2><p>For the most part, the predictions are pretty accurate via visual investigation. Most of the areas that actually had majority-Republican vote shares in the 2018 elections were predicted to be likely or solidly Republican by the experts on average. The blue districts of the 2018 midterms, like the ones along the west coast of Washington, Oregon, and California, in Arizona and New Mexico, in southern Texas, and scattered throughout the Rust Belt, were impressively predicted by the experts and their ratings, reflected in the standout blue coloring in the plot above. The experts were also able to pin down the close races, like the ones in southern New Mexico and in Maine. Overall, I think the average expert ratings predicted the congressional races at the district level very well, despite being just one predictor (that is a culmination of many predictors considered by the experts) in my model.</p>
+<h1 id="my-2022-model-and-forecast-updated" class="link-owner">
+  <a href="/blog/100322-incumbency/#my-2022-model-and-forecast-updated" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My 2022 Model and Forecast, Updated
+</h1><h2 id="my-new-model" class="link-owner">
+  <a href="/blog/100322-incumbency/#my-new-model" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My New Model
+</h2><p>My national model remains the same as it was last week, and I cannot fully extend my national model to the district level because it uses national variables like GDP change, as well as national responses to the generic ballot polls. That said, I can incorporate this week’s investigation into a district-level model that predicts the House races by district using the most recent expert ratings data I have access to. These district-level models are of course imperfect because they only use expert ratings, but across all of them, they have an average R-squared of 0.78.</p>
+<h2 id="my-new-forecast" class="link-owner">
+  <a href="/blog/100322-incumbency/#my-new-forecast" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My New Forecast
+</h2><p>Below are my models’ predictions for the major vote share taken by Democrats for the 94 congressional districts where the expert ratings were available.</p>
+<!-- raw HTML omitted -->
+<hr>
+<p><strong>References</strong></p>
+<p>[1] Ballotpedia. (2022). <a href="https://ballotpedia.org/Main_Page" title="https://ballotpedia.org/Main_Page" target="_blank" rel="nofollow noopener">https://ballotpedia.org/Main_Page</a></p>
+<p>[2] Cook Political Report. (2002). House Race Ratings. <a href="https://www.cookpolitical.com/ratings/house-race-ratings" title="https://www.cookpolitical.com/ratings/house-race-ratings" target="_blank" rel="nofollow noopener">https://www.cookpolitical.com/ratings/house-race-ratings</a></p>
+<p>[3] Inside Elections. (2022). House Ratings. <a href="https://insideelections.com/ratings/house" title="https://insideelections.com/ratings/house" target="_blank" rel="nofollow noopener">https://insideelections.com/ratings/house</a></p>
+<p>[4] Sabato’s Crystal Ball. (2022). House Race Ratings. <a href="https://centerforpolitics.org/crystalball/2022-house/" title="https://centerforpolitics.org/crystalball/2022-house/" target="_blank" rel="nofollow noopener">https://centerforpolitics.org/crystalball/2022-house/</a></p>
+<p>[5] The New York Times. (2018, November 6). U.S. House election results 2018. The New York Times. <a href="https://www.nytimes.com/interactive/2018/11/06/us/elections/results-house-elections.html" title="https://www.nytimes.com/interactive/2018/11/06/us/elections/results-house-elections.html" target="_blank" rel="nofollow noopener">https://www.nytimes.com/interactive/2018/11/06/us/elections/results-house-elections.html</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Polls and Forecasters</title>
+      <link>/blog/092622-polls-pollsters/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/092622-polls-pollsters/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="the-plan-this-week" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#the-plan-this-week" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Plan This Week
+</h1><p>So far, I&rsquo;ve confirmed that the president’s party often performs poorly in the midterm House elections and that a combination of fundamental (Q8, national) economic variables, including GDP growth %, RDI change %, unemployment rate, and absolute GDP growth, are somewhat able to predict House incumbent party vote share. These two findings have led me to forecast that the incumbent (President and House) Democrats will lose House vote share in November. This week, I delve into how forecasting giants like <a href="https://www.economist.com/interactive/us-midterms-2022/forecast/house" title="The Economist" target="_blank" rel="nofollow noopener">The Economist</a> and <a href="https://projects.fivethirtyeight.com/2022-election-forecast/house/" title="FiveThirtyEight" target="_blank" rel="nofollow noopener">FiveThirtyEight</a> incorporate polls into their House predictions. Then, I examine how polling data can improve my predictions by investigating how predictive it&rsquo;s been in past elections. After that, I will incorporate the latest polls to provide a numerical prediction for the Democrat House vote share.</p>
+<h1 id="what-do-forecasters-do" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#what-do-forecasters-do" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>What Do Forecasters Do?
+</h1><p>In general, election forecasters gather as much relevant data about elections as they can to predict the outcome of future ones. The prevailing question for them, and for students of government in Election Analytics, pertains to what data is relevant?</p>
+<h2 id="the-economist" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#the-economist" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Economist
+</h2><p>According to <a href="https://www.economist.com/the-economist-explains/2022/09/09/how-does-the-economists-midterms-election-model-work" title="The Economist&rsquo;s forecasting model report" target="_blank" rel="nofollow noopener">The Economist&rsquo;s forecasting model report</a> this year, polls are the best indicator for the outcome of House elections. Especially informative is the &ldquo;generic ballot&rdquo; question, which asks &ldquo;If the elections for U.S. Congress were being held today, would you vote for the Republican Party’s candidate or the Democratic Party’s candidate for Congress in your district?&rdquo; (Pew Research Center, 2002). As the countdown to Election Day dwindles, poll results are weighed more heavily, as they&rsquo;re believed to be more reflective of the electorate than previous polls. Additionally, pollster quality over the years is also considered to correct for past estimation errors. The models also account for a slew of other predictors, including president&rsquo;s party performance in special elections, the midterm-incumbent disadvantage, state-level partisan lean, and campaign finances.</p>
+<h2 id="fivethirtyeight" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#fivethirtyeight" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>FiveThirtyEight
+</h2><p>FiveThirtyEight has become a renowned forecasting site, and is transparent about its <a href="https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/" title="methodology" target="_blank" rel="nofollow noopener">methodology</a>. In all versions of their House forecast, they consider thousands of polls (district-level), each weighted with pollster rating and quality in mind. For districts with low or no polling, they use the CANTOR system, which &ldquo;infers results &hellip; from comparable districts that do have polling.&rdquo; More complex versions of their modeling include the fundamentals (such as economics, fundraising, past elections results), and expert forecasts (<a href="https://www.cookpolitical.com/ratings/house-race-ratings" title="Cook Political Report" target="_blank" rel="nofollow noopener">Cook Political Report</a>, <a href="https://insideelections.com/ratings/house" title="Inside Elections" target="_blank" rel="nofollow noopener">Inside Elections</a>, and <a href="https://centerforpolitics.org/crystalball/2022-house/" title="Sabato&rsquo;s Crystal Ball" target="_blank" rel="nofollow noopener">Sabato&rsquo;s Crystal Ball</a>).</p>
+<h2 id="comparison-and-insights" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#comparison-and-insights" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Comparison and Insights
+</h2><p>For the most part, The Economist and FiveThirtyEight methodologies appear to be similar. On a high level, they share many predictors: polls (weighted according to recency, pollster quality), previous election results, campaign finances, and other fundamentals, like the midterm-incumbent effect. Some small, but important, differences lie in the specifics of each predictor - for example, The Economist relies more on generic ballot polling data, while FiveThirtyEight utilizes district-level candidate polls. FiveThirtyEight includes expert ratings and forecasts in their model, which The Economist does not.</p>
+<p>I personally prefer the FiveThirtyEight model due to its inclusion of expert ratings. Though it seems initially a bit circular to build a predictive model based, in part, on others&rsquo; predictions, it ultimately makes sense &ndash; other experts have made their best guesses for election results, and on average, they probably are onto something. This idea is reminiscent of Galton&rsquo;s (1907) &ldquo;wisdom of the crowds,&rdquo; but the crowds consist of pollsters and election forecasters here.</p>
+<h1 id="my-2022-model-and-forecast-updated" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#my-2022-model-and-forecast-updated" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My 2022 Model and Forecast, Updated
+</h1><p>I take inspiration from the aforementioned models and update my own, incorporating national economic variables, the midterm-incumbent effect, and generic ballot polling data in order to predict the House incumbent party vote share for the upcoming election.</p>
+<p>The economic variables are the exact same as the ones from last week; see <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-19-local-and-national-economy/" title="here" target="_blank" rel="nofollow noopener">here</a> for more information. The <code>PresParty-HouseInc-Midterm</code> variable is meant to capture the midterm-incumbent effect, taking a value of: <code>1</code> for election years when there is a midterm election <em>and</em> the House incumbent party is the president&rsquo;s party, <code>0</code> otherwise. In these years, we&rsquo;d expect the House incumbent party to suffer in vote share, as it&rsquo;s known that the president&rsquo;s party, which is the same as the House incumbent party, performs poorly in midterm years. The generic ballot poll responses are taken into account via the <code>Generic Ballot Average Support</code> variable, which averages the generic ballot responses for each election year with respect to weighting that boost polls closer to Election Day, and dampen those farther out (Gelman and King, 1993).</p>
+<p>Below is a regression table of several model editions I considered.</p>
+<p>
+
+  
+  My Updated Model.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/092622-polls-pollsters/bp3_regression.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/092622-polls-pollsters/bp3_regression_hu55293b853ad44a5f358d5ab2f90a20b9_228265_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/092622-polls-pollsters/bp3_regression_hu55293b853ad44a5f358d5ab2f90a20b9_228265_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/092622-polls-pollsters/bp3_regression_hu55293b853ad44a5f358d5ab2f90a20b9_228265_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/092622-polls-pollsters/bp3_regression_hu55293b853ad44a5f358d5ab2f90a20b9_228265_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="My Updated Model."
+          title="My Updated Model."
+          src="bp3_regression.png"
+          height="1056"
+          width="1872"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      My Updated Model.
+    </figcaption>
+  </figure>
+
+
+
+The &ldquo;National Econ&rdquo; Model comes from last week, and only considers the national economic variables of Gross Domestic Product growth (percentage and absolute), unemployment rate, and Real Disposable Income (RDI) change %. The adjusted R-squared is only 0.292, and few variables are clearly predictive of vote share.</p>
+<p>Next, I consider a model using only the midterm-incumbent effect and generic ballot support. Impressively, these two variables alone have an adjusted R-squared of 0.552.</p>
+<p>The next two models consider economic variables and either polls, or the midterm-incumbent effect, but not both. It appears that the generic ballot polls provide more predictive power to my model than the midterm effect alone.</p>
+<h2 id="my-new-model" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#my-new-model" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My New Model
+</h2><p>Lastly, my final model considers all the predictors we&rsquo;ve conceptually explored up until this point - generic ballot polling data <em>and</em> fundamentals like national economic variables and midterm-incumbent effect. My adjusted R-squared is 0.769, and GDP growth %, RDI change %, GDP absolute growth, midterm-incumbency, and generic ballot support are all found to be significant predictors of House incumbent party vote share. When GDP growth % and generic ballot average support increase, we expect incumbent vote share to increase.</p>
+<p>Interestingly, negative RDI growth % and absolute GDP growth, as well as it not being a midterm year for an incumbent party that&rsquo;s the president&rsquo;s party, are associated with increases in incumbent vote share. I plan to further investigate GDP growth in absolute terms versus percentage in future weeks &ndash; it&rsquo;s fascinating because even though the two measures are correlated (0.7), removing one or the other significantly reduces the R-squared value of my model (by a magnitude of ~0.10). However, including both measures makes my model&rsquo;s economic coefficients appear counterintuitive! In future weeks, I also hope to include expert predictions in my model as FiveThirtyEight does.</p>
+<h2 id="my-new-forecast" class="link-owner">
+  <a href="/blog/092622-polls-pollsters/#my-new-forecast" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>My New Forecast
+</h2><p>Considering the current economic conditions, generic ballot polls, and the fact that this year, the President&rsquo;s party is trying to hold onto their House incumbency in the midterms, my model predicts <strong>the House incumbent party (D) will have a (two-party) vote share of 49.82%, with a confidence interval of (47.97, 51.66).</strong> My updated model predicts the Democrats will have a two-party seat share of 51.46%, (48.17, 54.75), which is roughly 223 seats (208.73, 237.57). As Steve Kornacki said, if the Democrats are to hold onto their House majority, it seems that it&rsquo;ll be by the slimmest of margins.</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] The Economist Newspaper. (2022). How does the Economist&rsquo;s midterms election model work? The Economist. <a href="https://www.economist.com/the-economist-explains/2022/09/09/how-does-the-economists-midterms-election-model-work" title="https://www.economist.com/the-economist-explains/2022/09/09/how-does-the-economists-midterms-election-model-work" target="_blank" rel="nofollow noopener">https://www.economist.com/the-economist-explains/2022/09/09/how-does-the-economists-midterms-election-model-work</a></p>
+<p>[2] Pew Research Center. (2002). Why the generic ballot test? Pew Research Center - U.S. Politics &amp; Policy. <a href="https://www.pewresearch.org/politics/2002/10/01/why-the-generic-ballot-test/" title="https://www.pewresearch.org/politics/2002/10/01/why-the-generic-ballot-test/" target="_blank" rel="nofollow noopener">https://www.pewresearch.org/politics/2002/10/01/why-the-generic-ballot-test/</a></p>
+<p>[3] Silver, Nate. (2022). How fivethirtyeight’s house, senate and governor models work. <a href="https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/" title="https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/" target="_blank" rel="nofollow noopener">https://fivethirtyeight.com/methodology/how-fivethirtyeights-house-and-senate-models-work/</a></p>
+<p>[4] Galton. (1907). Vox Populi. Nature (London), 75(1949), 450–451. <a href="https://doi.org/10.1038/075450a0" title="https://doi.org/10.1038/075450a0" target="_blank" rel="nofollow noopener">https://doi.org/10.1038/075450a0</a></p>
+<p>[5] Gelman, &amp; King, G. (1993). Why Are American Presidential Election Campaign Polls So Variable When Votes Are So Predictable? British Journal of Political Science, 23(4), 409–451. <a href="https://doi.org/10.1017/S0007123400006682" title="https://doi.org/10.1017/S0007123400006682" target="_blank" rel="nofollow noopener">https://doi.org/10.1017/S0007123400006682</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Economic Predictors of House Incumbent Vote Share</title>
+      <link>/blog/091922-economy/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091922-economy/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="introduction" class="link-owner">
+  <a href="/blog/091922-economy/#introduction" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Introduction
+</h1><p>Last week, my dive into the 2018 election results and swings confirmed that the president&rsquo;s party often performs poorly in the midterms. By the 2020 House elections, the president&rsquo;s party gained some of its vote share back.</p>
+<p>This week, I temporarily move away from cyclical election study to delve into one of the most promising ways to predict election outcomes &ndash; economics. Retrospective voting, a model of voting in which voters elect leaders based off of recent experiences and judgment of welfare under incumbent leadership, dictates that for many elections, the results largely rely on the state of the economy in the last quarter of the election cycle (Achen &amp; Bartels, 2017). For presidential elections, this means that national economic variables like GDP (gross domestic product), unemployment, and RDI (real disposable income) can account for a lot of the variation in incumbent candidate popularity. <strong>I explore this relationship between national economic variables and incumbent vote share, but for House races from 1948 to 2020. I want to know which variables accurately predict House incumbent party vote share, and build a model accordingly. Lastly, I will test my model with data from 2020 to see how well it would&rsquo;ve predicted the last election.</strong></p>
+<h1 id="gdp-rdi-and-unemployment" class="link-owner">
+  <a href="/blog/091922-economy/#gdp-rdi-and-unemployment" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>GDP, RDI, and Unemployment
+</h1><p>To start identifying which national economic variables predict House incumbent vote share well, I first investigated how Quarter 8 GDP growth (percentage), RDI change (percentage), and unemployment rate, individually, are related to incumbent party vote share. I specifically choose Quarter 8 because voters often refer to the latest memory they have of the economy to judge how the economy has performed under their incumbent leader(s) (Achen &amp; Bartels, 2017. Healy &amp; Lenz, 2014).</p>
+<p>
+
+  
+  Scatter Plots.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/091922-economy/scatter_plots.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Scatter Plots."
+          title="Scatter Plots."
+          src="scatter_plots.png"
+          height="1176"
+          width="1532"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Scatter Plots.
+    </figcaption>
+  </figure>
+
+
+</p>
+<p>As shown above, each variable, GDP growth, RDI change, and unemployment rate, respectively, are correlated to House incumbent vote share - as GDP growth percentage decreases, or RDI change percentage decreases, or unemployment rate grows, House incumbent vote share grows. These correlations are unintuitive, and suggest that voters do not accurately hold their leaders accountable according to national economic performance.</p>
+<p>That said, these correlations are not too explanatory by themselves and may be very susceptible to noise, with R-squared values of 0.081, 0.056, and 0.131. I moved on from univariate relationships between these national economic variables House incumbent vote share to multivariable relationships, hoping to find a model that incorporates multiple economic variables to predict incumbent vote share. In this multivariable model (which I call Model 1), I consider the predictors <code>GDP_growth_pct</code> (GDP growth %), <code>DSPIC_change_pct</code> (RDI change %), <code>GDP_growth_qt</code> (GDP growth), and <code>UNRATE</code> (unemployment rate) to investigate how they influence incumbent vote share in conjunction.</p>
+<p>
+
+  
+  Regression Stargazer.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="/blog/091922-economy/regression_stargazer.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="/blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="/blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="/blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="/blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Regression Stargazer."
+          title="Regression Stargazer."
+          src="regression_stargazer.png"
+          height="908"
+          width="1372"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Regression Stargazer.
+    </figcaption>
+  </figure>
+
+
+</p>
+<h1 id="model-1" class="link-owner">
+  <a href="/blog/091922-economy/#model-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Model 1
+</h1><p>My development of Model 1 finds that GDP, RDI, and unemployment all influence House incumbent vote share, but in varying directions and with varying levels of statistical significance. For GDP growth (%), Model 1 anticipates that as it grows by 1, House incumbent vote share will too by 2.9, which makes more sense. However, for GDP growth (absolute) and unemployment rate, increases in these are still associated with decreases in incumbent vote share.</p>
+<p>These results are again fascinating, as they are counter-intuitive and don&rsquo;t follow the traditional knowledge political scientists lean on concerning retrospective voting, economic performance, and incumbent success. That said, Model 1 has an R-squared value of 0.386, which is much higher than the univariate R-squared values previously found.</p>
+<!-- raw HTML omitted -->
+<p>To evaluate the performance of my model and choice of model, I check the residuals. As shown below, they are roughly normally distributed around a center point of 0. This tells me that the form of Model 1 (linear) is adequate.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>This prediction is probably an overestimate given the fact that Model 1 did not account for the negative incumbent-midterm effect. Additionally, Model 1 should be used again once Q8 (so, Q4 of 2022) data becomes available to maximize its predictive power. The model can also be improved with wider purview into House incumbent seat share and totals. Lastly, Wright found that worsened (so, increased) unemployment affects Democrats differently than it does Republicans. Given more time, I would expore if this finding holds when we focus specifically on House elections.</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] Achen, &amp; Bartels, L. M. (2017). Democracy for realists (REV - Revised). Princeton University Press.
+<a href="https://muse.jhu.edu/book/64646" title="https://muse.jhu.edu/book/64646" target="_blank" rel="nofollow noopener">https://muse.jhu.edu/book/64646</a></p>
+<p>[2] Healy, &amp; Lenz, G. S. (2014). Substituting the End for the Whole: Why Voters Respond Primarily to the Election-Year Economy. American Journal of Political Science, 58(1), 31–47. <a href="https://doi.org/10.1111/ajps.12053" title="https://doi.org/10.1111/ajps.12053" target="_blank" rel="nofollow noopener">https://doi.org/10.1111/ajps.12053</a></p>
+<p>[3] Wright. (2012). Unemployment and the Democratic Electoral Advantage. The American Political Science Review, 106(4), 685–702. <a href="https://doi.org/10.1017/S0003055412000330" title="https://doi.org/10.1017/S0003055412000330" target="_blank" rel="nofollow noopener">https://doi.org/10.1017/S0003055412000330</a></p>
+<p>[4] Rakich, N., &amp; Mejia, E. (2022, March 31). The house map&rsquo;s Republican bias will plummet in 2022 - because of gerrymandering. FiveThirtyEight.  <a href="https://fivethirtyeight.com/features/the-house-maps-republican-bias-will-plummet-in-2022-because-of-gerrymandering/" title="https://fivethirtyeight.com/features/the-house-maps-republican-bias-will-plummet-in-2022-because-of-gerrymandering/" target="_blank" rel="nofollow noopener">https://fivethirtyeight.com/features/the-house-maps-republican-bias-will-plummet-in-2022-because-of-gerrymandering/</a></p>
+<p>[5] BEA. Gross Domestic Product. <a href="https://www.bea.gov/data/gdp/gross-domestic-product" title="https://www.bea.gov/data/gdp/gross-domestic-product" target="_blank" rel="nofollow noopener">https://www.bea.gov/data/gdp/gross-domestic-product</a></p>
+<p>[6] BEA. Gross Domestic Product Second Quarter 2022. <a href="https://www.bea.gov/news/2022/gross-domestic-product-second-quarter-2022-advance-estimate" title="https://www.bea.gov/news/2022/gross-domestic-product-second-quarter-2022-advance-estimate" target="_blank" rel="nofollow noopener">https://www.bea.gov/news/2022/gross-domestic-product-second-quarter-2022-advance-estimate</a></p>
+<p>[7] FRED. GDPC1. <a href="https://fred.stlouisfed.org/series/GDPC1" title="https://fred.stlouisfed.org/series/GDPC1" target="_blank" rel="nofollow noopener">https://fred.stlouisfed.org/series/GDPC1</a></p>
+<p>[8] Trading Economics. Unemployment Rate. <a href="https://tradingeconomics.com/united-states/unemployment-rate" title="https://tradingeconomics.com/united-states/unemployment-rate" target="_blank" rel="nofollow noopener">https://tradingeconomics.com/united-states/unemployment-rate</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Analyzing House Vote Share Swings of 2018 and 2020</title>
+      <link>/blog/091522-vote-shares/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091522-vote-shares/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="introduction" class="link-owner">
+  <a href="/blog/091522-vote-shares/#introduction" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Introduction
+</h1><p>This is blog post #1 in a series of analytical posts about the 2022 midterms. This post is affiliated with Gov 1347: Election Analytics, a course at Harvard University in the Government department.</p>
+<p>Over the next several weeks, I will be exploring previous U.S. elections data to analyze voter trends and behavior. This exploration will aide in my ultimate goal of forecasting the 2022 midterm election results. For this first blog, I focus on the House vote shares from 2016 to 2020 and how they changed over the course of Donald J. Trump&rsquo;s term. I compare the results of 2016 House election, specifically the House Democratic Party vote share at the state level, to those of the 2018 midterm House election to see the extent to which the common theme of incumbent disadvantage applied to the House election results. I then compare the House Democratic vote share of the 2018 election to the 2020 House election, which saw the election of Joseph R. Biden. <strong>My hope is to identify the trends in House election swings in the Trump era. As we near the 2022 midterms, where the Democratic president&rsquo;s party is campaigning hard to retain House control, it&rsquo;ll be increasingly important to know which states have shown increased support for House Democrats in recent years.</strong></p>
+<h1 id="house-races-in-2016-2018-and-2020" class="link-owner">
+  <a href="/blog/091522-vote-shares/#house-races-in-2016-2018-and-2020" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>House Races in 2016, 2018, and 2020
+</h1><p>To answer this question, I pulled data about the House party vote shares for 2016, 2018, and 2020. I show 2018-2016 and 2020-2018 comparison maps, which consist of states colored by the quantity <code>\(\frac{D_y}{D_y + R_y} - \frac{D_{y - 2}}{D_{y - 2} + R_{y - 2}}\)</code>. This quantity is a measure of state swing in Democratic Party vote share for that House election, since the previous one. Below is the 2018-2016 swing map - negative (red) values show a decline in (D) House vote share in a given state since 2016, positive (blue) values show the opposite, and near-zero (white) values represent no change in (D) House vote.</p>
+<!-- raw HTML omitted -->
+<p>However, this swing against the executive party may reverse by the next House elections, and this was indeed true in 2020.</p>
+<!-- raw HTML omitted -->
+<p>My dive into the 2018 and 2020 House election results and swings has revealed several observations: (1) Because the president&rsquo;s party has always been known to suffer during midterms, and this tradition remained true in the 2018 midterms, it should be expected that the Democrats see this same poor performance in November. (2) Looking beyond the midterms, Democrats may be relieved to hear that the president&rsquo;s party does seem to get some of their vote share back in House elections by the next general election. We saw that in 2020, House vote shares declined for Democrats in nearly all states. (3) It is important to study swings and temporally relative party performance to see how voters move in preference over different House elections, but it is also very important to study the House elections move in absolute terms &ndash; although observation (2) recognized that the president&rsquo;s party does gain a lot of its lost House vote share back by the general election, 2020 showed us that this gain was ultimately not enough, with the challenger party taking the House, the Senate (by a hair), and the presidency.</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] Campbell, J. (2018a). Introduction: Forecasting the 2018 US Midterm Elections. <a href="https://doi.org/10.1017/S1049096518001592" title="https://doi.org/10.1017/S1049096518001592" target="_blank" rel="nofollow noopener">https://doi.org/10.1017/S1049096518001592</a></p>
+<p>[2] Walter, Amy (2020). 2020 National Popular Vote Tracker, <a href="https://www.cookpolitical.com/2020-national-popular-vote-tracker" title="https://www.cookpolitical.com/2020-national-popular-vote-tracker" target="_blank" rel="nofollow noopener">https://www.cookpolitical.com/2020-national-popular-vote-tracker</a></p>
+<p>[3] Vestal, James Allan, et al. (2020). Georgia Results 2020. <a href="https://www.politico.com/2020-election/results/georgia/" title="https://www.politico.com/2020-election/results/georgia/" target="_blank" rel="nofollow noopener">https://www.politico.com/2020-election/results/georgia/</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Spotify Playlist Producer</title>
+      <link>/blog/052022-playlist-producer/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/052022-playlist-producer/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="the-spotify-playlist-producer" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#the-spotify-playlist-producer" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>The Spotify Playlist <em>Producer</em>
+</h1><p>For project files, see the <a href="https://github.com/vivian-1372/playlist-producer" title="GitHub repository" target="_blank" rel="nofollow noopener">GitHub repository</a>.</p>
+<!-- raw HTML omitted -->
+<h2 id="overview" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#overview" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Overview
+</h2><p>Hello! This is my &ldquo;Playlist <em>Producer</em>.&rdquo; I developed this project over the course of several weeks in my Spring 2022 semester as a sophomore. At this point, I have newly rediscovered my love for computational thinking and problem solving, and want to apply my Python skills to a fun problem I&rsquo;ve had for a while &ndash; my lack of new music. I am a Spotify loyalist, but I sometimes find that once I have exhausted my Daily Mix 1, I am in desperate need of more music to explore. So then, my motivating questions became: Can I get the same genre, but different (but not too different&hellip;) songs? Can I get the same artist vibe, but different (but not overly different&hellip;) artists? As I soon learned, personalization and recommendation are games of balance.</p>
+<h2 id="project-purpose" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#project-purpose" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Project Purpose
+</h2><p>Mainly, the aim is to provide new and familiar song suggestions to Spotify users that are meaningfully related to their favorite artist and associated vibes. A subgoal was to use a non-invasive approach, so that users only needed to provide small amounts of information (rather than broad access to their account) for the suggestion algorithm to work.</p>
+<h2 id="fundamentals" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#fundamentals" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Fundamentals
+</h2><p>In this project, I defined &ldquo;new&rdquo; to be music from artists other than the user&rsquo;s favorite artist. &ldquo;Old&rdquo; or &ldquo;familiar&rdquo; generally refers to music from their artist, though I acknowledge that some songs from a user&rsquo;s favorite artist may still nonetheless be new to them. &ldquo;Favorite artist&rdquo; can be whoever comes to mind to the user &ndash; their all-time favorite, their current favorite, their long-lost, but just-rediscovered favorite.</p>
+<h2 id="computational-breakdown" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#computational-breakdown" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Computational Breakdown
+</h2><ul>
+<li>Obtain playlist library to pull songs from to populate new playlists.
+<ul>
+<li>I pulled the playlists to stock my library from samples of the <a href="https://engineering.atspotify.com/2018/05/introducing-the-million-playlist-dataset-and-recsys-challenge-2018/" title="Spotify Million Playlist Dataset" target="_blank" rel="nofollow noopener">Spotify Million Playlist Dataset</a>.</li>
+</ul>
+</li>
+<li>Take in user input about desired playlist length, their favorite artist, and how much of the playlist they&rsquo;d like to be new versus old songs.
+<ul>
+<li>The playlist length should be an integer between 1 and 30. The favorite artist should be a string entry, not case-sensitive. The last value should be between 0 and 100, which represents the percentage of the playlist the user would like to contain new music.</li>
+<li>There can be a lot more done towards the end of input validation, but there are some checks put in place to catch the egregious inputs.</li>
+</ul>
+</li>
+<li>Populate the playlist with the desired number of familiar songs.
+<ul>
+<li>Randomly peek into the playlists in my playlist library that contain songs from the user&rsquo;s favorite artist. Pull from these until the desired number of familiar songs is reached.</li>
+</ul>
+</li>
+<li>Populate the remainder of the playlist with new songs from the playlists that contain their favorite artist, but are from new artists.
+<ul>
+<li>Randomly peek into playlists in the playlist library that contain songs from the user&rsquo;s favorite artist. Pull songs from these playlists that are <em>not</em> from the favorite artist until the desired playlist length has been reached.</li>
+</ul>
+</li>
+<li>Display new playlist and song suggestions, with artist credits.
+<ul>
+<li>Print outs!</li>
+</ul>
+</li>
+</ul>
+<h2 id="sample-input-and-output" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#sample-input-and-output" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Sample input and output
+</h2><h2 id="text-indicates-user-input" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#text-indicates-user-input" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>&lt;text&gt; indicates user input
+</h2><p>Hi! Welcome to the Playlist Producer. It&rsquo;s what it sounds like - I
+produce a playlist for you, and you enjoy it.</p>
+<p>How many songs would you like in your playlist? &lt;6&gt;</p>
+<p>Life&rsquo;s all about exploration.
+What percentage of the playlist would you like to be brand new? &lt;50&gt;</p>
+<h2 id="who-is-your-favorite-artist-drake" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#who-is-your-favorite-artist-drake" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Perfect. Let&rsquo;s get a sense of what you like.
+Who is your favorite artist? &lt;Drake&gt;
+</h2><p>Here it is: a playlist 50% Drake and 50% new. Enjoy!</p>
+<p>Controlla - Drake</p>
+<p>Jumpman - Drake</p>
+<p>Energy - Drake</p>
+<p>Smoke To It (feat. Skizzy Mars) - Marc E. Bassy</p>
+<p>Season 2 Episode 3 - Glass Animals</p>
+<p>All Eyes On You (feat. Chris Brown &amp; Nicki Minaj) - Meek Mill</p>
+<h2 id="looking-forward" class="link-owner">
+  <a href="/blog/052022-playlist-producer/#looking-forward" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Looking Forward
+</h2><p>To continue developing this project, I would provide the option to obtain an actual Spotify link to the new playlist. Another feature I&rsquo;d love to explore is making the playlist based on favorite album or genre, which would require a drastic change in or addition to my algorithm. Lastly, I would also make my program more error-proof, as it takes in a considerable amount of user input that has to be accounted for&hellip;
+Also, I would like to deal with imperfect splits of new versus old songs in playlists (percentage request versus integer values).
+I think this is a good step toward diversifying users&rsquo; music taste more!</p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
       <title>COVID-19 Concern and Citizen Trust in Different Institutions</title>
       <link>/blog/121621-covid-trust/</link>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
@@ -519,6 +2460,76 @@ Gelfand, M., Han, S., Haslam, S. A., Jetten, J., … Willer, R. (2020).
 Using social and behavioural science to support COVID-19 pandemic
 response. Nature Human Behaviour, 4(5), 460–471.
 <a href="https://doi.org/10.1038/s41562-020-0884-z" title="https://doi.org/10.1038/s41562-020-0884-z" target="_blank" rel="nofollow noopener">https://doi.org/10.1038/s41562-020-0884-z</a></p>
+
+          
+          
+          
+          
+          
+          ]]>
+      </description>
+
+
+    </item>
+    
+    <item>
+      <title>Cooperation Strategies</title>
+      <link>/blog/091621-cooperation-strategies/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091621-cooperation-strategies/</guid>
+      
+      
+      
+      
+      
+      
+      
+      <description>
+          <![CDATA[ 
+          
+          <h1 id="introduction" class="link-owner">
+  <a href="/blog/091621-cooperation-strategies/#introduction" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Introduction
+</h1><p>For this week’s blog post, I look at the performance of my six selected cooperation strategies when played in a repetitive, round-robin style tournament and what the results may suggest about cooperation between humans. I select <em>appeaser</em>, <em>foolMeOnce</em>, <em>majorityScrounger</em>, <em>retaliater</em>, <em>titfortat</em>, and <em>winStayer</em> as playing strategies and set them against each other over 100 repeated rounds each.</p>
+<h1 id="data-details" class="link-owner">
+  <a href="/blog/091621-cooperation-strategies/#data-details" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Data Details
+</h1><p>*File Name: \texttt{prisoners_dilemma_data.csv}
+*Source: Shiny app developed by <a href="https://github.com/swarm-lab/axelRod/tree/master/R" title="Simon Garnier" target="_blank" rel="nofollow noopener">Simon Garnier</a> and edited slightly by the TF team.</p>
+<h1 id="finding-a-winning-strategy" class="link-owner">
+  <a href="/blog/091621-cooperation-strategies/#finding-a-winning-strategy" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Finding a Winning Strategy
+</h1><p>I focus on two questions about the results of this tournament: how my winning strategy (according to total points) fared against its opponents, as well as how each strategy fared against all the other strategies. Which strategies were most successful against which other ones?</p>
+<p>My most successful strategy was <em>foolMeOnce</em>, with 2 wins in 5 games and the highest average score against its opponents – 333.6.</p>
+<p>![Best Strategies](Sorted Average Scores.png)</p>
+<p>It won against <em>majorityScrounger</em> and <em>winStayer</em>, and tied with <em>appeaser</em>, <em>retaliater</em>, and <em>titfortat</em>. Below is a bar chart that depicts how many points <em>foolMeOnce</em> scored against each, on average.</p>
+<p>![foolMeOnce Chart](fMO Chart.png)</p>
+<p>How did the other strategies perform overall? I created a grouped bar chart to compare their performances in their matchups.
+![All Strategies Compared](All Strats Chart.png)</p>
+<h1 id="why-foolmeonce" class="link-owner">
+  <a href="/blog/091621-cooperation-strategies/#why-foolmeonce" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Why <em>foolMeOnce</em>?
+</h1><p>As discussed previously and is reconfirmed by the visualization of each strategy’s scoring abilities, no other chosen strategy is able to average 305+ points the same way <em>foolMeOnce</em> can. Even when a certain strategy performs particularly poorly, like appeaser (averaging 52 points) when playing <em>majorityScrounger</em>, its opponent only averages 302. The outcome of my tournament suggests that there is a uniquely dominant strategy in this tournament. So, my findings lead me to 2 new questions: why does <em>foolMeOnce</em> perform so well in this tournament? How does it achieve point average heights that other strategies cannot?</p>
+<p>To investigate these questions, let’s first solidify our understanding of how <em>foolMeOnce works</em>. Its description is as follows:</p>
+<ol>
+<li>Cooperates the first time it plays a new opponent.</li>
+<li>Keeps cooperating after the first defection of the opponent.</li>
+<li>Defects systematically after the opponent defects a second time.
+Therefore, the strategy says: cooperate until opponent’s second defection, then only defect after that.</li>
+</ol>
+<p>This strategy reminds me of the Grim Trigger (GT) strategy, which entails cooperation until the opponent defects once. After that, GT players systematically defect. The rationale for this strategy is that one can only trust their opponent until the opponent betrays their cooperative deal. After a player has been forced to take the sucker prize once, they should never trust the opponent to cooperate again. Thus, they themselves should never cooperate again in order to avoid the sucker prize. In practice, Grim Trigger is a bit too unforgiving. Researchers Miguel Aramendia, L. Ruiz, and Federico Valenciano recognized this in their paper, “The Forgiving Trigger Strategy: An Alternative To The Trigger Strategy,” where they note that “It is possible to improve on the grim-trigger strategy while retaining subgame perfection and in some cases adding weak renegotiation proofness… The basic idea is that, following a deviation, the cheater, instead of continuing in the Nash equilibrium forever, chooses an autopenalty which signals, in a very strong way, that he/she would not deviate any more if cooperation were reestablished.”</p>
+<p>This improved Grim Trigger strategy from the Aramendia-Ruiz-Valenciano paper, which signals that cooperation is possible again if one’s opponent stops defecting after the first time, is essentially what <em>foolMeOnce</em> does as a strategy. Even after the first defection, <em>foolMeOnce</em> players allow for the possibility of future mutual cooperation, which is a better choice for both players compared to mutual, continuous defection. It is only after the second opponent defection, a repeated betrayal of trust, that <em>foolMeOnce</em> players finally pull the trigger and defect systematically to avoid future sucker prizes.</p>
+<p>After investigating <em>foolMeOnce</em> further, I understand why it is highly effective. Like <em>titfortat</em>, a strategy that Axelrod pinpoints as sure-fire, <em>foolMeOnce</em> starts with the spirit of cooperation. It continues to cooperate so long as the opponent cooperates. Upon first defection, <em>titfortat</em> reactively retaliates while <em>foolMeOnce</em> forgives and continues to cooperate. However, after the second defection, <em>titfortat</em> still allows the opponent to continue making marginal gains in points should they choose to defect again in the future. In contrast, <em>foolMeOnce</em> disallows these comparative point gains to continue occurring after the second defection: from that point on, both players will take the mutual defection prize, or <em>foolMeOnce</em> players will claim the temptation prize alone. Effectively, <em>foolMeOnce</em> players can only do better, or equally as poorly, as their opponents – but never worse. In a tournament and analysis where comparative performance matters, such a strategy comes out on top.</p>
+<p>This insight into cooperation/defection strategy may be extended into the political realm. When actors come into repeated contact, should they follow a Grim Trigger, <em>titfortat</em>, <em>foolMeOnce</em>, or some other logic? Of course, actors will not behave like perfect computer players, but their philosophies about cooperation and retaliation are relevant. Because a strategy like Grim Trigger is so unforgiving, it can be inefficient in real applications. For example, two nations trying to cooperate will lose all chances to work together once either side defects, even if it was a truly singular occurrence. For significant issues requiring cooperation, like nuclear disarmament or climate change, abrupt and total shutdown of cooperation would be unfavorable for such important end goals. The outcome of my data analysis for this week has suggested to me that perhaps a discipline-heavy strategy like GT would work, but with more forgiveness built-in. Thus, whether defection is limited to 2 occurrences like with <em>foolMeOnce</em>, or collaborating countries incorporate efficient breach terms into their transactions, I believe that the formula of serious punishment of defection and prioritization of cooperation can incentivize cooperation between important actors in the political world.</p>
+<hr>
+<p><strong>References</strong>
+[1] Axelrod (1980)</p>
+<p>[2] Miguel Aramendia, L. Ruiz, and Federico Valenciano (2004)</p>
 
           
           

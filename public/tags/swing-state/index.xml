@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swing state on Vivian Nguyen</title>
+    <link>/tags/swing-state/</link>
+    <description>Recent content in swing state on Vivian Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/swing-state/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analyzing House Vote Share Swings of 2018 and 2020</title>
+      <link>/blog/091522-vote-shares/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091522-vote-shares/</guid>
+      <description>Link Introduction This is blog post #1 in a series of analytical posts about the 2022 midterms. This post is affiliated with Gov 1347: Election Analytics, a course at Harvard University in the Government department.
+Over the next several weeks, I will be exploring previous U.S. elections data to analyze voter trends and behavior. This exploration will aide in my ultimate goal of forecasting the 2022 midterm election results. For this first blog, I focus on the House vote shares from 2016 to 2020 and how they changed over the course of Donald J.</description>
+    </item>
+    
+  </channel>
+</rss>

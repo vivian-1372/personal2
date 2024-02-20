@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>
+    
+      Economic Predictors of House Incumbent Vote Share -
+      
+      Vivian Nguyen
+  </title>
+    <meta
+      name="description"
+      content="My personal website"
+    /><meta name="author" content="Vivian Nguyen" />
+  
+    <meta name="robots" content="index,follow" />
+  
+  <meta name="generator" content="Hugo 0.110.0">
+
+  <meta property="og:title" content="Economic Predictors of House Incumbent Vote Share" />
+<meta property="og:description" content="Link Introduction Last week, my dive into the 2018 election results and swings confirmed that the president&rsquo;s party often performs poorly in the midterms. By the 2020 House elections, the president&rsquo;s party gained some of its vote share back.
+This week, I temporarily move away from cyclical election study to delve into one of the most promising ways to predict election outcomes &ndash; economics. Retrospective voting, a model of voting in which voters elect leaders based off of recent experiences and judgment of welfare under incumbent leadership, dictates that for many elections, the results largely rely on the state of the economy in the last quarter of the election cycle (Achen &amp; Bartels, 2017)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/091922-economy/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-09-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-19T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Economic Predictors of House Incumbent Vote Share"/>
+<meta name="twitter:description" content="Link Introduction Last week, my dive into the 2018 election results and swings confirmed that the president&rsquo;s party often performs poorly in the midterms. By the 2020 House elections, the president&rsquo;s party gained some of its vote share back.
+This week, I temporarily move away from cyclical election study to delve into one of the most promising ways to predict election outcomes &ndash; economics. Retrospective voting, a model of voting in which voters elect leaders based off of recent experiences and judgment of welfare under incumbent leadership, dictates that for many elections, the results largely rely on the state of the economy in the last quarter of the election cycle (Achen &amp; Bartels, 2017)."/>
+
+  
+  
+    <meta
+      name="msapplication-TileColor"
+      content="#5bbad5"
+    />
+  
+  
+    <meta name="theme-color" content="#ffffff" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
+  
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-16x16.png" />
+  
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png" />
+  
+  
+    <link rel="manifest" href="../../site.webmanifest" />
+  
+  
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5" />
+  
+
+
+  
+
+  
+  <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "blog",
+    "name": "Economic Predictors of House Incumbent Vote Share",
+    "headline": "Economic Predictors of House Incumbent Vote Share",
+    "alternativeHeadline": "",
+    "description": "Link Introduction Last week, my dive into the 2018 election results and swings confirmed that the president\u0026rsquo;s party often performs poorly in the midterms. By the 2020 House elections, the president\u0026rsquo;s party gained some of its vote share back.\nThis week, I temporarily move away from cyclical election study to delve into one of the most promising ways to predict election outcomes \u0026ndash; economics. Retrospective voting, a model of voting in which voters elect leaders based off of recent experiences and judgment of welfare under incumbent leadership, dictates that for many elections, the results largely rely on the state of the economy in the last quarter of the election cycle (Achen \u0026amp; Bartels, 2017).",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "\/blog\/091922-economy\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Vivian Nguyen"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Vivian Nguyen"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Vivian Nguyen"
+    },
+    "copyrightHolder" : "Vivian Nguyen",
+    "copyrightYear" : "2022",
+    "dateCreated": "2022-09-19T00:00:00.00Z",
+    "datePublished": "2022-09-19T00:00:00.00Z",
+    "dateModified": "2022-09-19T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Vivian Nguyen",
+        "url": "/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "\/favicon-32x32.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "/favicon-32x32.png",
+    "url" : "\/blog\/091922-economy\/",
+    "wordCount" : "813",
+    "genre" : [ "Election Analytics" ],
+    "keywords" : [ "economy" , "incumbent" , "national model" ]
+}
+</script>
+
+
+  <link
+    rel="preload"
+    href="../../fonts/Comfortaa-Light.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="../../fonts/FiraSans-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="../../fonts/Comfortaa-Bold.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  
+    <link
+      rel="authorization_endpoint"
+      href="https://indieauth.com/auth"
+    />
+    <link
+      rel="token_endpoint"
+      href="https://tokens.indieauth.com/token"
+    />
+  
+  
+    <link
+      rel="webmention"
+      href="https://webmention.io/example.com/webmention"
+    />
+    <link
+      rel="pingback"
+      href="https://webmention.io/example.com/xmlrpc"
+    />
+  
+  <link rel="canonical" href="../../blog/091922-economy/" />
+
+  
+  
+  <link
+      rel="stylesheet"
+      href="/css/build.min.18d031cfd031d459edeabddebe324cdc79d8d4b70686bb2bde15fa5802d67894.css"
+      integrity="sha256-GNAxz9Ax1Fnt6r3evjJM3HnY1LcGhrsr3hX6WALWeJQ="
+      crossorigin="anonymous"
+    />
+  
+  <script async defer data-website-id="1234567-abcd-efgh-0000-abcdefg1234" src="https://analytics.example.com/umami.js"></script>
+
+
+</head>
+
+  <body class="flex flex-col min-h-screen dark:bg-gray-900">
+<header
+  class="w-full bg-gray-200 dark:bg-black border-t-2 border-accent-400 sticky top-0 transition-shadow duration-300 hover:shadow-lg z-10"
+>
+  
+  <style type="text/css">
+    input#nav-toggle:checked ~ label#show-button {
+      display: none;
+    }
+
+    input#nav-toggle:checked ~ label#hide-button {
+      display: flex;
+    }
+
+    input#nav-toggle:checked ~ #nav-menu {
+      display: block;
+    }
+  </style>
+
+  <nav
+    class="flex items-center sm:justify-around justify-between flex-wrap py-2 px-2"
+  >
+    <a
+      href="../../"
+      class="flex items-center text-gray-700 dark:text-gray-200 font-mono font-bold"
+    >
+      Vivian Nguyen
+      <span class="animate-blink font-mono font-bold">|</span>
+    </a>
+
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      id="show-button"
+      for="nav-toggle"
+      class="flex items-center block sm:hidden text-gray-500 dark:text-gray-200 hover:text-accent-500"
+    >
+      <svg
+        class="fill-current h-4 w-4"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
+      </svg>
+    </label>
+    <label
+      id="hide-button"
+      for="nav-toggle"
+      class="flex items-center hidden text-gray-500 dark:text-gray-200 hover:text-accent-400"
+    >
+      <svg
+        class="fill-current h-4 w-4"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"
+        />
+      </svg>
+    </label>
+
+    <ul
+      id="nav-menu"
+      class="sm:flex w-full sm:w-auto hidden sm:block mt-2 sm:mt-0 sm:space-x-2"
+    >
+      
+        <li>
+          <a
+            href="../../about/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/About</a
+          >
+        </li>
+      
+      
+        <li>
+          <a
+            href="../../resume/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/Resume</a
+          >
+        </li>
+      
+      
+        <li>
+          <a
+            href="../../blog/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/Blog</a
+          >
+        </li>
+      
+      
+        <li>
+          <a
+            href="../../archive/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/Archive</a
+          >
+        </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
+  <div
+  class="px-6 mx-auto mb-16 prose text-gray-700 justify-self-center sm:px-4 md:px-0 lg:prose-lg dark:prose-dark"
+>
+  
+  <article class="h-entry">
+    
+    <h1 class="p-name">Economic Predictors of House Incumbent Vote Share</h1>
+    <div>
+      <span class="text-gray-400">
+        
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Time</title><path fill="none" d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 128v144h96"/></svg>
+    </span>
+  
+
+
+        4 minute read
+      </span>
+    </div>
+    
+    <div class="e-content">
+      <h1 id="introduction" class="link-owner">
+  <a href="../../blog/091922-economy/#introduction" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Introduction
+</h1><p>Last week, my dive into the 2018 election results and swings confirmed that the president&rsquo;s party often performs poorly in the midterms. By the 2020 House elections, the president&rsquo;s party gained some of its vote share back.</p>
+<p>This week, I temporarily move away from cyclical election study to delve into one of the most promising ways to predict election outcomes &ndash; economics. Retrospective voting, a model of voting in which voters elect leaders based off of recent experiences and judgment of welfare under incumbent leadership, dictates that for many elections, the results largely rely on the state of the economy in the last quarter of the election cycle (Achen &amp; Bartels, 2017). For presidential elections, this means that national economic variables like GDP (gross domestic product), unemployment, and RDI (real disposable income) can account for a lot of the variation in incumbent candidate popularity. <strong>I explore this relationship between national economic variables and incumbent vote share, but for House races from 1948 to 2020. I want to know which variables accurately predict House incumbent party vote share, and build a model accordingly. Lastly, I will test my model with data from 2020 to see how well it would&rsquo;ve predicted the last election.</strong></p>
+<h1 id="gdp-rdi-and-unemployment" class="link-owner">
+  <a href="../../blog/091922-economy/#gdp-rdi-and-unemployment" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>GDP, RDI, and Unemployment
+</h1><p>To start identifying which national economic variables predict House incumbent vote share well, I first investigated how Quarter 8 GDP growth (percentage), RDI change (percentage), and unemployment rate, individually, are related to incumbent party vote share. I specifically choose Quarter 8 because voters often refer to the latest memory they have of the economy to judge how the economy has performed under their incumbent leader(s) (Achen &amp; Bartels, 2017. Healy &amp; Lenz, 2014).</p>
+<p>
+
+  
+  Scatter Plots.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/091922-economy/scatter_plots.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/091922-economy/scatter_plots_hu5ee31e26e6231fb7f7e9337bea503062_321006_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Scatter Plots."
+          title="Scatter Plots."
+          src="scatter_plots.png"
+          height="1176"
+          width="1532"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Scatter Plots.
+    </figcaption>
+  </figure>
+
+
+</p>
+<p>As shown above, each variable, GDP growth, RDI change, and unemployment rate, respectively, are correlated to House incumbent vote share - as GDP growth percentage decreases, or RDI change percentage decreases, or unemployment rate grows, House incumbent vote share grows. These correlations are unintuitive, and suggest that voters do not accurately hold their leaders accountable according to national economic performance.</p>
+<p>That said, these correlations are not too explanatory by themselves and may be very susceptible to noise, with R-squared values of 0.081, 0.056, and 0.131. I moved on from univariate relationships between these national economic variables House incumbent vote share to multivariable relationships, hoping to find a model that incorporates multiple economic variables to predict incumbent vote share. In this multivariable model (which I call Model 1), I consider the predictors <code>GDP_growth_pct</code> (GDP growth %), <code>DSPIC_change_pct</code> (RDI change %), <code>GDP_growth_qt</code> (GDP growth), and <code>UNRATE</code> (unemployment rate) to investigate how they influence incumbent vote share in conjunction.</p>
+<p>
+
+  
+  Regression Stargazer.
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/091922-economy/regression_stargazer.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/091922-economy/regression_stargazer_hu5fd88d94af96da288a564ab06e9419cc_137253_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Regression Stargazer."
+          title="Regression Stargazer."
+          src="regression_stargazer.png"
+          height="908"
+          width="1372"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Regression Stargazer.
+    </figcaption>
+  </figure>
+
+
+</p>
+<h1 id="model-1" class="link-owner">
+  <a href="../../blog/091922-economy/#model-1" class="link">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+  </a>Model 1
+</h1><p>My development of Model 1 finds that GDP, RDI, and unemployment all influence House incumbent vote share, but in varying directions and with varying levels of statistical significance. For GDP growth (%), Model 1 anticipates that as it grows by 1, House incumbent vote share will too by 2.9, which makes more sense. However, for GDP growth (absolute) and unemployment rate, increases in these are still associated with decreases in incumbent vote share.</p>
+<p>These results are again fascinating, as they are counter-intuitive and don&rsquo;t follow the traditional knowledge political scientists lean on concerning retrospective voting, economic performance, and incumbent success. That said, Model 1 has an R-squared value of 0.386, which is much higher than the univariate R-squared values previously found.</p>
+<!-- raw HTML omitted -->
+<p>To evaluate the performance of my model and choice of model, I check the residuals. As shown below, they are roughly normally distributed around a center point of 0. This tells me that the form of Model 1 (linear) is adequate.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>This prediction is probably an overestimate given the fact that Model 1 did not account for the negative incumbent-midterm effect. Additionally, Model 1 should be used again once Q8 (so, Q4 of 2022) data becomes available to maximize its predictive power. The model can also be improved with wider purview into House incumbent seat share and totals. Lastly, Wright found that worsened (so, increased) unemployment affects Democrats differently than it does Republicans. Given more time, I would expore if this finding holds when we focus specifically on House elections.</p>
+<hr>
+<p><strong>References</strong></p>
+<p>[1] Achen, &amp; Bartels, L. M. (2017). Democracy for realists (REV - Revised). Princeton University Press.
+<a href="https://muse.jhu.edu/book/64646" title="https://muse.jhu.edu/book/64646" target="_blank" rel="nofollow noopener">https://muse.jhu.edu/book/64646</a></p>
+<p>[2] Healy, &amp; Lenz, G. S. (2014). Substituting the End for the Whole: Why Voters Respond Primarily to the Election-Year Economy. American Journal of Political Science, 58(1), 31–47. <a href="https://doi.org/10.1111/ajps.12053" title="https://doi.org/10.1111/ajps.12053" target="_blank" rel="nofollow noopener">https://doi.org/10.1111/ajps.12053</a></p>
+<p>[3] Wright. (2012). Unemployment and the Democratic Electoral Advantage. The American Political Science Review, 106(4), 685–702. <a href="https://doi.org/10.1017/S0003055412000330" title="https://doi.org/10.1017/S0003055412000330" target="_blank" rel="nofollow noopener">https://doi.org/10.1017/S0003055412000330</a></p>
+<p>[4] Rakich, N., &amp; Mejia, E. (2022, March 31). The house map&rsquo;s Republican bias will plummet in 2022 - because of gerrymandering. FiveThirtyEight.  <a href="https://fivethirtyeight.com/features/the-house-maps-republican-bias-will-plummet-in-2022-because-of-gerrymandering/" title="https://fivethirtyeight.com/features/the-house-maps-republican-bias-will-plummet-in-2022-because-of-gerrymandering/" target="_blank" rel="nofollow noopener">https://fivethirtyeight.com/features/the-house-maps-republican-bias-will-plummet-in-2022-because-of-gerrymandering/</a></p>
+<p>[5] BEA. Gross Domestic Product. <a href="https://www.bea.gov/data/gdp/gross-domestic-product" title="https://www.bea.gov/data/gdp/gross-domestic-product" target="_blank" rel="nofollow noopener">https://www.bea.gov/data/gdp/gross-domestic-product</a></p>
+<p>[6] BEA. Gross Domestic Product Second Quarter 2022. <a href="https://www.bea.gov/news/2022/gross-domestic-product-second-quarter-2022-advance-estimate" title="https://www.bea.gov/news/2022/gross-domestic-product-second-quarter-2022-advance-estimate" target="_blank" rel="nofollow noopener">https://www.bea.gov/news/2022/gross-domestic-product-second-quarter-2022-advance-estimate</a></p>
+<p>[7] FRED. GDPC1. <a href="https://fred.stlouisfed.org/series/GDPC1" title="https://fred.stlouisfed.org/series/GDPC1" target="_blank" rel="nofollow noopener">https://fred.stlouisfed.org/series/GDPC1</a></p>
+<p>[8] Trading Economics. Unemployment Rate. <a href="https://tradingeconomics.com/united-states/unemployment-rate" title="https://tradingeconomics.com/united-states/unemployment-rate" target="_blank" rel="nofollow noopener">https://tradingeconomics.com/united-states/unemployment-rate</a></p>
+
+    </div>
+    <hr />
+    
+
+
+  <div class="pb-2 text-gray-500">
+    <span class="font-bold">
+      
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Calendar</title><rect fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" x="48" y="80" width="416" height="384" rx="48"/><circle cx="296" cy="232" r="24"/><circle cx="376" cy="232" r="24"/><circle cx="296" cy="312" r="24"/><circle cx="376" cy="312" r="24"/><circle cx="136" cy="312" r="24"/><circle cx="216" cy="312" r="24"/><circle cx="136" cy="392" r="24"/><circle cx="216" cy="392" r="24"/><circle cx="296" cy="392" r="24"/><path fill="none" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" stroke-linecap="round" d="M128 48v32M384 48v32"/><path fill="none" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M464 160H48"/></svg>
+    </span>
+  
+
+
+      Posted:
+    </span>
+    
+    <time class="dt-published" datetime="2022-09-19 00:00:00 &#43;0000 UTC">
+      <a class="u-url" href="../../blog/091922-economy/">September 19, 2022</a>
+    </time>
+  </div>
+  
+
+
+    
+    
+      <div class="pb-2 text-gray-500">
+        <span class="font-bold">
+          
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Person</title><path fill="none" d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+    </span>
+  
+
+
+          Posted By:
+        </span>
+        <a rel="author" class="p-author h-card" href="../../about"
+          >Vivian Nguyen
+          
+            
+            <img
+              class="u-photo hidden"
+              src="../../images/index_hud5b3ec7adeb56dfdc58fb2c348ec5240_451035_200x200_fit_q75_h2_box_3.webp"
+              width="200"
+              height="200"
+              alt="Vivian Nguyen"
+            />
+          </a
+        >
+      </div>
+    
+    
+      <div class="pb-2 text-gray-500">
+        <span class="font-bold">
+          
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Folder Open</title><path fill="none" d="M64 192v-72a40 40 0 0140-40h75.89a40 40 0 0122.19 6.72l27.84 18.56a40 40 0 0022.19 6.72H408a40 40 0 0140 40v40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" d="M479.9 226.55L463.68 392a40 40 0 01-39.93 40H88.25a40 40 0 01-39.93-40L32.1 226.55A32 32 0 0164 192h384.1a32 32 0 0131.8 34.55z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    </span>
+  
+
+
+          Categories:
+        </span>
+        
+          
+          <a
+            href="../../categories/election-analytics"
+            class="p-category"
+            >Election Analytics</a
+          >
+      </div>
+    
+    
+      <div class="pb-2 text-gray-500">
+        <span class="font-bold">
+          
+
+
+  
+    <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Pricetags</title><path fill="none" d="M403.29 32H280.36a14.46 14.46 0 00-10.2 4.2L24.4 281.9a28.85 28.85 0 000 40.7l117 117a28.86 28.86 0 0040.71 0L427.8 194a14.46 14.46 0 004.2-10.2v-123A28.66 28.66 0 00403.29 32z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" d="M352 144a32 32 0 1132-32 32 32 0 01-32 32z"/><path fill="none" d="M230 480l262-262a13.81 13.81 0 004-10V80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    </span>
+  
+
+
+          Tags:
+        </span>
+        
+          <a
+            href="../../tags/economy"
+            class="
+            rounded-md 
+            text-base 
+            border 
+            border-gray-300 
+            hover:bg-gray-100 
+            w-1/2 
+            p-1 
+            items-center 
+            justify-center 
+            no-underline
+            text-gray-500"
+            >economy</a
+          >
+          <a
+            href="../../tags/incumbent"
+            class="
+            rounded-md 
+            text-base 
+            border 
+            border-gray-300 
+            hover:bg-gray-100 
+            w-1/2 
+            p-1 
+            items-center 
+            justify-center 
+            no-underline
+            text-gray-500"
+            >incumbent</a
+          >
+          <a
+            href="../../tags/national-model"
+            class="
+            rounded-md 
+            text-base 
+            border 
+            border-gray-300 
+            hover:bg-gray-100 
+            w-1/2 
+            p-1 
+            items-center 
+            justify-center 
+            no-underline
+            text-gray-500"
+            >national model</a
+          >
+      </div>
+    
+    <hr />
+  </article>
+  
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+  <script
+      data-isso="https://comments.exmaple.com/"
+      data-isso-id="thread-id"
+      data-isso-css="true"
+      data-isso-lang="en"
+      data-isso-reply-to-self="true"
+      data-isso-require-author="true"
+      data-isso-require-email="false"
+      data-isso-avatar="true"
+      data-isso-avatar-bg=""
+      src="https://comments.example.com/js/embed.min.js">
+  </script>
+  <noscript
+    >Please enable JavaScript to view the comments powered by
+    <a href="https://posativ.org/isso/">Isso</a>.</noscript
+  >
+  <div>
+    <section id="isso-thread"></section>
+  </div>
+
+
+</div>
+
+
+    </main>
+<footer
+  class="bottom-0 w-full bg-gray-200 dark:bg-black p-4 text-xs text-center text-gray-700 dark:text-gray-200"
+>
+  <p>
+    made with
+    <a href="https://gohugo.io" class="underline hover:text-accent-400">Hugo</a>
+    and
+    <a href="https://tailwindcss.com" class="underline hover:text-accent-400"
+      >TailwindCSS</a
+    >
+  </p>
+  <p class="footer-copyright">
+    Vivian Nguyen 2024
+  </p>
+  <div class="hidden"></div>
+  
+    <div class="h-card hidden">
+  <p>
+    
+    
+    <a class="u-url" href="../../">Vivian Nguyen</a>
+    created by
+    
+      
+      <img
+        class="u-photo"
+        src="../../images/index_hud5b3ec7adeb56dfdc58fb2c348ec5240_451035_200x200_fit_q75_h2_box_3.webp"
+        width="200"
+        height="200"
+        alt="Vivian Nguyen"
+      />
+    <span class="p-name" rel="me"
+      >Vivian Nguyen</span
+    >
+    
+    (<span class="u-pronoun">he</span>/<span class="u-pronoun">him</span> pronouns, also known as <span class="p-nickname">Vivian</span> some places)
+    
+    in
+    
+     <span class="p-locality">Cambridge</span>,
+    
+     <span class="p-region">Boston</span>,
+    
+     <span class="p-country-name">United States</span>.
+    
+  </p>
+  
+</div>
+
+  
+</footer>
+
+  
+  
+
+  
+  
+
+  
+    <script src="../../js/bundle.min.2fada14b944debc1e3dfaa1a285d7faabeadb55081bdccfd9c74dbe6fae43c8d.js" integrity="sha256-L62hS5RN68Hj36oaKF1/qr6ttVCBvcz9nHTb5vrkPI0="></script>
+
+
+</body>
+</html>

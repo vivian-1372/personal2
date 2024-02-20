@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recommendation on Vivian Nguyen</title>
+    <link>/tags/recommendation/</link>
+    <description>Recent content in recommendation on Vivian Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/recommendation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spotify Playlist Producer</title>
+      <link>/blog/052022-playlist-producer/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/052022-playlist-producer/</guid>
+      <description>Link The Spotify Playlist Producer For project files, see the GitHub repository.
+Link Overview Hello! This is my &amp;ldquo;Playlist Producer.&amp;rdquo; I developed this project over the course of several weeks in my Spring 2022 semester as a sophomore. At this point, I have newly rediscovered my love for computational thinking and problem solving, and want to apply my Python skills to a fun problem I&amp;rsquo;ve had for a while &amp;ndash; my lack of new music.</description>
+    </item>
+    
+  </channel>
+</rss>

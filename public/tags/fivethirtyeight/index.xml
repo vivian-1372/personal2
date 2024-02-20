@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FiveThirtyEight on Vivian Nguyen</title>
+    <link>/tags/fivethirtyeight/</link>
+    <description>Recent content in FiveThirtyEight on Vivian Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Mon, 03 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/fivethirtyeight/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expert Ratings</title>
+      <link>/blog/100322-incumbency/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/100322-incumbency/</guid>
+      <description>Link The Plan This Week Last week, I took a close look at The Economist’s and FiveThirtyEight’s House forecast models and their methodology, and compared them. With these models in mind, I updated my own 2022 midterm forecast and model to include national economic conditions (Gross Domestic Product, Real Disposable Income, and unemployment), generic ballot polls (partisan preference), and the midterm-president’s-party effect.
+One of the most interesting differences between the two models was that FiveThirtyEight explicitly mentions their use of expert forecasts (Cook Political Report, Inside Elections, and Sabato’s Crystal Ball) to predict future elections.</description>
+    </item>
+    
+    <item>
+      <title>Polls and Forecasters</title>
+      <link>/blog/092622-polls-pollsters/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/092622-polls-pollsters/</guid>
+      <description>Link The Plan This Week So far, I&amp;rsquo;ve confirmed that the president’s party often performs poorly in the midterm House elections and that a combination of fundamental (Q8, national) economic variables, including GDP growth %, RDI change %, unemployment rate, and absolute GDP growth, are somewhat able to predict House incumbent party vote share. These two findings have led me to forecast that the incumbent (President and House) Democrats will lose House vote share in November.</description>
+    </item>
+    
+  </channel>
+</rss>

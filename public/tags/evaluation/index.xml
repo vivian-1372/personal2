@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>evaluation on Vivian Nguyen</title>
+    <link>/tags/evaluation/</link>
+    <description>Recent content in evaluation on Vivian Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Tue, 22 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/evaluation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post-Election Reflection</title>
+      <link>/blog/112222-post-election-reflection/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/112222-post-election-reflection/</guid>
+      <description>Link Overview This week, I am revisiting my final models and predictions from week 8 and reflecting on how they performed, and speculating about why, now that we’re about 2 weeks post-Election Day now.
+Link My Final Model and Predictions Link National Model My national modeling addressed two main goals: predicting the 2022 House incumbent party two-party vote share and predicting the 2022 House incumbent party seat count. My main model consisted of a linear regression built off of 4 predictors (GDP absolute growth, generic ballot support for the House incumbent party, whether or not it was a midterm year for the incumbent/President’s party, and the congressional approval rate).</description>
+    </item>
+    
+  </channel>
+</rss>

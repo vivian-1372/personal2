@@ -7,7 +7,114 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
-    <lastBuildDate>Thu, 16 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final Remarks</title>
+      <link>/blog/120622-final-remarks/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/120622-final-remarks/</guid>
+      <description>Link The Plan Today I couldn&amp;rsquo;t end this series without saying a few final remarks, so here we are! It&amp;rsquo;s been a long and rewarding journey of learning and adapting, so I wanted to summarize a few of the top lessons learned, give thanks, and look forward.
+Link Final Remarks I&amp;rsquo;ve learned a lot this semester, and much of it has been through guided trial-and-error. Looking back, I feel very proud of all the work I&amp;rsquo;ve done, and how accurate my models were, especially given that they were my first real shots at forecasting U.</description>
+    </item>
+    
+    <item>
+      <title>Campaign Narrative</title>
+      <link>/blog/120722-campaign-narrative/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/120722-campaign-narrative/</guid>
+      <description>Link Overview After months of studying the midterm elections at the national and district levels, we&amp;rsquo;ve gained a more complete understanding of the factors that predict incumbent party performance in terms of two-party vote share and seat wins. This week, I will take a deep dive into Washington&amp;rsquo;s 8th congressional district to carefully analyze how its House race went after a brief review of the general characteristics of the district (including geography, demographics, candidates, electoral history) and its forecasted outcome per my models and those of the experts.</description>
+    </item>
+    
+    <item>
+      <title>Post-Election Reflection</title>
+      <link>/blog/112222-post-election-reflection/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/112222-post-election-reflection/</guid>
+      <description>Link Overview This week, I am revisiting my final models and predictions from week 8 and reflecting on how they performed, and speculating about why, now that we’re about 2 weeks post-Election Day now.
+Link My Final Model and Predictions Link National Model My national modeling addressed two main goals: predicting the 2022 House incumbent party two-party vote share and predicting the 2022 House incumbent party seat count. My main model consisted of a linear regression built off of 4 predictors (GDP absolute growth, generic ballot support for the House incumbent party, whether or not it was a midterm year for the incumbent/President’s party, and the congressional approval rate).</description>
+    </item>
+    
+    <item>
+      <title>Final Prediction</title>
+      <link>/blog/110722-final-prediction/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/110722-final-prediction/</guid>
+      <description>Link Overview Welcome to the final election forecasting update of this election cycle! It’s been a long journey of election research and data analysis, but alas, we are one day out from Election Day. In today’s blog post, I am going to present my final predictions in detail, which will involve model formulas, model descriptions, model coefficients, model interpretations, model validation, prediction confidence intervals, and visualizations for my national and district-level models.</description>
+    </item>
+    
+    <item>
+      <title>The Ground Game</title>
+      <link>/blog/101922-ground-game/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/101922-ground-game/</guid>
+      <description>This is blog post #6 in a series of analytical posts about the 2022 midterms. This post is affiliated with Gov 1347: Election Analytics, a course at Harvard University in the Government department.
+Link The Plan This Week Last week, I investigated the impact of television advertisements on party success at the district level, and found a small, arguably negligible, effect. This week, I delve into the other major side of campaign activities – “the ground game.</description>
+    </item>
+    
+    <item>
+      <title>The Air War</title>
+      <link>/blog/101022-air-war/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/101022-air-war/</guid>
+      <description>Link The Plan This Week We are about 4 weeks out from Election Day, and thus far I&amp;rsquo;ve created a national forecasting model that incorporates national economic conditions (Gross Domestic Product, Real Disposable Income, and unemployment), generic ballot polling (partisan preference), and the midterm-president&amp;rsquo;s-party effect. I&amp;rsquo;ve also created a simple district-level forecasting model based on expert ratings ([Cook Political Report](https://www.cookpolitical.com/ratings/house-race -ratings), Inside Elections, and Sabato&amp;rsquo;s Crystal Ball).
+This week I plan to explore the impact of advertisements (volume, cost) on the outcomes of congressional races.</description>
+    </item>
+    
+    <item>
+      <title>Expert Ratings</title>
+      <link>/blog/100322-incumbency/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/100322-incumbency/</guid>
+      <description>Link The Plan This Week Last week, I took a close look at The Economist’s and FiveThirtyEight’s House forecast models and their methodology, and compared them. With these models in mind, I updated my own 2022 midterm forecast and model to include national economic conditions (Gross Domestic Product, Real Disposable Income, and unemployment), generic ballot polls (partisan preference), and the midterm-president’s-party effect.
+One of the most interesting differences between the two models was that FiveThirtyEight explicitly mentions their use of expert forecasts (Cook Political Report, Inside Elections, and Sabato’s Crystal Ball) to predict future elections.</description>
+    </item>
+    
+    <item>
+      <title>Polls and Forecasters</title>
+      <link>/blog/092622-polls-pollsters/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/092622-polls-pollsters/</guid>
+      <description>Link The Plan This Week So far, I&amp;rsquo;ve confirmed that the president’s party often performs poorly in the midterm House elections and that a combination of fundamental (Q8, national) economic variables, including GDP growth %, RDI change %, unemployment rate, and absolute GDP growth, are somewhat able to predict House incumbent party vote share. These two findings have led me to forecast that the incumbent (President and House) Democrats will lose House vote share in November.</description>
+    </item>
+    
+    <item>
+      <title>Economic Predictors of House Incumbent Vote Share</title>
+      <link>/blog/091922-economy/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091922-economy/</guid>
+      <description>Link Introduction Last week, my dive into the 2018 election results and swings confirmed that the president&amp;rsquo;s party often performs poorly in the midterms. By the 2020 House elections, the president&amp;rsquo;s party gained some of its vote share back.
+This week, I temporarily move away from cyclical election study to delve into one of the most promising ways to predict election outcomes &amp;ndash; economics. Retrospective voting, a model of voting in which voters elect leaders based off of recent experiences and judgment of welfare under incumbent leadership, dictates that for many elections, the results largely rely on the state of the economy in the last quarter of the election cycle (Achen &amp;amp; Bartels, 2017).</description>
+    </item>
+    
+    <item>
+      <title>Analyzing House Vote Share Swings of 2018 and 2020</title>
+      <link>/blog/091522-vote-shares/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091522-vote-shares/</guid>
+      <description>Link Introduction This is blog post #1 in a series of analytical posts about the 2022 midterms. This post is affiliated with Gov 1347: Election Analytics, a course at Harvard University in the Government department.
+Over the next several weeks, I will be exploring previous U.S. elections data to analyze voter trends and behavior. This exploration will aide in my ultimate goal of forecasting the 2022 midterm election results. For this first blog, I focus on the House vote shares from 2016 to 2020 and how they changed over the course of Donald J.</description>
+    </item>
+    
+    <item>
+      <title>Spotify Playlist Producer</title>
+      <link>/blog/052022-playlist-producer/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/052022-playlist-producer/</guid>
+      <description>Link The Spotify Playlist Producer For project files, see the GitHub repository.
+Link Overview Hello! This is my &amp;ldquo;Playlist Producer.&amp;rdquo; I developed this project over the course of several weeks in my Spring 2022 semester as a sophomore. At this point, I have newly rediscovered my love for computational thinking and problem solving, and want to apply my Python skills to a fun problem I&amp;rsquo;ve had for a while &amp;ndash; my lack of new music.</description>
+    </item>
+    
     <item>
       <title>COVID-19 Concern and Citizen Trust in Different Institutions</title>
       <link>/blog/121621-covid-trust/</link>
@@ -16,6 +123,16 @@
       <guid>/blog/121621-covid-trust/</guid>
       <description>Link Overview February 2022
 Note: I wrote this paper for Government 1372: Political Psychology, a data science in the Harvard Government department. At this point, I was gaining proficiency in R, but had not developed a sophisticated understanding of statistics and causal inference yet. That said, this paper was one of my first large data science projects, and was driven by my newfound passion for applying data science techniques and programming experience to (what I deem to be) relevant real-world problems.</description>
+    </item>
+    
+    <item>
+      <title>Cooperation Strategies</title>
+      <link>/blog/091621-cooperation-strategies/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091621-cooperation-strategies/</guid>
+      <description>Link Introduction For this week’s blog post, I look at the performance of my six selected cooperation strategies when played in a repetitive, round-robin style tournament and what the results may suggest about cooperation between humans. I select appeaser, foolMeOnce, majorityScrounger, retaliater, titfortat, and winStayer as playing strategies and set them against each other over 100 repeated rounds each.
+Link Data Details *File Name: \texttt{prisoners_dilemma_data.csv} *Source: Shiny app developed by Simon Garnier and edited slightly by the TF team.</description>
     </item>
     
     <item>

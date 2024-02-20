@@ -7,7 +7,259 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
-    <lastBuildDate>Thu, 16 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>thank you</title>
+      <link>/tags/thank-you/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/thank-you/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>campaign</title>
+      <link>/tags/campaign/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/campaign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kim Schrier</title>
+      <link>/tags/kim-schrier/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/kim-schrier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matt Larkin</title>
+      <link>/tags/matt-larkin/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/matt-larkin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>messaging</title>
+      <link>/tags/messaging/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/messaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Washington 8</title>
+      <link>/tags/washington-8/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/washington-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>accuracy</title>
+      <link>/tags/accuracy/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/accuracy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>evaluation</title>
+      <link>/tags/evaluation/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/evaluation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post-election</title>
+      <link>/tags/post-election/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/post-election/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reflection</title>
+      <link>/tags/reflection/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reflection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>district models</title>
+      <link>/tags/district-models/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/district-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>final model</title>
+      <link>/tags/final-model/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/final-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>national model</title>
+      <link>/tags/national-model/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/national-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>field office</title>
+      <link>/tags/field-office/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/field-office/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Obama</title>
+      <link>/tags/obama/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/obama/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>advertisements</title>
+      <link>/tags/advertisements/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/advertisements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TV</title>
+      <link>/tags/tv/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>expert ratings</title>
+      <link>/tags/expert-ratings/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/expert-ratings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FiveThirtyEight</title>
+      <link>/tags/fivethirtyeight/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fivethirtyeight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polls</title>
+      <link>/tags/polls/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/polls/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Economist</title>
+      <link>/tags/the-economist/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/the-economist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>economy</title>
+      <link>/tags/economy/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/economy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>incumbent</title>
+      <link>/tags/incumbent/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/incumbent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swing state</title>
+      <link>/tags/swing-state/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/swing-state/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>/tags/music/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>playlist</title>
+      <link>/tags/playlist/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/playlist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recommendation</title>
+      <link>/tags/recommendation/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/recommendation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spotify</title>
+      <link>/tags/spotify/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/spotify/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>CDC</title>
       <link>/tags/cdc/</link>
@@ -59,6 +311,24 @@
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/vaccine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cooperation</title>
+      <link>/tags/cooperation/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cooperation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game theory</title>
+      <link>/tags/game-theory/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/game-theory/</guid>
       <description></description>
     </item>
     

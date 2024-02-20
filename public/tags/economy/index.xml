@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>economy on Vivian Nguyen</title>
+    <link>/tags/economy/</link>
+    <description>Recent content in economy on Vivian Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/economy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Economic Predictors of House Incumbent Vote Share</title>
+      <link>/blog/091922-economy/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091922-economy/</guid>
+      <description>Link Introduction Last week, my dive into the 2018 election results and swings confirmed that the president&amp;rsquo;s party often performs poorly in the midterms. By the 2020 House elections, the president&amp;rsquo;s party gained some of its vote share back.
+This week, I temporarily move away from cyclical election study to delve into one of the most promising ways to predict election outcomes &amp;ndash; economics. Retrospective voting, a model of voting in which voters elect leaders based off of recent experiences and judgment of welfare under incumbent leadership, dictates that for many elections, the results largely rely on the state of the economy in the last quarter of the election cycle (Achen &amp;amp; Bartels, 2017).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>advertisements on Vivian Nguyen</title>
+    <link>/tags/advertisements/</link>
+    <description>Recent content in advertisements on Vivian Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/advertisements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Air War</title>
+      <link>/blog/101022-air-war/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/101022-air-war/</guid>
+      <description>Link The Plan This Week We are about 4 weeks out from Election Day, and thus far I&amp;rsquo;ve created a national forecasting model that incorporates national economic conditions (Gross Domestic Product, Real Disposable Income, and unemployment), generic ballot polling (partisan preference), and the midterm-president&amp;rsquo;s-party effect. I&amp;rsquo;ve also created a simple district-level forecasting model based on expert ratings ([Cook Political Report](https://www.cookpolitical.com/ratings/house-race -ratings), Inside Elections, and Sabato&amp;rsquo;s Crystal Ball).
+This week I plan to explore the impact of advertisements (volume, cost) on the outcomes of congressional races.</description>
+    </item>
+    
+  </channel>
+</rss>

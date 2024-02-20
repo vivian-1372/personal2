@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cooperation on Vivian Nguyen</title>
+    <link>/tags/cooperation/</link>
+    <description>Recent content in cooperation on Vivian Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cooperation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cooperation Strategies</title>
+      <link>/blog/091621-cooperation-strategies/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/091621-cooperation-strategies/</guid>
+      <description>Link Introduction For this week’s blog post, I look at the performance of my six selected cooperation strategies when played in a repetitive, round-robin style tournament and what the results may suggest about cooperation between humans. I select appeaser, foolMeOnce, majorityScrounger, retaliater, titfortat, and winStayer as playing strategies and set them against each other over 100 repeated rounds each.
+Link Data Details *File Name: \texttt{prisoners_dilemma_data.csv} *Source: Shiny app developed by Simon Garnier and edited slightly by the TF team.</description>
+    </item>
+    
+  </channel>
+</rss>
