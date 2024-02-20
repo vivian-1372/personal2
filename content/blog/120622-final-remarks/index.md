@@ -9,10 +9,7 @@ tags: ["thank you"]
 # The Plan Today
 I couldn't end this series without saying a few final remarks, so here we are! It's been a long and rewarding journey of learning and adapting, so I wanted to summarize a few of the top lessons learned, give thanks, and look forward.  
 
-<div class="figure">
-<img src="election_analytics_2022.png" alt="Source: The Economist and [Lucy Ding](https://dinglucy.github.io/election-analytics/)" width="95%" />
-<p class="caption">Figure 1: Source: The Economist and [Lucy Ding](https://dinglucy.github.io/election-analytics/)</p>
-</div>
+![Source: The Economist and Lucy Ding](election_analytics_2022.png)
 
 # Final Remarks
 I've learned a lot this semester, and much of it has been through guided trial-and-error. Looking back, I feel very proud of all the work I've done, and how accurate my models were, especially given that they were my first real shots at forecasting U.S. elections. Looking forward to the predictive challenges to come in 2024, and generally, what else data science can tell us about government and people. 

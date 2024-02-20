@@ -1,6 +1,3 @@
----title: "COVID-19 Concern and Citizen Trust in Different Institutions"author: "Vivian Nguyen"date: "2021-12-16"tags: ["COVID", "trust", "CDC", "partisanship", "politicization", "vaccine"]categories:   - Political Psychology
----
-
 ## Overview
 
 February 2022
@@ -172,27 +169,45 @@ government, (3) trust in the state government, (4) trust in the CDC, (5)
 and trust in national public health officials. These questions were
 asked as follows:
 
--   “How concerned are you, if at all, about the coronavirus or COVID-19
-    outbreak?”
+1.) “How concerned are you, if at all, about the coronavirus or COVID-19
+outbreak?”
 
-1.  Extremely concerned (b) Very concerned (c) Somewhat concerned
-2.  Not very concerned (e) Not at all concerned
+(a.) Extremely concerned
 
--   “How much trust do you have in \[the federal government\] to provide
-    you with accurate information about coronavirus or COVID-19?”
+(b.) Very concerned
 
-1.  A great deal (b) A fair amount
-2.  Not very much (d) None at all
+(c.) Somewhat concerned
 
--   “How much trust do you have in \[your state government\] to provide
-    you with accurate information about coronavirus or COVID-19?” Same
-    answer options as above
--   “How much trust do you have in \[the Centers for Disease Control, or
-    CDC\] to provide you with accurate information about coronavirus or
-    COVID-19?” Same answer options as above
--   “How much trust do you have in \[national public health officials\]
-    to provide you with accurate information about coronavirus or
-    COVID-19?” Same answer options as above
+(d.) Not very concerned
+
+(e.) Not at all concerned
+
+2.) “How much trust do you have in \[the federal government\] to provide
+you with accurate information about coronavirus or COVID-19?”
+
+(a.) A great deal
+
+(b.) A fair amount
+
+(c.) Not very much
+
+(d.) None at all
+
+3.) “How much trust do you have in \[your state government\] to provide
+you with accurate information about coronavirus or COVID-19?”
+
+Same answer options as above
+
+4.) “How much trust do you have in \[the Centers for Disease Control, or
+CDC\] to provide you with accurate information about coronavirus or
+COVID-19?”
+
+Same answer options as above
+
+5.) “How much trust do you have in \[national public health officials\]
+to provide you with accurate information about coronavirus or COVID-19?”
+
+Same answer options as above
 
 We also used the responses to demographic questions as control
 variables, including respondent age, education level, gender, income,

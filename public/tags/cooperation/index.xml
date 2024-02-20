@@ -15,7 +15,8 @@
       
       <guid>/blog/091621-cooperation-strategies/</guid>
       <description>Link Introduction For this week’s blog post, I look at the performance of my six selected cooperation strategies when played in a repetitive, round-robin style tournament and what the results may suggest about cooperation between humans. I select appeaser, foolMeOnce, majorityScrounger, retaliater, titfortat, and winStayer as playing strategies and set them against each other over 100 repeated rounds each.
-Link Data Details *File Name: \texttt{prisoners_dilemma_data.csv} *Source: Shiny app developed by Simon Garnier and edited slightly by the TF team.</description>
+Link Data Details *File Name: prisoners_dilemma_data.csv
+*Source: Shiny app developed by Simon Garnier and edited slightly by the TF team.</description>
     </item>
     
   </channel>

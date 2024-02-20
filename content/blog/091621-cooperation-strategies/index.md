@@ -5,6 +5,8 @@ date: "2021-09-16"
 categories: 
   - Political Psychology
 tags: ["game theory", "cooperation"]
+cover:
+  src: cover.jpg
 ---
 
 
@@ -13,7 +15,8 @@ tags: ["game theory", "cooperation"]
 For this week’s blog post, I look at the performance of my six selected cooperation strategies when played in a repetitive, round-robin style tournament and what the results may suggest about cooperation between humans. I select *appeaser*, *foolMeOnce*, *majorityScrounger*, *retaliater*, *titfortat*, and *winStayer* as playing strategies and set them against each other over 100 repeated rounds each.
 
 # Data Details
-*File Name: \texttt{prisoners\_dilemma\_data.csv}
+*File Name: prisoners_dilemma_data.csv
+
 *Source: Shiny app developed by [Simon Garnier](https://github.com/swarm-lab/axelRod/tree/master/R) and edited slightly by the TF team.
 
 # Finding a Winning Strategy
@@ -21,14 +24,14 @@ I focus on two questions about the results of this tournament: how my winning st
 
 My most successful strategy was *foolMeOnce*, with 2 wins in 5 games and the highest average score against its opponents – 333.6. 
 
-![Best Strategies](Sorted Average Scores.png)
+![Best Strategies](Sorted_Average_Scores.png)
 
 It won against *majorityScrounger* and *winStayer*, and tied with *appeaser*, *retaliater*, and *titfortat*. Below is a bar chart that depicts how many points *foolMeOnce* scored against each, on average.
 
-![foolMeOnce Chart](fMO Chart.png)
+![foolMeOnce Chart](fMO_Chart.png)
 
 How did the other strategies perform overall? I created a grouped bar chart to compare their performances in their matchups. 
-![All Strategies Compared](All Strats Chart.png)
+![All Strategies Compared](All_Strats_Chart.png)
 
 
 # Why *foolMeOnce*?
@@ -52,6 +55,7 @@ This insight into cooperation/defection strategy may be extended into the politi
 ---
 
 **References**
+
 [1] Axelrod (1980)
 
 [2] Miguel Aramendia, L. Ruiz, and Federico Valenciano (2004)

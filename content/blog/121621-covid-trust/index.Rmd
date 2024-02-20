@@ -43,17 +43,40 @@ To test these hypotheses, Lucy and I used data from the Axios/Ipsos Coronavirus 
 
 Each week, the poll collected responses about Americans’ behaviors, risk perceptions, attitudes about COVID-19. A few questions were of interest to me, regarding (1) COVID-19 concern, (2) trust in the federal government, (3) trust in the state government, (4) trust in the CDC, (5) and trust in national public health officials. These questions were asked as follows:
 
-- “How concerned are you, if at all, about the coronavirus or COVID-19 outbreak?” 
-(a) Extremely concerned            (b) Very concerned                (c) Somewhat concerned 
-(d) Not very concerned             (e) Not at all concerned
-- “How much trust do you have in [the federal government] to provide you with accurate information about coronavirus or COVID-19?” 
-(a) A great deal                   (b) A fair amount
-(c) Not very much                  (d) None at all
-- “How much trust do you have in [your state government] to provide you with accurate information about coronavirus or COVID-19?” 
+1.) “How concerned are you, if at all, about the coronavirus or COVID-19 outbreak?” 
+
+(a.) Extremely concerned
+
+(b.) Very concerned
+
+(c.) Somewhat concerned
+
+(d.) Not very concerned
+
+(e.) Not at all concerned
+
+
+2.) “How much trust do you have in [the federal government] to provide you with accurate information about coronavirus or COVID-19?” 
+
+(a.) A great deal    
+
+(b.) A fair amount
+
+(c.) Not very much                  
+
+(d.) None at all
+
+
+3.) “How much trust do you have in [your state government] to provide you with accurate information about coronavirus or COVID-19?” 
+
 Same answer options as above
-- “How much trust do you have in [the Centers for Disease Control, or CDC] to provide you with accurate information about coronavirus or COVID-19?”
+
+4.) “How much trust do you have in [the Centers for Disease Control, or CDC] to provide you with accurate information about coronavirus or COVID-19?”
+
 Same answer options as above
-- “How much trust do you have in [national public health officials] to provide you with accurate information about coronavirus or COVID-19?”
+
+5.) “How much trust do you have in [national public health officials] to provide you with accurate information about coronavirus or COVID-19?”
+
 Same answer options as above
 
 We also used the responses to demographic questions as control variables, including respondent age, education level, gender, income, and party identification. 
