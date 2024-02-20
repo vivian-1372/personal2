@@ -2,18 +2,17 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Richard Hendriks",
-    "label": "Programmer",
+    "label": "Data Scientist",
     "image": "",
-    "email": "richard.hendriks@mail.com",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
+    "email": "viviannguyen@college.harvard.edu",
+    "url": "http://vivian-1372.github.io/personal2",
     "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "10 Cowperthwaite Street",
+      "postalCode": "MA 02138",
+      "city": "Cambridge",
       "countryCode": "US",
-      "region": "California"
+      "region": "Massachusetts"
     },
     "profiles": [
       {

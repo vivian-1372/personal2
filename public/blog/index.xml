@@ -116,6 +116,16 @@ Link Overview Hello! This is my &amp;ldquo;Playlist Producer.&amp;rdquo; I devel
     </item>
     
     <item>
+      <title>COVID-19 Concern and Citizen Trust in Different Institutions</title>
+      <link>/blog/121621-covid-trust/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/121621-covid-trust/</guid>
+      <description>Link Overview February 2022
+Note: I wrote this paper for Government 1372: Political Psychology, a data science in the Harvard Government department. At this point, I was gaining proficiency in R, but had not developed a sophisticated understanding of statistics and causal inference yet. That said, this paper was one of my first large data science projects, and was driven by my newfound passion for applying data science techniques and programming experience to (what I deem to be) relevant real-world problems.</description>
+    </item>
+    
+    <item>
       <title>Cooperation Strategies</title>
       <link>/blog/091621-cooperation-strategies/</link>
       <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
@@ -136,16 +146,6 @@ Link Data Details *File Name: prisoners_dilemma_data.csv
 Link Data Details *File Name: bias_data.csv
 *Source: These data are from last week&amp;rsquo;s in-class survey.
 Variable Name Variable Description id Unique ID for each respondent rare_disease_prog From the rare disease problem, the program chosen by the respondent (either &amp;lsquo;Program A&amp;rsquo; or &amp;lsquo;Program B&amp;rsquo;) rare_disease_cond From the rare disease problem, the framing condition to which the respondent was assigned (either &amp;lsquo;save&amp;rsquo; or &amp;lsquo;die&amp;rsquo;) linda From the Linda problem, the option the respondent thought most probable, either &amp;ldquo;teller&amp;rdquo; or &amp;ldquo;teller and feminist&amp;rdquo; cab From the cab problem, the respondent&amp;rsquo;s estimate of the probability the car was blue gender One of &amp;ldquo;man&amp;rdquo;, &amp;ldquo;woman&amp;rdquo;, &amp;ldquo;non-binary&amp;rdquo;, or &amp;ldquo;other&amp;rdquo; year Year at Harvard college_stats Indicator for whether or not the respondent has taken a college-level statistics course Link The Linda Problem &amp;ldquo;Linda is 31 years old, single, outspoken, and very bright.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/blog/121621-covid-trust/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/121621-covid-trust/</guid>
-      <description>Link Overview February 2022
-Note: I wrote this paper for Government 1372: Political Psychology, a data science in the Harvard Government department. At this point, I was gaining proficiency in R, but had not developed a sophisticated understanding of statistics and causal inference yet. That said, this paper was one of my first large data science projects, and was driven by my newfound passion for applying data science techniques and programming experience to (what I deem to be) relevant real-world problems.</description>
     </item>
     
   </channel>
