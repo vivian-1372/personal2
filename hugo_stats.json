@@ -6,6 +6,7 @@
       "body",
       "br",
       "circle",
+      "code",
       "div",
       "em",
       "figcaption",
@@ -301,24 +302,33 @@
       "z-10"
     ],
     "ids": [
+      "abstract",
       "amens-nitentior-vires",
       "bouncing-arrow",
+      "conclusion",
       "data-details",
       "extension",
       "featured-post",
       "fig:pie",
       "haec-posuitque-altorum",
       "hide-button",
+      "hypotheses",
       "including-plots",
       "introduction",
       "isso-thread",
       "iunone-theseius-abstulit-morabar-mersis",
+      "methods",
       "nav-menu",
       "nav-toggle",
+      "overview",
       "r-markdown",
+      "results",
       "show-button",
+      "the-axiosipsos-coronavirus-index",
       "the-cab-problem",
-      "the-linda-problem"
+      "the-linda-problem",
+      "trust-as-an-outcome",
+      "trust-in-various-institutions"
     ]
   }
 }
