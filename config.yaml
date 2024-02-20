@@ -81,6 +81,8 @@ menu:
       url: https://github.com/vivian-1372
     - name: LinkedIn
       url: https://linkedin.com/in/vivian-nha-nguyen/
+    - name: GMail
+      url: mailto:viviannguyen@college.harvard.edu
 build:
   writeStats: yes
 markup:

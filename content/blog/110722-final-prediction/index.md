@@ -167,11 +167,11 @@ These models have an average R-squared of 0.50 and average adjusted R-squared of
 
 Below are my predictions for the 94 most competitive districts, using expert ratings and incumbency:
 
-<div id="aewqqfhknk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="itizwfuwdt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
-&#10;#aewqqfhknk .gt_table {
+&#10;#itizwfuwdt .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -195,7 +195,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_heading {
+&#10;#itizwfuwdt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -206,11 +206,11 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_caption {
+&#10;#itizwfuwdt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#aewqqfhknk .gt_title {
+&#10;#itizwfuwdt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -221,7 +221,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#aewqqfhknk .gt_subtitle {
+&#10;#itizwfuwdt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -232,12 +232,12 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#aewqqfhknk .gt_bottom_border {
+&#10;#itizwfuwdt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_col_headings {
+&#10;#itizwfuwdt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -251,7 +251,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_col_heading {
+&#10;#itizwfuwdt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -270,7 +270,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#aewqqfhknk .gt_column_spanner_outer {
+&#10;#itizwfuwdt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -281,13 +281,13 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#aewqqfhknk .gt_column_spanner_outer:first-child {
+&#10;#itizwfuwdt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#aewqqfhknk .gt_column_spanner_outer:last-child {
+&#10;#itizwfuwdt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#aewqqfhknk .gt_column_spanner {
+&#10;#itizwfuwdt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -298,7 +298,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   display: inline-block;
   width: 100%;
 }
-&#10;#aewqqfhknk .gt_group_heading {
+&#10;#itizwfuwdt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -323,7 +323,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   vertical-align: middle;
   text-align: left;
 }
-&#10;#aewqqfhknk .gt_empty_group_heading {
+&#10;#itizwfuwdt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -337,13 +337,13 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#aewqqfhknk .gt_from_md > :first-child {
+&#10;#itizwfuwdt .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#aewqqfhknk .gt_from_md > :last-child {
+&#10;#itizwfuwdt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#aewqqfhknk .gt_row {
+&#10;#itizwfuwdt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -361,7 +361,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#aewqqfhknk .gt_stub {
+&#10;#itizwfuwdt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -373,7 +373,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#aewqqfhknk .gt_stub_row_group {
+&#10;#itizwfuwdt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -386,10 +386,10 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#aewqqfhknk .gt_row_group_first td {
+&#10;#itizwfuwdt .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#aewqqfhknk .gt_summary_row {
+&#10;#itizwfuwdt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -398,14 +398,14 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#aewqqfhknk .gt_first_summary_row {
+&#10;#itizwfuwdt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_first_summary_row.thick {
+&#10;#itizwfuwdt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#aewqqfhknk .gt_last_summary_row {
+&#10;#itizwfuwdt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -414,7 +414,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_grand_summary_row {
+&#10;#itizwfuwdt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -423,7 +423,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#aewqqfhknk .gt_first_grand_summary_row {
+&#10;#itizwfuwdt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -432,10 +432,10 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_striped {
+&#10;#itizwfuwdt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#aewqqfhknk .gt_table_body {
+&#10;#itizwfuwdt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -443,7 +443,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_footnotes {
+&#10;#itizwfuwdt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -456,7 +456,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_footnote {
+&#10;#itizwfuwdt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -464,7 +464,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#aewqqfhknk .gt_sourcenotes {
+&#10;#itizwfuwdt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -477,58 +477,58 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#aewqqfhknk .gt_sourcenote {
+&#10;#itizwfuwdt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#aewqqfhknk .gt_left {
+&#10;#itizwfuwdt .gt_left {
   text-align: left;
 }
-&#10;#aewqqfhknk .gt_center {
+&#10;#itizwfuwdt .gt_center {
   text-align: center;
 }
-&#10;#aewqqfhknk .gt_right {
+&#10;#itizwfuwdt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#aewqqfhknk .gt_font_normal {
+&#10;#itizwfuwdt .gt_font_normal {
   font-weight: normal;
 }
-&#10;#aewqqfhknk .gt_font_bold {
+&#10;#itizwfuwdt .gt_font_bold {
   font-weight: bold;
 }
-&#10;#aewqqfhknk .gt_font_italic {
+&#10;#itizwfuwdt .gt_font_italic {
   font-style: italic;
 }
-&#10;#aewqqfhknk .gt_super {
+&#10;#itizwfuwdt .gt_super {
   font-size: 65%;
 }
-&#10;#aewqqfhknk .gt_footnote_marks {
+&#10;#itizwfuwdt .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
-&#10;#aewqqfhknk .gt_asterisk {
+&#10;#itizwfuwdt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#aewqqfhknk .gt_indent_1 {
+&#10;#itizwfuwdt .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#aewqqfhknk .gt_indent_2 {
+&#10;#itizwfuwdt .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#aewqqfhknk .gt_indent_3 {
+&#10;#itizwfuwdt .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#aewqqfhknk .gt_indent_4 {
+&#10;#itizwfuwdt .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#aewqqfhknk .gt_indent_5 {
+&#10;#itizwfuwdt .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1131,11 +1131,11 @@ Both my national and district-level work has indicated that the Republicans are 
 
 It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
 
-<div id="rkpauxejmf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bakmcxebdp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
-&#10;#rkpauxejmf .gt_table {
+&#10;#bakmcxebdp .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1159,7 +1159,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_heading {
+&#10;#bakmcxebdp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1170,11 +1170,11 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_caption {
+&#10;#bakmcxebdp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#rkpauxejmf .gt_title {
+&#10;#bakmcxebdp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1185,7 +1185,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#rkpauxejmf .gt_subtitle {
+&#10;#bakmcxebdp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1196,12 +1196,12 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#rkpauxejmf .gt_bottom_border {
+&#10;#bakmcxebdp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_col_headings {
+&#10;#bakmcxebdp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1215,7 +1215,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_col_heading {
+&#10;#bakmcxebdp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1234,7 +1234,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#rkpauxejmf .gt_column_spanner_outer {
+&#10;#bakmcxebdp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1245,13 +1245,13 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#rkpauxejmf .gt_column_spanner_outer:first-child {
+&#10;#bakmcxebdp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#rkpauxejmf .gt_column_spanner_outer:last-child {
+&#10;#bakmcxebdp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#rkpauxejmf .gt_column_spanner {
+&#10;#bakmcxebdp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1262,7 +1262,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   display: inline-block;
   width: 100%;
 }
-&#10;#rkpauxejmf .gt_group_heading {
+&#10;#bakmcxebdp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1287,7 +1287,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   vertical-align: middle;
   text-align: left;
 }
-&#10;#rkpauxejmf .gt_empty_group_heading {
+&#10;#bakmcxebdp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1301,13 +1301,13 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#rkpauxejmf .gt_from_md > :first-child {
+&#10;#bakmcxebdp .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#rkpauxejmf .gt_from_md > :last-child {
+&#10;#bakmcxebdp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#rkpauxejmf .gt_row {
+&#10;#bakmcxebdp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1325,7 +1325,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#rkpauxejmf .gt_stub {
+&#10;#bakmcxebdp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1337,7 +1337,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#rkpauxejmf .gt_stub_row_group {
+&#10;#bakmcxebdp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1350,10 +1350,10 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#rkpauxejmf .gt_row_group_first td {
+&#10;#bakmcxebdp .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#rkpauxejmf .gt_summary_row {
+&#10;#bakmcxebdp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1362,14 +1362,14 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#rkpauxejmf .gt_first_summary_row {
+&#10;#bakmcxebdp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_first_summary_row.thick {
+&#10;#bakmcxebdp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#rkpauxejmf .gt_last_summary_row {
+&#10;#bakmcxebdp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1378,7 +1378,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_grand_summary_row {
+&#10;#bakmcxebdp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1387,7 +1387,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#rkpauxejmf .gt_first_grand_summary_row {
+&#10;#bakmcxebdp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1396,10 +1396,10 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_striped {
+&#10;#bakmcxebdp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#rkpauxejmf .gt_table_body {
+&#10;#bakmcxebdp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1407,7 +1407,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_footnotes {
+&#10;#bakmcxebdp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1420,7 +1420,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_footnote {
+&#10;#bakmcxebdp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1428,7 +1428,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#rkpauxejmf .gt_sourcenotes {
+&#10;#bakmcxebdp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1441,58 +1441,58 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#rkpauxejmf .gt_sourcenote {
+&#10;#bakmcxebdp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#rkpauxejmf .gt_left {
+&#10;#bakmcxebdp .gt_left {
   text-align: left;
 }
-&#10;#rkpauxejmf .gt_center {
+&#10;#bakmcxebdp .gt_center {
   text-align: center;
 }
-&#10;#rkpauxejmf .gt_right {
+&#10;#bakmcxebdp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#rkpauxejmf .gt_font_normal {
+&#10;#bakmcxebdp .gt_font_normal {
   font-weight: normal;
 }
-&#10;#rkpauxejmf .gt_font_bold {
+&#10;#bakmcxebdp .gt_font_bold {
   font-weight: bold;
 }
-&#10;#rkpauxejmf .gt_font_italic {
+&#10;#bakmcxebdp .gt_font_italic {
   font-style: italic;
 }
-&#10;#rkpauxejmf .gt_super {
+&#10;#bakmcxebdp .gt_super {
   font-size: 65%;
 }
-&#10;#rkpauxejmf .gt_footnote_marks {
+&#10;#bakmcxebdp .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
-&#10;#rkpauxejmf .gt_asterisk {
+&#10;#bakmcxebdp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#rkpauxejmf .gt_indent_1 {
+&#10;#bakmcxebdp .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#rkpauxejmf .gt_indent_2 {
+&#10;#bakmcxebdp .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#rkpauxejmf .gt_indent_3 {
+&#10;#bakmcxebdp .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#rkpauxejmf .gt_indent_4 {
+&#10;#bakmcxebdp .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#rkpauxejmf .gt_indent_5 {
+&#10;#bakmcxebdp .gt_indent_5 {
   text-indent: 25px;
 }
 </style>

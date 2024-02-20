@@ -7,7 +7,7 @@
     "email": "viviannguyen@college.harvard.edu",
     "phone": "",
     "url": "https://vivian-1372.github.io/personal2/",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "summary": "Vivian hails from the Jersey Shore, and now resides in Boston. She is set to graduate from Harvard University as a double major in Statistics and Government in May 2024. Over the last four years, she discovered her passion for data science and has applied it in her coursework and extracurricular pursuits at consulting firms and Harvard's library. Her main interests lie in predictive modeling, generative AI, and recommendation algorithms. Her favorite realms of exploration are digital media, politics, sports (go Celtics!), chess, and music.",
     "location": {
       "address": "10 Cowperthwaite Street",
       "postalCode": "MA 02138",
@@ -17,9 +17,9 @@
     },
     "profiles": [
       {
-        "network": "",
+        "network": "GMail",
         "username": "",
-        "url": ""
+        "url": "mailto:viviannguyen@college.harvard.edu"
       }
     ]
   },
@@ -27,55 +27,85 @@
     {
       "name": "Harvard Data Analytics Group",
       "location": "Cambridge, MA",
-      "description": "Awesome compression company",
-      "position": "Associate",
+      "description": "",
+      "position": "Data Associate",
       "url": "https://harvardanalytics.org/",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "startDate": "2022-09-01",
+      "endDate": "2024-05-31",
+      "summary": "",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Constructed logistic classification and NLP analysis models in R and Python to identify and analyze reputable users, influencers, and misinformation spreaders on #MedTwitter. Final classification models achieved 86% accuracy",
+        "Established ETL pipeline that continually ingests user data, extracts features, and applies classification with Twitter’s API",
+        "Built secure, automatic, and filterable dashboard for  ($1B in revenue) nonprofit to display donor advanced sentiment analytics, pain points, most frequently-used keywords, and key themes identified from NLP analysis of call transcripts",
+        "Wrote advanced SQL queries to optimize data retrieval, improving real-time dashboard update speeds by 20%" 
       ]
     },
     {
-      "name": "Pied Piper TEST VIVIAN",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "name": "Trilogy Interactive (Digital Marketing Firm)",
+      "location": "Washington, D.C.",
+      "description": "",
+      "position": "Data Science Fellow",
+      "url": "https://www.trilogyinteractive.com/",
+      "startDate": "2023-06-01",
+      "endDate": "2023-08-20",
+      "summary": "",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Engineered EOD autopilot long-term reporting pipeline for campaign donations, decreasing production time by 20%",
+        "Implemented an automated hourly campaign performance tracking system, raising first-hour revenue prediction accuracy by 70% and overall projection accuracy by 60% across 40 client projects",
+        "Built reformatting script for daily data refreshes in JavaScript and integrated it into master production pipeline",
+        "Developed a robust NLP analysis framework for analyzing source codes, messages, and fundraising performance database"
+      ]
+    },
+    {
+      "name": "Harvard Geospatial Library",
+      "location": "Cambridge, MA",
+      "description": "",
+      "position": "Data Fellow",
+      "url": "https://library.harvard.edu/services-tools/harvard-geospatial-library",
+      "startDate": "2023-05-01",
+      "endDate": "2023-08-20",
+      "summary": "",
+      "highlights": [
+        "Wrangled and standardized JSON metadata, including feature engineering with Google API to obtain granular spatial data for complete recordkeeping. Updated documentation to be readable by both data librarians and library audience",
+        "Co-authored data guide with analysis and visualizations of 11,000+ datasets for Harvard Map Collection"        
+      ]
+    },
+    {
+      "name": "APIAVote",
+      "location": "Washington, D.C.",
+      "description": "",
+      "position": "Civil Tech Intern",
+      "url": "https://apiavote.org/",
+      "startDate": "2022-06-01",
+      "endDate": "2022-08-20",
+      "summary": "",
+      "highlights": [
+        "Scraped and aggregated voting and school sites to build election directory and collegiate outreach databases",
+        "Utilized Excel and R to analyze disaggregated 2022 Asian American Voter Survey data; presented results in press briefing"          
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        ""
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
+      "institution": "Harvard University",
+      "url": "https://www.harvard.edu/",
+      "area": "Statistics & Government",
       "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
+      "startDate": "2020-09-01",
+      "endDate": "2024-05-24",
       "score": "4.0",
       "courses": [
         "DB1101 - Basic SQL",
@@ -85,10 +115,10 @@
   ],
   "awards": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "title": "Charles Bonaparte Prize",
+      "date": "2023-07-01",
+      "awarder": "Harvard Government Department",
+      "summary": "An award to be made 'at the end of the junior year to that member of the class concentrating in government who, without regard to financial need, has the highest academic distinction in that subject.'"
     }
   ],
   "publications": [
@@ -105,18 +135,33 @@
       "name": "Data Analysis",
       "level": "",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Python",
+        "R",
+        "Excel",
+        "Visualization"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Modeling",
+      "level": "",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Neural Networks",
+        "Trees and RF",
+        "SVM",
+        "Boosting",
+        "Regression",
+        "PCA",
+        "NLP"
+      ]
+    },
+    {
+      "name": "Statistics",
+      "level": "",
+      "keywords": [
+        "Survey Statistics",
+        "Probability",
+        "Causual Inference",
+        "Generalized Linear Models"
       ]
     }
   ],
@@ -128,10 +173,10 @@
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "",
+        ""
       ]
     }
   ],
@@ -143,21 +188,60 @@
   ],
   "projects": [
     {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
+      "name": "AI Screenwriting: Multi-Agent ChatGPT Model",
+      "description":   "",
       "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+        "Designed and implemented a multi-agent model to generate, critique, and refine movie pitches using OpenAI and IMDb APIs and NLP.",
+        "Pitches are assessed via cinematic and marketability criteria and optimized iteratively.",
+        "1 pitch is now in development."
       ],
       "keywords": [
-        "GoogleMaps", "Chrome Extension", "Javascript"
+        "ChatGPT", "IMBb", "Python"
       ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "missdirection.example.com",
+      "startDate": "2023-12-01",
+      "endDate": "2024-05-24",
+      "url": "",
       "roles": [
-        "Team lead", "Designer"
+        "Team lead"
+      ],
+      "entity": "Smoogle",
+      "type": "application"
+    },
+    {
+      "name": "2022 Midterm House Forecast",
+      "description":   "",
+      "highlights": [ 
+        "Forecasted 435 House races with multivariate regression models in R.",
+        "Incumbent two-party vote share predicted within 0.4 p.p., incumbent seat  count within 4 seats, and 83% of all district races and 92% of non-toss-up races correctly called."
+      ],
+      "keywords": [
+        "Election", "Forecasting", "R"
+      ],
+      "startDate": "2022-09-01",
+      "endDate": "2022-12-01",
+      "url": "https://vivian-1372.github.io/personal2/categories/election-analytics/",
+      "roles": [
+        "Lead"
+      ],
+      "entity": "Smoogle",
+      "type": "application"
+    },
+    {
+      "name": "Predicting Undergraduate Dining Hall Occupancy",
+      "description":   "",
+      "highlights": [
+        "Data cleaning, EDA, feature engineering, and model (time series, F, boosting) tuning, testing, and selection in Python.",
+        "Utilized LASSO regularization for feature selection.",
+        "Final dining swipes per dining hall per meal were predicted with 81% accuracy."
+      ],
+      "keywords": [
+        "Comparative", "Modeling", "Python"
+      ],
+      "startDate": "2022-10-01",
+      "endDate": "2022-12-15",
+      "url": "",
+      "roles": [
+        "Lead"
       ],
       "entity": "Smoogle",
       "type": "application"
