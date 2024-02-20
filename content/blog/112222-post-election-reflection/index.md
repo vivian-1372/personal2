@@ -33,11 +33,11 @@ A quick glance tells us that my national model’s national vote share predictio
 
 The table below provides a more detailed report on the accuracy of my national and district-level models, with measures of root mean squared error (RMSE), number of miscalled districts, classification accuracy, and the average margin by which the predicted vote shares were inaccurate.
 
-<div id="ipzveaatmu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="xgdbvlqoxs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
-&#10;#ipzveaatmu .gt_table {
+&#10;#xgdbvlqoxs .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -61,7 +61,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_heading {
+&#10;#xgdbvlqoxs .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -72,11 +72,11 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_caption {
+&#10;#xgdbvlqoxs .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#ipzveaatmu .gt_title {
+&#10;#xgdbvlqoxs .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -87,7 +87,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#ipzveaatmu .gt_subtitle {
+&#10;#xgdbvlqoxs .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -98,12 +98,12 @@ The table below provides a more detailed report on the accuracy of my national a
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#ipzveaatmu .gt_bottom_border {
+&#10;#xgdbvlqoxs .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_col_headings {
+&#10;#xgdbvlqoxs .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -117,7 +117,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_col_heading {
+&#10;#xgdbvlqoxs .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -136,7 +136,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#ipzveaatmu .gt_column_spanner_outer {
+&#10;#xgdbvlqoxs .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -147,13 +147,13 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#ipzveaatmu .gt_column_spanner_outer:first-child {
+&#10;#xgdbvlqoxs .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#ipzveaatmu .gt_column_spanner_outer:last-child {
+&#10;#xgdbvlqoxs .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#ipzveaatmu .gt_column_spanner {
+&#10;#xgdbvlqoxs .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -164,7 +164,7 @@ The table below provides a more detailed report on the accuracy of my national a
   display: inline-block;
   width: 100%;
 }
-&#10;#ipzveaatmu .gt_group_heading {
+&#10;#xgdbvlqoxs .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -189,7 +189,7 @@ The table below provides a more detailed report on the accuracy of my national a
   vertical-align: middle;
   text-align: left;
 }
-&#10;#ipzveaatmu .gt_empty_group_heading {
+&#10;#xgdbvlqoxs .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -203,13 +203,13 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#ipzveaatmu .gt_from_md > :first-child {
+&#10;#xgdbvlqoxs .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#ipzveaatmu .gt_from_md > :last-child {
+&#10;#xgdbvlqoxs .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#ipzveaatmu .gt_row {
+&#10;#xgdbvlqoxs .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -227,7 +227,7 @@ The table below provides a more detailed report on the accuracy of my national a
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#ipzveaatmu .gt_stub {
+&#10;#xgdbvlqoxs .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -239,7 +239,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#ipzveaatmu .gt_stub_row_group {
+&#10;#xgdbvlqoxs .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -252,10 +252,10 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#ipzveaatmu .gt_row_group_first td {
+&#10;#xgdbvlqoxs .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#ipzveaatmu .gt_summary_row {
+&#10;#xgdbvlqoxs .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -264,14 +264,14 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#ipzveaatmu .gt_first_summary_row {
+&#10;#xgdbvlqoxs .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_first_summary_row.thick {
+&#10;#xgdbvlqoxs .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#ipzveaatmu .gt_last_summary_row {
+&#10;#xgdbvlqoxs .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -280,7 +280,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_grand_summary_row {
+&#10;#xgdbvlqoxs .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -289,7 +289,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#ipzveaatmu .gt_first_grand_summary_row {
+&#10;#xgdbvlqoxs .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -298,10 +298,10 @@ The table below provides a more detailed report on the accuracy of my national a
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_striped {
+&#10;#xgdbvlqoxs .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#ipzveaatmu .gt_table_body {
+&#10;#xgdbvlqoxs .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -309,7 +309,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_footnotes {
+&#10;#xgdbvlqoxs .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -322,7 +322,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_footnote {
+&#10;#xgdbvlqoxs .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -330,7 +330,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#ipzveaatmu .gt_sourcenotes {
+&#10;#xgdbvlqoxs .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -343,58 +343,58 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#ipzveaatmu .gt_sourcenote {
+&#10;#xgdbvlqoxs .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#ipzveaatmu .gt_left {
+&#10;#xgdbvlqoxs .gt_left {
   text-align: left;
 }
-&#10;#ipzveaatmu .gt_center {
+&#10;#xgdbvlqoxs .gt_center {
   text-align: center;
 }
-&#10;#ipzveaatmu .gt_right {
+&#10;#xgdbvlqoxs .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#ipzveaatmu .gt_font_normal {
+&#10;#xgdbvlqoxs .gt_font_normal {
   font-weight: normal;
 }
-&#10;#ipzveaatmu .gt_font_bold {
+&#10;#xgdbvlqoxs .gt_font_bold {
   font-weight: bold;
 }
-&#10;#ipzveaatmu .gt_font_italic {
+&#10;#xgdbvlqoxs .gt_font_italic {
   font-style: italic;
 }
-&#10;#ipzveaatmu .gt_super {
+&#10;#xgdbvlqoxs .gt_super {
   font-size: 65%;
 }
-&#10;#ipzveaatmu .gt_footnote_marks {
+&#10;#xgdbvlqoxs .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
-&#10;#ipzveaatmu .gt_asterisk {
+&#10;#xgdbvlqoxs .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#ipzveaatmu .gt_indent_1 {
+&#10;#xgdbvlqoxs .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#ipzveaatmu .gt_indent_2 {
+&#10;#xgdbvlqoxs .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#ipzveaatmu .gt_indent_3 {
+&#10;#xgdbvlqoxs .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#ipzveaatmu .gt_indent_4 {
+&#10;#xgdbvlqoxs .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#ipzveaatmu .gt_indent_5 {
+&#10;#xgdbvlqoxs .gt_indent_5 {
   text-indent: 25px;
 }
 </style>

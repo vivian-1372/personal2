@@ -11,10 +11,8 @@ tags: ["Washington 8", "Kim Schrier", "Matt Larkin", "campaign", "messaging"]
 After months of studying the midterm elections at the national and district levels, we've gained a more complete understanding of the factors that predict incumbent party performance in terms of two-party vote share and seat wins. This week, I will take a deep dive into Washington's 8th congressional district to carefully analyze how its House race went after a brief review of the general characteristics of the district (including geography, demographics, candidates, electoral history) and its forecasted outcome per my models and those of the experts. I will then evaluate the forecasts' accuracies and the race's actual outcome, commenting on the campaigns ran and how they may have contributed to the outcome deviations from the forecasts.  
 
 # Washington's 8th Congressional District 
+![Washington 8. Source: CNN](WA_8.png)
 
-```{r echo = FALSE, out.width = "95%", fig.cap = 'Source: CNN.'}
-knitr::include_graphics("WA_8.png")
-```
 ## Fast Facts 
 Directly east of Seattle and Tacoma (where I was born!), Washington's 8th congressional district is located in western Washington, covering most of King, Pierce, Chelan, Douglas, Snohomish, and Kittitas Counties. The region has a [Mediterranean climate](https://www.britannica.com/science/Mediterranean-climate#:~:text=Mediterranean%20climate%2C%20major%20climate%20type,western%20sides%20of%20the%20continents), with mild summers and moist winters (Choose Washington). Its geography is defined by the Cascade Mountain range, being home of the Mt. Baker National Forest, Wenatchee National Forest, Wenatchee Mountains, and part of the Mount Rainier National Park.        
 
@@ -22,18 +20,14 @@ As of the 2021 American Community Survey, WA-8 has a population of over 780,000 
 
 WA-8 was created in the post-1980-Census redistricting cycle. Until 2003, it was mostly comprised of King and Pierce Counties. Between 2003 and 2013, the district was grew larger with the addition of Samarnish County. From 2013 until 2020, the district grew even larger with Chelan and Kittatas being added. CNN tracked the most recent changes after the 2020 redistricting cycle, shown below. 
 
-```{r echo = FALSE, out.width = "95%", fig.cap = 'Source: CNN.'}
-knitr::include_graphics("WA_redistricting.png")
-```
+![WA Redistricting. Source: CNN](WA_redistricting.png)
 
 Up until 2018, the district was a Republican stronghold for the House despite consistently electing a Democratic nominee for presidency since 1992 (Ballotpedia). In 2018, Kim Schrier (D) became the first Democrat to represent WA-8 after winning the race for the newly open seat against Republican Dino Rossi. Today, the district is described as "Washington's swingiest congressional district" (Seattle Times).
 
 ## 2022 Campaigns
 For the 2022 midterms, WA-8 saw two major campaigns from Democratic incumbent Kim Schrier and Republican challenger Matt Larkin. 
 
-```{r echo = FALSE, out.width = "95%", fig.cap = 'Source: New York Times'}
-knitr::include_graphics("WA_campaigns.png")
-```
+![WA Campaigns. Source: New York Times](WA_campaigns.png)
 
 ### Background and Key Issues
 Prior to serving in the House of Representatives, Kim Schrier, M.D., graduated from U.C. Berkeley with a degree in Astrophysics and had a successful career as a pediatrician in the Puget Sound region ([House site](https://schrier.house.gov/) and [campaign site](https://www.drkimschrier.com/)). For her 2022 re-election bid, she emphasized her efforts to increase affordable, quality healthcare, to protect women's rights, and to build a "middle-class centered economy." Whilst labeling herself a "pragmatic centrist" and emphasizing her ability to work with both parties, Schrier champions women's rights to abortion and reproductive care, as well as clean energy policies (Seattle Times). 
