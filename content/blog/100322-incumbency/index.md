@@ -21,17 +21,15 @@ To conduct this week’s investigation, I compare the actual results of the 2018
 
 Below is the actual (D) vote share in the 2018 midterm elections at the district level.
 
-<figure>
-<img src="actual_2018_results.png" alt="Actual 2018 (D) Vote Share." />
-<figcaption aria-hidden="true">Actual 2018 (D) Vote Share.</figcaption>
-</figure>
+![](actual_2018_results.png)
 
 Most of the map is either red or white, which seems to suggest that most district vote share results were in the Republican party’s favor or close between the two major parties. However, it is important to remember that for the House of Representatives, land is not proportional to representation, population is. Also, the president’s party often performs poorly in midterm years, as discussed in detail in the [first blog post](https://vivian-1372.github.io/Election-Analytics/post/2022-09-15-analzying-2020-house-vote-shares/) of this series. Those two reminders considered, it then makes sense that the Democrats actually took the House in the 2018 midterms, with 235 seats going to Democrats and 199 going to Republicans (New York Times 2018).
 
 ## Expert Predictions for Vote Share in 2018, by District
 
 Below are the expert ratings for the 2018 midterms, which I call predictions because the ratings reflect what the experts believed would happen in each congressional district election. Red areas represent high expert confidence that the region will go to Republicans, while blue areas represent high confidence that the region will go to Democrats.
-![Expert Ratings for 2018 Midterms.](expert_ratings_2018.png)
+
+![](expert_ratings_2018.png)
 
 ## Evaluation
 
@@ -47,11 +45,11 @@ My national model remains the same as it was last week, and I cannot fully exten
 
 Below are my models’ predictions for the major vote share taken by Democrats for the 94 congressional districts where the expert ratings were available.
 
-<div id="sgncqhunpq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="tuxfuufsth" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
-&#10;#sgncqhunpq .gt_table {
+&#10;#tuxfuufsth .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -75,7 +73,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_heading {
+&#10;#tuxfuufsth .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -86,11 +84,11 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_caption {
+&#10;#tuxfuufsth .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#sgncqhunpq .gt_title {
+&#10;#tuxfuufsth .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -101,7 +99,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#sgncqhunpq .gt_subtitle {
+&#10;#tuxfuufsth .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -112,12 +110,12 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#sgncqhunpq .gt_bottom_border {
+&#10;#tuxfuufsth .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_col_headings {
+&#10;#tuxfuufsth .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -131,7 +129,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_col_heading {
+&#10;#tuxfuufsth .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -150,7 +148,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#sgncqhunpq .gt_column_spanner_outer {
+&#10;#tuxfuufsth .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -161,13 +159,13 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#sgncqhunpq .gt_column_spanner_outer:first-child {
+&#10;#tuxfuufsth .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#sgncqhunpq .gt_column_spanner_outer:last-child {
+&#10;#tuxfuufsth .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#sgncqhunpq .gt_column_spanner {
+&#10;#tuxfuufsth .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -178,7 +176,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   display: inline-block;
   width: 100%;
 }
-&#10;#sgncqhunpq .gt_group_heading {
+&#10;#tuxfuufsth .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -203,7 +201,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   vertical-align: middle;
   text-align: left;
 }
-&#10;#sgncqhunpq .gt_empty_group_heading {
+&#10;#tuxfuufsth .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -217,13 +215,13 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#sgncqhunpq .gt_from_md > :first-child {
+&#10;#tuxfuufsth .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#sgncqhunpq .gt_from_md > :last-child {
+&#10;#tuxfuufsth .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#sgncqhunpq .gt_row {
+&#10;#tuxfuufsth .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -241,7 +239,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#sgncqhunpq .gt_stub {
+&#10;#tuxfuufsth .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -253,7 +251,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#sgncqhunpq .gt_stub_row_group {
+&#10;#tuxfuufsth .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -266,10 +264,10 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#sgncqhunpq .gt_row_group_first td {
+&#10;#tuxfuufsth .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#sgncqhunpq .gt_summary_row {
+&#10;#tuxfuufsth .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -278,14 +276,14 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#sgncqhunpq .gt_first_summary_row {
+&#10;#tuxfuufsth .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_first_summary_row.thick {
+&#10;#tuxfuufsth .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#sgncqhunpq .gt_last_summary_row {
+&#10;#tuxfuufsth .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -294,7 +292,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_grand_summary_row {
+&#10;#tuxfuufsth .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -303,7 +301,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#sgncqhunpq .gt_first_grand_summary_row {
+&#10;#tuxfuufsth .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -312,10 +310,10 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_striped {
+&#10;#tuxfuufsth .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#sgncqhunpq .gt_table_body {
+&#10;#tuxfuufsth .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -323,7 +321,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_footnotes {
+&#10;#tuxfuufsth .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -336,7 +334,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_footnote {
+&#10;#tuxfuufsth .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -344,7 +342,7 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#sgncqhunpq .gt_sourcenotes {
+&#10;#tuxfuufsth .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -357,58 +355,58 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#sgncqhunpq .gt_sourcenote {
+&#10;#tuxfuufsth .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#sgncqhunpq .gt_left {
+&#10;#tuxfuufsth .gt_left {
   text-align: left;
 }
-&#10;#sgncqhunpq .gt_center {
+&#10;#tuxfuufsth .gt_center {
   text-align: center;
 }
-&#10;#sgncqhunpq .gt_right {
+&#10;#tuxfuufsth .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#sgncqhunpq .gt_font_normal {
+&#10;#tuxfuufsth .gt_font_normal {
   font-weight: normal;
 }
-&#10;#sgncqhunpq .gt_font_bold {
+&#10;#tuxfuufsth .gt_font_bold {
   font-weight: bold;
 }
-&#10;#sgncqhunpq .gt_font_italic {
+&#10;#tuxfuufsth .gt_font_italic {
   font-style: italic;
 }
-&#10;#sgncqhunpq .gt_super {
+&#10;#tuxfuufsth .gt_super {
   font-size: 65%;
 }
-&#10;#sgncqhunpq .gt_footnote_marks {
+&#10;#tuxfuufsth .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
-&#10;#sgncqhunpq .gt_asterisk {
+&#10;#tuxfuufsth .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#sgncqhunpq .gt_indent_1 {
+&#10;#tuxfuufsth .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#sgncqhunpq .gt_indent_2 {
+&#10;#tuxfuufsth .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#sgncqhunpq .gt_indent_3 {
+&#10;#tuxfuufsth .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#sgncqhunpq .gt_indent_4 {
+&#10;#tuxfuufsth .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#sgncqhunpq .gt_indent_5 {
+&#10;#tuxfuufsth .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -711,6 +709,15 @@ Below are my models’ predictions for the major vote share taken by Democrats f
   </tfoot>
   &#10;</table>
 </div>
+
+![](r1.png)
+![](r2.png)
+![](r3.png)
+![](r4.png)
+![](r5.png)
+![](r6.png)
+![](r7.png)
+![](r8.png)
 
 ------------------------------------------------------------------------
 

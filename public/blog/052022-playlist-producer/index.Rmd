@@ -9,9 +9,8 @@ tags: ["Spotify", "music", "playlist", "recommendation"]
  
 # The Spotify Playlist *Producer*
 For project files, see the [GitHub repository](https://github.com/vivian-1372/playlist-producer).
-```{r echo = FALSE, out.width = "95%", fig.cap = 'Source: AudioHype.'}
-knitr::include_graphics("spotify.png")
-```
+
+![Source: AudioHype](spotify.png)
 
 ## Overview
 Hello! This is my "Playlist *Producer*." I developed this project over the course of several weeks in my Spring 2022 semester as a sophomore. At this point, I have newly rediscovered my love for computational thinking and problem solving, and want to apply my Python skills to a fun problem I've had for a while -- my lack of new music. I am a Spotify loyalist, but I sometimes find that once I have exhausted my Daily Mix 1, I am in desperate need of more music to explore. So then, my motivating questions became: Can I get the same genre, but different (but not too different...) songs? Can I get the same artist vibe, but different (but not overly different...) artists? As I soon learned, personalization and recommendation are games of balance.

@@ -11,14 +11,7 @@ tags: ["national model", "final model", "district models"]
 
 Welcome to the final election forecasting update of this election cycle! It’s been a long journey of election research and data analysis, but alas, we are one day out from Election Day. In today’s blog post, I am going to present my final predictions in detail, which will involve model formulas, model descriptions, model coefficients, model interpretations, model validation, prediction confidence intervals, and visualizations for my national and district-level models.
 
-<div class="figure">
-
-<img src="election.png" alt="Source: The Economist." width="95%" />
-<p class="caption">
-Figure 1: Source: The Economist.
-</p>
-
-</div>
+![](election.png)
 
 # National Model
 
@@ -26,15 +19,7 @@ Starting in [week 2](https://vivian-1372.github.io/Election-Analytics/post/2022-
 
 The best iteration of my model is the most recent one, which includes only 4 predictors: absolute GDP growth (Quarter 8, the last of the election cycle), the average generic ballot support of the House incumbent party (weighted by recency of the poll), an indicator for whether or not the House incumbent party is also the president’s party during a midterm year, and the average congressional approval rate. Absolute GDP growth is the economic variable I chose to capture how voters reward and punish the incumbent House party, and it came about after multiple considerations of other economic variables like unemployment rate, GDP growth percentage, and RDI change percentage. Average generic ballot support of the party in control of the House, introduced in [week 3](https://vivian-1372.github.io/Election-Analytics/post/2022-09-26-polls-and-pollsters/), reflects how much the nation wants the currently-leading party to retain that congressional power. The binary indicator for `President's-Party-House-Incumbent-Midterm` is my attempt to capture the well-known fact that the president’s party consistently performs poorly in midterm elections, which I covered in [week 1](https://vivian-1372.github.io/Election-Analytics/post/2022-09-15-analzying-2020-house-vote-shares/). The indicator is equal to 1 if the party in control of the House happens to be the president’s party in a midterm year, and to 0 otherwise. Lastly, the average congressional approval rate was included because I believe it gives us a sense of how satisfied voters are with Congress, generally. This is distinct from the generic ballot support metric, with the former telling us how much voters like Congress’s performance, which (perhaps unintuitively) doesn’t match 1-to-1 with how much voters want the incumbent party to stay in power.
 
-<div class="figure">
-
-<img src="CA_GB.png" alt="Disconnect between Congressional Approval and Incumbent Generic Ballot." width="75%" />
-<p class="caption">
-Figure 2: Disconnect between Congressional Approval and Incumbent Generic Ballot.
-</p>
-
-</div>
-
+![Disconnect between Congressional Approval and Incumbent Generic Ballot](CA_GB.png)
 As shown above, generic ballot support for the incumbent party in the House doesn’t move with general approval of Congress! This was surprising to me at first, but was a good sign that I wasn’t introducing too much collinearity into my model by including both measures.
 
 ## Model Details
@@ -43,23 +28,13 @@ As shown above, generic ballot support for the incumbent party in the House does
 
 I wanted to use this model to predict both national incumbent two-party vote share and national incumbent seat count, so I came up with two final regression formulas that incorporated the aforementioned fundamental predictors.
 
-<figure>
-<img src="nat_VS_formula.png" alt="National Democratic Two-Party Vote Share Regression Formula." />
-<figcaption aria-hidden="true">National Democratic Two-Party Vote Share Regression Formula.</figcaption>
-</figure>
+![](nat_VS_formula.png)
 
 ### Vote Share Regression
 
 In modeling the incumbent party’s two-party vote share, which is the Democrat’s vote share this election, we get some interesting coefficients. See below for this model’s coefficient values, variable significance, and the model’s overall evaluation metrics (like R-squared and adjusted R-squared).
 
-<div class="figure">
-
-<img src="nat_VS_reg.png" alt="National Democratic Two-Party Vote Share Regression Output." width="75%" />
-<p class="caption">
-Figure 3: National Democratic Two-Party Vote Share Regression Output.
-</p>
-
-</div>
+![](nat_VS_reg.png)
 
 The small, but negative, coefficient attached to absolute GDP is rather unintuitive, but my hypothesis is that for GDP, voters respond to levels and relative change differently. Previous weeks’ work has shown that positive percentage change is associated with higher incumbent vote share, as we’d expect, but positive absolute change is negatively correlated with incumbent party vote share perhaps because voters slightly punish incumbents when they deem the absolute change is not “large enough.” For every additional billion dollars of GDP change between the 7th and 8th quarters, the incumbent party loses 0.014 percentage points.
 
@@ -73,32 +48,19 @@ I would like to quickly note my model’s final adjusted R-squared, 0.872, which
 
 ### Vote Share Validation
 
-<div class="figure">
-
-<img src="nat_VS_val.png" alt="National Democratic Two-Party Vote Share Model Validation." width="344" />
-<p class="caption">
-(#fig:vote share validation printout)National Democratic Two-Party Vote Share Model Validation.
-</p>
-
-</div>
+![](nat_VS_val.png)
 
 Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model. The distribution looks roughly normally distributed, with a mean a little below 0, tiny tails, and most residuals within \[-2, 2\].
 
 ### Seat Count Formula
 
 Next, I ran the same model again, but this time with incumbent party seat count as the response variable. Below are the regression formula and regression output for this model.
-![National Democratic Party Seat Count Regression Formula.](nat_S_formula.png)
+
+![](nat_S_formula.png)
 
 ### Seat Count Regression
 
-<div class="figure">
-
-<img src="nat_S_reg.png" alt="National Democratic Seat Count Regression Output." width="75%" />
-<p class="caption">
-Figure 4: National Democratic Seat Count Regression Output.
-</p>
-
-</div>
+![](nat_S_reg.png)
 
 The model coefficients of the seat count model have the same signs as those of the vote share model, but different magnitudes because of the switch from predicting vote share, which can only be in the interval \[0, 100\], to predicting seat count, which can be \[0, 435\]. It is really the sign of the coefficients that matter for interpretation, and since those haven’t changed, I will only briefly comment on this regression output.
 
@@ -106,14 +68,7 @@ It’s helpful to see the relationship between the president’s-party-incumbent
 
 ### Seat Count Validation
 
-<div class="figure">
-
-<img src="nat_S_val.png" alt="National Democratic Party Seat Count Model Validation." width="75%" />
-<p class="caption">
-(#fig:seat count validation printout)National Democratic Party Seat Count Model Validation.
-</p>
-
-</div>
+![](nat_S_val.png)
 
 Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model again, this time for prediction of incumbent seat count. The distribution looks roughly normally distributed, with a mean at around 0 and most residuals within \[-20, 20\]. Neither our vote share nor our seat count model seem to perform poorly when tested with out-of-sample data, so we may move forward with prediction now!
 
@@ -123,14 +78,7 @@ Using the two models above, and the newest data for the 2022 midterms, I predict
 
 The GDP data comes from [FRED](https://fred.stlouisfed.org/series/GDPC1), the generic ballot data comes from [FiveThirtyEight](https://projects.fivethirtyeight.com/polls/generic-ballot/), and the congressional approval numbers come from [Gallup](https://news.gallup.com/poll/1600/congress-public.aspx).
 
-<div class="figure">
-
-<img src="nat_model_viz.png" alt="435 Seats Up For Grabs." width="398" />
-<p class="caption">
-Figure 5: 435 Seats Up For Grabs.
-</p>
-
-</div>
+![](nat_model_viz.png)
 
 # District Models
 
@@ -143,22 +91,19 @@ Most expert ratings were pulled from Wikipedia’s election ratings pages for ea
 The main difference in variable selection between the competitive and non-competitive models boils down to the fact that naturally, there is a lot more coverage of the competitive ones, meaning more expert rating availability. Because of this, the competitive district models feature an average of about 7 expert ratings, whereas the non-competitive ones feature none.
 
 For the competitive districts, I used the following regression formula:
-![Competitive District Model Formula.](dist_formula.png)
+![](dist_formula.png)
 These models ended up with an average R-squared of 0.88 and average adjusted R-squared of 0.49.
 
 Developing models for the non-competitive models was a journey - over the weeks, I realized that good district-level data is hard to come by, and with Election Day drawing near, I felt there was a choice between building out a self-made model and building a highly predictive one to be made. In the end, I decided to go with the former, in the name of learning. The models then are fundamentals-based than the competitive ones, using the major vote share of the last Democrat candidate in addition to the incumbency of the current candidate.
 
-<figure>
-<img src="dist_NC_formula.png" alt="Non-competitive District Model Formula." />
-<figcaption aria-hidden="true">Non-competitive District Model Formula.</figcaption>
-</figure>
+![](dist_NC_formula.png)
 
 I chose to use these variables because House elections have historically favored incumbent candidates, and I believe that how the Democrat performed in each district in previous years can tell us a lot about how the Democratic candidate will perform this year.
 
-![Coefficients for Incumbent Variable.](dist_incumb_coef.png)
+![](dist_incumb_coef.png)
 The histogram above illustrates the coefficient values for the incumbent variable over the many non-competitive districts. The average coefficient value is a little under 16, and it indicates that on average, when a Democratic candidate is an incumbent, their vote share is expected to be about 16 points higher than had they not been an incumbent. This definitely tracks with what we know about the incumbency advantage for House members.
 
-![Coefficients for Last Democrat Vote Share Variable.](dist_VS_coef.png)
+![](dist_VS_coef.png)
 This histogram shows the coefficient values for the last Democrat’s vote share (in the previous election), and the mean is value is 0.36. The numerical interpretation of this one is a little confusing, but the main takeaway is that the vast majority of these coefficients are positive, indicating that the higher the last Democrat’s vote share, the higher we can expect this year’s Democratic vote share to be.
 
 These models have an average R-squared of 0.50 and average adjusted R-squared of 0.45.
@@ -167,11 +112,11 @@ These models have an average R-squared of 0.50 and average adjusted R-squared of
 
 Below are my predictions for the 94 most competitive districts, using expert ratings and incumbency:
 
-<div id="itizwfuwdt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="pameuymjvb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
-&#10;#itizwfuwdt .gt_table {
+&#10;#pameuymjvb .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -195,7 +140,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_heading {
+&#10;#pameuymjvb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -206,11 +151,11 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_caption {
+&#10;#pameuymjvb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#itizwfuwdt .gt_title {
+&#10;#pameuymjvb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -221,7 +166,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#itizwfuwdt .gt_subtitle {
+&#10;#pameuymjvb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -232,12 +177,12 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#itizwfuwdt .gt_bottom_border {
+&#10;#pameuymjvb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_col_headings {
+&#10;#pameuymjvb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -251,7 +196,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_col_heading {
+&#10;#pameuymjvb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -270,7 +215,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#itizwfuwdt .gt_column_spanner_outer {
+&#10;#pameuymjvb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -281,13 +226,13 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#itizwfuwdt .gt_column_spanner_outer:first-child {
+&#10;#pameuymjvb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#itizwfuwdt .gt_column_spanner_outer:last-child {
+&#10;#pameuymjvb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#itizwfuwdt .gt_column_spanner {
+&#10;#pameuymjvb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -298,7 +243,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   display: inline-block;
   width: 100%;
 }
-&#10;#itizwfuwdt .gt_group_heading {
+&#10;#pameuymjvb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -323,7 +268,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   vertical-align: middle;
   text-align: left;
 }
-&#10;#itizwfuwdt .gt_empty_group_heading {
+&#10;#pameuymjvb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -337,13 +282,13 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#itizwfuwdt .gt_from_md > :first-child {
+&#10;#pameuymjvb .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#itizwfuwdt .gt_from_md > :last-child {
+&#10;#pameuymjvb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#itizwfuwdt .gt_row {
+&#10;#pameuymjvb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -361,7 +306,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#itizwfuwdt .gt_stub {
+&#10;#pameuymjvb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -373,7 +318,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#itizwfuwdt .gt_stub_row_group {
+&#10;#pameuymjvb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -386,10 +331,10 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#itizwfuwdt .gt_row_group_first td {
+&#10;#pameuymjvb .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#itizwfuwdt .gt_summary_row {
+&#10;#pameuymjvb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -398,14 +343,14 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#itizwfuwdt .gt_first_summary_row {
+&#10;#pameuymjvb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_first_summary_row.thick {
+&#10;#pameuymjvb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#itizwfuwdt .gt_last_summary_row {
+&#10;#pameuymjvb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -414,7 +359,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_grand_summary_row {
+&#10;#pameuymjvb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -423,7 +368,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#itizwfuwdt .gt_first_grand_summary_row {
+&#10;#pameuymjvb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -432,10 +377,10 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_striped {
+&#10;#pameuymjvb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#itizwfuwdt .gt_table_body {
+&#10;#pameuymjvb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -443,7 +388,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_footnotes {
+&#10;#pameuymjvb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -456,7 +401,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_footnote {
+&#10;#pameuymjvb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -464,7 +409,7 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#itizwfuwdt .gt_sourcenotes {
+&#10;#pameuymjvb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -477,58 +422,58 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#itizwfuwdt .gt_sourcenote {
+&#10;#pameuymjvb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#itizwfuwdt .gt_left {
+&#10;#pameuymjvb .gt_left {
   text-align: left;
 }
-&#10;#itizwfuwdt .gt_center {
+&#10;#pameuymjvb .gt_center {
   text-align: center;
 }
-&#10;#itizwfuwdt .gt_right {
+&#10;#pameuymjvb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#itizwfuwdt .gt_font_normal {
+&#10;#pameuymjvb .gt_font_normal {
   font-weight: normal;
 }
-&#10;#itizwfuwdt .gt_font_bold {
+&#10;#pameuymjvb .gt_font_bold {
   font-weight: bold;
 }
-&#10;#itizwfuwdt .gt_font_italic {
+&#10;#pameuymjvb .gt_font_italic {
   font-style: italic;
 }
-&#10;#itizwfuwdt .gt_super {
+&#10;#pameuymjvb .gt_super {
   font-size: 65%;
 }
-&#10;#itizwfuwdt .gt_footnote_marks {
+&#10;#pameuymjvb .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
-&#10;#itizwfuwdt .gt_asterisk {
+&#10;#pameuymjvb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#itizwfuwdt .gt_indent_1 {
+&#10;#pameuymjvb .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#itizwfuwdt .gt_indent_2 {
+&#10;#pameuymjvb .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#itizwfuwdt .gt_indent_3 {
+&#10;#pameuymjvb .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#itizwfuwdt .gt_indent_4 {
+&#10;#pameuymjvb .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#itizwfuwdt .gt_indent_5 {
+&#10;#pameuymjvb .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1116,26 +1061,60 @@ Below are my predictions for the 94 most competitive districts, using expert rat
   </tfoot>
   &#10;</table>
 </div>
+
+![](r1.png)
+![](r2.png)
+![](r3.png)
+![](r4.png)
+![](r5.png)
+![](r6.png)
+![](r7.png)
+![](r8.png)
+
 And the non-competitive district predictions, using past election results and incumbency:
 
-<div class="figure">
-
-<img src="dist_viz.png" alt="Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly." width="361" />
-<p class="caption">
-(#fig:district model viz)Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly.
-</p>
-
-</div>
-
+![Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly](dist_viz.png)
 Both my national and district-level work has indicated that the Republicans are likely to win the House back once the votes have all been counted. We will see soon if these predictions are correct, and precisely how correct or incorrect they were. Below you can find the rest of the district predictions, complete with 95% confidence intervals.
 
 It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
 
-<div id="bakmcxebdp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+![](1.png)
+![](2.png)
+![](3.png)
+![](4.png)
+![](5.png)
+![](6.png)
+![](7.png)
+![](8.png)
+![](9.png)
+![](10.png)
+![](11.png)
+![](12.png)
+![](13.png)
+![](14.png)
+![](15.png)
+![](16.png)
+![](17.png)
+![](18.png)
+![](19.png)
+![](20.png)
+![](21.png)
+![](22.png)
+![](23.png)
+![](24.png)
+![](25.png)
+![](26.png)
+![](27.png)
+![](28.png)
+![](29.png)
+![](30.png)
+![](31.png)
+
+<div id="ulaymbvwmf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
-&#10;#bakmcxebdp .gt_table {
+&#10;#ulaymbvwmf .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1159,7 +1138,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_heading {
+&#10;#ulaymbvwmf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1170,11 +1149,11 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_caption {
+&#10;#ulaymbvwmf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#bakmcxebdp .gt_title {
+&#10;#ulaymbvwmf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1185,7 +1164,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#bakmcxebdp .gt_subtitle {
+&#10;#ulaymbvwmf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1196,12 +1175,12 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#bakmcxebdp .gt_bottom_border {
+&#10;#ulaymbvwmf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_col_headings {
+&#10;#ulaymbvwmf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1215,7 +1194,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_col_heading {
+&#10;#ulaymbvwmf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1234,7 +1213,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#bakmcxebdp .gt_column_spanner_outer {
+&#10;#ulaymbvwmf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1245,13 +1224,13 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#bakmcxebdp .gt_column_spanner_outer:first-child {
+&#10;#ulaymbvwmf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#bakmcxebdp .gt_column_spanner_outer:last-child {
+&#10;#ulaymbvwmf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#bakmcxebdp .gt_column_spanner {
+&#10;#ulaymbvwmf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1262,7 +1241,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   display: inline-block;
   width: 100%;
 }
-&#10;#bakmcxebdp .gt_group_heading {
+&#10;#ulaymbvwmf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1287,7 +1266,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   vertical-align: middle;
   text-align: left;
 }
-&#10;#bakmcxebdp .gt_empty_group_heading {
+&#10;#ulaymbvwmf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1301,13 +1280,13 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#bakmcxebdp .gt_from_md > :first-child {
+&#10;#ulaymbvwmf .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#bakmcxebdp .gt_from_md > :last-child {
+&#10;#ulaymbvwmf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#bakmcxebdp .gt_row {
+&#10;#ulaymbvwmf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1325,7 +1304,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#bakmcxebdp .gt_stub {
+&#10;#ulaymbvwmf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1337,7 +1316,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bakmcxebdp .gt_stub_row_group {
+&#10;#ulaymbvwmf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1350,10 +1329,10 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#bakmcxebdp .gt_row_group_first td {
+&#10;#ulaymbvwmf .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#bakmcxebdp .gt_summary_row {
+&#10;#ulaymbvwmf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1362,14 +1341,14 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bakmcxebdp .gt_first_summary_row {
+&#10;#ulaymbvwmf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_first_summary_row.thick {
+&#10;#ulaymbvwmf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#bakmcxebdp .gt_last_summary_row {
+&#10;#ulaymbvwmf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1378,7 +1357,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_grand_summary_row {
+&#10;#ulaymbvwmf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1387,7 +1366,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bakmcxebdp .gt_first_grand_summary_row {
+&#10;#ulaymbvwmf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1396,10 +1375,10 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_striped {
+&#10;#ulaymbvwmf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#bakmcxebdp .gt_table_body {
+&#10;#ulaymbvwmf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1407,7 +1386,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_footnotes {
+&#10;#ulaymbvwmf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1420,7 +1399,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_footnote {
+&#10;#ulaymbvwmf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1428,7 +1407,7 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bakmcxebdp .gt_sourcenotes {
+&#10;#ulaymbvwmf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1441,58 +1420,58 @@ It’s been a great 8 weeks, see you on the other side of the 2022 midterms!
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#bakmcxebdp .gt_sourcenote {
+&#10;#ulaymbvwmf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bakmcxebdp .gt_left {
+&#10;#ulaymbvwmf .gt_left {
   text-align: left;
 }
-&#10;#bakmcxebdp .gt_center {
+&#10;#ulaymbvwmf .gt_center {
   text-align: center;
 }
-&#10;#bakmcxebdp .gt_right {
+&#10;#ulaymbvwmf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#bakmcxebdp .gt_font_normal {
+&#10;#ulaymbvwmf .gt_font_normal {
   font-weight: normal;
 }
-&#10;#bakmcxebdp .gt_font_bold {
+&#10;#ulaymbvwmf .gt_font_bold {
   font-weight: bold;
 }
-&#10;#bakmcxebdp .gt_font_italic {
+&#10;#ulaymbvwmf .gt_font_italic {
   font-style: italic;
 }
-&#10;#bakmcxebdp .gt_super {
+&#10;#ulaymbvwmf .gt_super {
   font-size: 65%;
 }
-&#10;#bakmcxebdp .gt_footnote_marks {
+&#10;#ulaymbvwmf .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
-&#10;#bakmcxebdp .gt_asterisk {
+&#10;#ulaymbvwmf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#bakmcxebdp .gt_indent_1 {
+&#10;#ulaymbvwmf .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#bakmcxebdp .gt_indent_2 {
+&#10;#ulaymbvwmf .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#bakmcxebdp .gt_indent_3 {
+&#10;#ulaymbvwmf .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#bakmcxebdp .gt_indent_4 {
+&#10;#ulaymbvwmf .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#bakmcxebdp .gt_indent_5 {
+&#10;#ulaymbvwmf .gt_indent_5 {
   text-indent: 25px;
 }
 </style>

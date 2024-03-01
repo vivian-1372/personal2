@@ -36,10 +36,11 @@ poll_df <- read_csv("538_generic_ballot_averages_2018-2022.csv")
 # Overview
 Welcome to the final election forecasting update of this election cycle! It's been a long journey of election research and data analysis, but alas, we are one day out from Election Day. In today's blog post, I am going to present my final predictions in detail, which will involve model formulas, model descriptions, model coefficients, model interpretations, model validation, prediction confidence intervals, and visualizations for my national and district-level models. 
 
-```{r echo = FALSE, out.width = "95%", fig.cap = 'Source: The Economist.'}
-knitr::include_graphics("election.png")
-```
+![](election.png)
+
+
 # National Model
+
 Starting in [week 2](https://vivian-1372.github.io/Election-Analytics/post/2022-09-19-local-and-national-economy/), I wanted to build out a good national model with a mix of fundamental variables to predict the national two-party vote shares of the parties. I ultimately chose to stick with fundamentals because in [weeks 5](https://vivian-1372.github.io/Election-Analytics/post/2022-10-10-the-air-war/) and [6](https://vivian-1372.github.io/Election-Analytics/post/2022-10-19-the-ground-game/), I found that campaign activity, whether it be on air or on the ground, didn't significantly or directly impact electoral outcomes. In [week 7](https://vivian-1372.github.io/Election-Analytics/post/2022-10-24-shocks/), I reached the same conclusion regarding shocks during the election cycle. 
 
 The best iteration of my model is the most recent one, which includes only 4 predictors: absolute GDP growth (Quarter 8, the last of the election cycle), the average generic ballot support of the House incumbent party (weighted by recency of the poll), an indicator for whether or not the House incumbent party is also the president's party during a midterm year, and the average congressional approval rate. Absolute GDP growth is the economic variable I chose to capture how voters reward and punish the incumbent House party, and it came about after multiple considerations of other economic variables like unemployment rate, GDP growth percentage, and RDI change percentage. Average generic ballot support of the party in control of the House, introduced in [week 3](https://vivian-1372.github.io/Election-Analytics/post/2022-09-26-polls-and-pollsters/), reflects how much the nation wants the currently-leading party to retain that congressional power. The binary indicator for `President's-Party-House-Incumbent-Midterm` is my attempt to capture the well-known fact that the president's party consistently performs poorly in midterm elections, which I covered in [week 1](https://vivian-1372.github.io/Election-Analytics/post/2022-09-15-analzying-2020-house-vote-shares/). The indicator is equal to 1 if the party in control of the House happens to be the president's party in a midterm year, and to 0 otherwise. Lastly, the average congressional approval rate was included because I believe it gives us a sense of how satisfied voters are with Congress, generally. This is distinct from the generic ballot support metric, with the former telling us how much voters like Congress's performance, which (perhaps unintuitively) doesn't match 1-to-1 with how much voters want the incumbent party to stay in power.
@@ -50,9 +51,7 @@ lines(nat_model_data$year, nat_model_data$pp_generic_ballot, col = "purple")
 legend(1979, 23, legend = c("Congressional Approval", "Generic Ballot"), col = c("orange", "purple"), lty = 1:1)
 ```
 
-```{r echo = FALSE, out.width = "75%", fig.cap = 'Disconnect between Congressional Approval and Incumbent Generic Ballot.'}
-knitr::include_graphics("CA_GB.png")
-```
+![Disconnect between Congressional Approval and Incumbent Generic Ballot](CA_GB.png)
 As shown above, generic ballot support for the incumbent party in the House doesn't move with general approval of Congress! This was surprising to me at first, but was a good sign that I wasn't introducing too much collinearity into my model by including both measures.   
 
 ## Model Details
@@ -60,14 +59,12 @@ As shown above, generic ballot support for the incumbent party in the House does
 ### Vote Share Formula
 I wanted to use this model to predict both national incumbent two-party vote share and national incumbent seat count, so I came up with two final regression formulas that incorporated the aforementioned fundamental predictors.  
 
-![National Democratic Two-Party Vote Share Regression Formula.](nat_VS_formula.png)
+![](nat_VS_formula.png)
 
 ### Vote Share Regression
 In modeling the incumbent party's two-party vote share, which is the Democrat's vote share this election, we get some interesting coefficients. See below for this model's coefficient values, variable significance, and the model's overall evaluation metrics (like R-squared and adjusted R-squared).
 
-```{r echo = FALSE, out.width= "75%", fig.cap = 'National Democratic Two-Party Vote Share Regression Output.'}
-knitr::include_graphics("nat_VS_reg.png")
-```
+![](nat_VS_reg.png)
 
 The small, but negative, coefficient attached to absolute GDP is rather unintuitive, but my hypothesis is that for GDP, voters respond to levels and relative change differently. Previous weeks' work has shown that positive percentage change is associated with higher incumbent vote share, as we'd expect, but positive absolute change is negatively correlated with incumbent party vote share perhaps because voters slightly punish incumbents when they deem the absolute change is not "large enough." For every additional billion dollars of GDP change between the 7th and 8th quarters, the incumbent party loses 0.014 percentage points. 
 
@@ -98,21 +95,17 @@ hist(outsamp_errors, breaks = 20,
 ```
 
 
-
-```{r vote share validation printout, echo = FALSE, fig.cap = 'National Democratic Two-Party Vote Share Model Validation.'}
-knitr::include_graphics("nat_VS_val.png")
-```
+![](nat_VS_val.png)
 
 Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model. The distribution looks roughly normally distributed, with a mean a little below 0, tiny tails, and most residuals within [-2, 2].  
 
 ### Seat Count Formula
 Next, I ran the same model again, but this time with incumbent party seat count as the response variable. Below are the regression formula and regression output for this model.
-![National Democratic Party Seat Count Regression Formula.](nat_S_formula.png)
+
+![](nat_S_formula.png)
 
 ### Seat Count Regression
-```{r echo = FALSE, out.width= "75%",  fig.cap = 'National Democratic Seat Count Regression Output.'}
-knitr::include_graphics("nat_S_reg.png")
-```
+![](nat_S_reg.png)
 
 The model coefficients of the seat count model have the same signs as those of the vote share model, but different magnitudes because of the switch from predicting vote share, which can only be in the interval [0, 100], to predicting seat count, which can be [0, 435]. It is really the sign of the coefficients that matter for interpretation, and since those haven't changed, I will only briefly comment on this regression output. 
 
@@ -136,9 +129,7 @@ hist(outsamp_errors, breaks = 20,
      main = "Mean Out-of-Sample Residual for\n Seat Count Model (1000 runs of CV)")
 ```
 
-```{r seat count validation printout, echo = FALSE, out.width= "75%", fig.cap = 'National Democratic Party Seat Count Model Validation.'}
-knitr::include_graphics("nat_S_val.png")
-```
+![](nat_S_val.png)
 
 Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model again, this time for prediction of incumbent seat count. The distribution looks roughly normally distributed, with a mean at around 0 and most residuals within [-20, 20]. Neither our vote share nor our seat count model seem to perform poorly when tested with out-of-sample data, so we may move forward with prediction now!  
 
@@ -146,9 +137,8 @@ Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cr
 Using the two models above, and the newest data for the 2022 midterms, I predict that the House incumbent (Democratic Party) two-party vote share will be **48.56%** (47.36, 49.83) and the seat count will be **209** (198, 221).
 
 The GDP data comes from [FRED](https://fred.stlouisfed.org/series/GDPC1), the generic ballot data comes from [FiveThirtyEight](https://projects.fivethirtyeight.com/polls/generic-ballot/), and the congressional approval numbers come from [Gallup](https://news.gallup.com/poll/1600/congress-public.aspx).
-```{r visualization, echo = FALSE, fig.cap= '435 Seats Up For Grabs.'}
-knitr::include_graphics("nat_model_viz.png")
-```
+
+![](nat_model_viz.png)
 
 # District Models
 Since [week 4](https://vivian-1372.github.io/Election-Analytics/post/2022-10-03-incumbency/), I have been slowly working towards building 435 models for the 435 district races. After much consideration, I decided to build two types of models: (1) the competitive type, which involves the average of many expert predictions and incumbency, and (2) the non-competitive type, which involves past election results and incumbency.
@@ -412,19 +402,19 @@ preds_NC_2022 <- preds_NC_2022 %>%
 The main difference in variable selection between the competitive and non-competitive models boils down to the fact that naturally, there is a lot more coverage of the competitive ones, meaning more expert rating availability. Because of this, the competitive district models feature an average of about 7 expert ratings, whereas the non-competitive ones feature none. 
 
 For the competitive districts, I used the following regression formula:
-![Competitive District Model Formula.](dist_formula.png)
+![](dist_formula.png)
 These models ended up with an average R-squared of 0.88 and average adjusted R-squared of 0.49. 
 
 Developing models for the non-competitive models was a journey - over the weeks, I realized that good district-level data is hard to come by, and with Election Day drawing near, I felt there was a choice between building out a self-made model and building a highly predictive one to be made. In the end, I decided to go with the former, in the name of learning. The models then are fundamentals-based than the competitive ones, using the major vote share of the last Democrat candidate in addition to the incumbency of the current candidate.  
 
-![Non-competitive District Model Formula.](dist_NC_formula.png)
+![](dist_NC_formula.png)
 
 I chose to use these variables because House elections have historically favored incumbent candidates, and I believe that how the Democrat performed in each district in previous years can tell us a lot about how the Democratic candidate will perform this year.
 
-![Coefficients for Incumbent Variable.](dist_incumb_coef.png)
+![](dist_incumb_coef.png)
 The histogram above illustrates the coefficient values for the incumbent variable over the many non-competitive districts. The average coefficient value is a little under 16, and it indicates that on average, when a Democratic candidate is an incumbent, their vote share is expected to be about 16 points higher than had they not been an incumbent. This definitely tracks with what we know about the incumbency advantage for House members.
 
-![Coefficients for Last Democrat Vote Share Variable.](dist_VS_coef.png)
+![](dist_VS_coef.png)
 This histogram shows the coefficient values for the last Democrat's vote share (in the previous election), and the mean is value is 0.36. The numerical interpretation of this one is a little confusing, but the main takeaway is that the vast majority of these coefficients are positive, indicating that the higher the last Democrat's vote share, the higher we can expect this year's Democratic vote share to be. 
 
 These models have an average R-squared of 0.50 and average adjusted R-squared of 0.45. 
@@ -439,13 +429,54 @@ export_table(preds_C_2022, format = 'html')
 
 ```
 
+![](r1.png)
+![](r2.png)
+![](r3.png)
+![](r4.png)
+![](r5.png)
+![](r6.png)
+![](r7.png)
+![](r8.png)
+
 And the non-competitive district predictions, using past election results and incumbency:
-```{r district model viz, echo = FALSE, fig.cap = 'Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly.'}
-knitr::include_graphics('dist_viz.png')
-```
+
+![Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly](dist_viz.png)
 Both my national and district-level work has indicated that the Republicans are likely to win the House back once the votes have all been counted. We will see soon if these predictions are correct, and precisely how correct or incorrect they were. Below you can find the rest of the district predictions, complete with 95% confidence intervals. 
 
 It's been a great 8 weeks, see you on the other side of the 2022 midterms!
+
+![](1.png)
+![](2.png)
+![](3.png)
+![](4.png)
+![](5.png)
+![](6.png)
+![](7.png)
+![](8.png)
+![](9.png)
+![](10.png)
+![](11.png)
+![](12.png)
+![](13.png)
+![](14.png)
+![](15.png)
+![](16.png)
+![](17.png)
+![](18.png)
+![](19.png)
+![](20.png)
+![](21.png)
+![](22.png)
+![](23.png)
+![](24.png)
+![](25.png)
+![](26.png)
+![](27.png)
+![](28.png)
+![](29.png)
+![](30.png)
+![](31.png)
+
 ```{r, echo = FALSE}
 
 export_table(preds_NC_2022, format = 'html')

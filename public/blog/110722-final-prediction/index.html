@@ -107,7 +107,7 @@
     },
     "image": "/favicon-32x32.png",
     "url" : "\/blog\/110722-final-prediction\/",
-    "wordCount" : "1831",
+    "wordCount" : "1832",
     "genre" : [ "Election Analytics" ],
     "keywords" : [ "national model" , "final model" , "district models" ]
 }
@@ -306,19 +306,137 @@
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Overview
 </h1><p>Welcome to the final election forecasting update of this election cycle! It’s been a long journey of election research and data analysis, but alas, we are one day out from Election Day. In today’s blog post, I am going to present my final predictions in detail, which will involve model formulas, model descriptions, model coefficients, model interpretations, model validation, prediction confidence intervals, and visualizations for my national and district-level models.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/election.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/election_hu8bb5d237394ca27bbb4119ffb04aeb45_527312_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/election_hu8bb5d237394ca27bbb4119ffb04aeb45_527312_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/election_hu8bb5d237394ca27bbb4119ffb04aeb45_527312_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/election_hu8bb5d237394ca27bbb4119ffb04aeb45_527312_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="election.png"
+          height="1430"
+          width="2550"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <h1 id="national-model" class="link-owner">
   <a href="../../blog/110722-final-prediction/#national-model" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>National Model
 </h1><p>Starting in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-19-local-and-national-economy/" title="week 2" target="_blank" rel="nofollow noopener">week 2</a>, I wanted to build out a good national model with a mix of fundamental variables to predict the national two-party vote shares of the parties. I ultimately chose to stick with fundamentals because in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-10-the-air-war/" title="weeks 5" target="_blank" rel="nofollow noopener">weeks 5</a> and <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-19-the-ground-game/" title="6" target="_blank" rel="nofollow noopener">6</a>, I found that campaign activity, whether it be on air or on the ground, didn’t significantly or directly impact electoral outcomes. In <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-10-24-shocks/" title="week 7" target="_blank" rel="nofollow noopener">week 7</a>, I reached the same conclusion regarding shocks during the election cycle.</p>
 <p>The best iteration of my model is the most recent one, which includes only 4 predictors: absolute GDP growth (Quarter 8, the last of the election cycle), the average generic ballot support of the House incumbent party (weighted by recency of the poll), an indicator for whether or not the House incumbent party is also the president’s party during a midterm year, and the average congressional approval rate. Absolute GDP growth is the economic variable I chose to capture how voters reward and punish the incumbent House party, and it came about after multiple considerations of other economic variables like unemployment rate, GDP growth percentage, and RDI change percentage. Average generic ballot support of the party in control of the House, introduced in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-26-polls-and-pollsters/" title="week 3" target="_blank" rel="nofollow noopener">week 3</a>, reflects how much the nation wants the currently-leading party to retain that congressional power. The binary indicator for <code>President's-Party-House-Incumbent-Midterm</code> is my attempt to capture the well-known fact that the president’s party consistently performs poorly in midterm elections, which I covered in <a href="https://vivian-1372.github.io/Election-Analytics/post/2022-09-15-analzying-2020-house-vote-shares/" title="week 1" target="_blank" rel="nofollow noopener">week 1</a>. The indicator is equal to 1 if the party in control of the House happens to be the president’s party in a midterm year, and to 0 otherwise. Lastly, the average congressional approval rate was included because I believe it gives us a sense of how satisfied voters are with Congress, generally. This is distinct from the generic ballot support metric, with the former telling us how much voters like Congress’s performance, which (perhaps unintuitively) doesn’t match 1-to-1 with how much voters want the incumbent party to stay in power.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>As shown above, generic ballot support for the incumbent party in the House doesn’t move with general approval of Congress! This was surprising to me at first, but was a good sign that I wasn’t introducing too much collinearity into my model by including both measures.</p>
+<p>
+
+  
+  Disconnect between Congressional Approval and Incumbent Generic Ballot
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/CA_GB.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/CA_GB_hu8db899f6efde493661b21c3176ce3088_54976_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/CA_GB_hu8db899f6efde493661b21c3176ce3088_54976_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/CA_GB_hu8db899f6efde493661b21c3176ce3088_54976_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/CA_GB_hu8db899f6efde493661b21c3176ce3088_54976_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Disconnect between Congressional Approval and Incumbent Generic Ballot"
+          title="Disconnect between Congressional Approval and Incumbent Generic Ballot"
+          src="CA_GB.png"
+          height="423"
+          width="678"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Disconnect between Congressional Approval and Incumbent Generic Ballot
+    </figcaption>
+  </figure>
+
+
+
+As shown above, generic ballot support for the incumbent party in the House doesn’t move with general approval of Congress! This was surprising to me at first, but was a good sign that I wasn’t introducing too much collinearity into my model by including both measures.</p>
 <h2 id="model-details" class="link-owner">
   <a href="../../blog/110722-final-prediction/#model-details" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
@@ -328,15 +446,135 @@
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Vote Share Formula
 </h3><p>I wanted to use this model to predict both national incumbent two-party vote share and national incumbent seat count, so I came up with two final regression formulas that incorporated the aforementioned fundamental predictors.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/nat_VS_formula.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_formula_hu3c41278e0f32148d2d52ccaf2f9f5cf2_38595_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_formula_hu3c41278e0f32148d2d52ccaf2f9f5cf2_38595_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_formula_hu3c41278e0f32148d2d52ccaf2f9f5cf2_38595_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_formula_hu3c41278e0f32148d2d52ccaf2f9f5cf2_38595_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="nat_VS_formula.png"
+          height="150"
+          width="900"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <h3 id="vote-share-regression" class="link-owner">
   <a href="../../blog/110722-final-prediction/#vote-share-regression" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Vote Share Regression
 </h3><p>In modeling the incumbent party’s two-party vote share, which is the Democrat’s vote share this election, we get some interesting coefficients. See below for this model’s coefficient values, variable significance, and the model’s overall evaluation metrics (like R-squared and adjusted R-squared).</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/nat_VS_reg.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_reg_hu3a1b2584ded06f81a4a631c0254eb485_82837_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_reg_hu3a1b2584ded06f81a4a631c0254eb485_82837_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_reg_hu3a1b2584ded06f81a4a631c0254eb485_82837_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_reg_hu3a1b2584ded06f81a4a631c0254eb485_82837_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="nat_VS_reg.png"
+          height="704"
+          width="718"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>The small, but negative, coefficient attached to absolute GDP is rather unintuitive, but my hypothesis is that for GDP, voters respond to levels and relative change differently. Previous weeks’ work has shown that positive percentage change is associated with higher incumbent vote share, as we’d expect, but positive absolute change is negatively correlated with incumbent party vote share perhaps because voters slightly punish incumbents when they deem the absolute change is not “large enough.” For every additional billion dollars of GDP change between the 7th and 8th quarters, the incumbent party loses 0.014 percentage points.</p>
 <p>The generic ballot support variable has a coefficient of 0.472, which makes sense - if voters generally support the incumbent party in polls, the party can expect to do well on Election Day. For every percentage point higher the generic ballot support is for the incumbent party in polls, the incumbent party earns an additional 0.472 percentage point of vote share.</p>
 <p>The only variable with a larger coefficient than generic ballot support is the president’s-party-incumbent-midterm variable. Midterm years in which the incumbent party is the president’s party see the incumbent party losing 2.788 percentage points of vote share. This is consistent with the decades of poor president’s party House performance we’ve observed.</p>
@@ -346,19 +584,78 @@
   <a href="../../blog/110722-final-prediction/#vote-share-validation" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Vote Share Validation
-</h3><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</h3><p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/nat_VS_val.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_val_hu680a8331cd905e60732df7e01fb8f7b3_30793_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_val_hu680a8331cd905e60732df7e01fb8f7b3_30793_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_val_hu680a8331cd905e60732df7e01fb8f7b3_30793_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/nat_VS_val_hu680a8331cd905e60732df7e01fb8f7b3_30793_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="nat_VS_val.png"
+          height="410"
+          width="689"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model. The distribution looks roughly normally distributed, with a mean a little below 0, tiny tails, and most residuals within [-2, 2].</p>
 <h3 id="seat-count-formula" class="link-owner">
   <a href="../../blog/110722-final-prediction/#seat-count-formula" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Seat Count Formula
-</h3><p>Next, I ran the same model again, but this time with incumbent party seat count as the response variable. Below are the regression formula and regression output for this model.
-
+</h3><p>Next, I ran the same model again, but this time with incumbent party seat count as the response variable. Below are the regression formula and regression output for this model.</p>
+<p>
 
   
-  National Democratic Party Seat Count Regression Formula.
+  
 
   
   
@@ -401,8 +698,8 @@
         />
 
         <img
-          alt="National Democratic Party Seat Count Regression Formula."
-          title="National Democratic Party Seat Count Regression Formula."
+          alt=""
+          title=""
           src="nat_S_formula.png"
           height="168"
           width="938"
@@ -411,7 +708,7 @@
       </picture>
     </a>
     <figcaption class="text-sm italic">
-      National Democratic Party Seat Count Regression Formula.
+      
     </figcaption>
   </figure>
 
@@ -421,18 +718,136 @@
   <a href="../../blog/110722-final-prediction/#seat-count-regression" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Seat Count Regression
-</h3><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</h3><p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/nat_S_reg.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/nat_S_reg_hu2be79fb1117908ed0a3301a9db1cdcd7_80532_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/nat_S_reg_hu2be79fb1117908ed0a3301a9db1cdcd7_80532_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/nat_S_reg_hu2be79fb1117908ed0a3301a9db1cdcd7_80532_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/nat_S_reg_hu2be79fb1117908ed0a3301a9db1cdcd7_80532_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="nat_S_reg.png"
+          height="712"
+          width="720"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>The model coefficients of the seat count model have the same signs as those of the vote share model, but different magnitudes because of the switch from predicting vote share, which can only be in the interval [0, 100], to predicting seat count, which can be [0, 435]. It is really the sign of the coefficients that matter for interpretation, and since those haven’t changed, I will only briefly comment on this regression output.</p>
 <p>It’s helpful to see the relationship between the president’s-party-incumbent-midterm effect and <em>seat count</em> because now, it becomes clear that when the president’s party is trying to defend its House incumbency in midterm years, like this year, it faces a steep uphill battle - when the indicator variable is 1, and everything else is held constant, the incumbent party is predicted to lose around 29 seats.</p>
 <h3 id="seat-count-validation" class="link-owner">
   <a href="../../blog/110722-final-prediction/#seat-count-validation" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Seat Count Validation
-</h3><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</h3><p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/nat_S_val.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/nat_S_val_huecbde306ec45fe71fae478bac220bcdc_30379_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/nat_S_val_huecbde306ec45fe71fae478bac220bcdc_30379_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/nat_S_val_huecbde306ec45fe71fae478bac220bcdc_30379_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/nat_S_val_huecbde306ec45fe71fae478bac220bcdc_30379_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="nat_S_val.png"
+          height="402"
+          width="682"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>Above is the histogram of the mean out-of-sample residuals over 1,000 runs of cross-validation for my model again, this time for prediction of incumbent seat count. The distribution looks roughly normally distributed, with a mean at around 0 and most residuals within [-20, 20]. Neither our vote share nor our seat count model seem to perform poorly when tested with out-of-sample data, so we may move forward with prediction now!</p>
 <h2 id="national-predictions" class="link-owner">
   <a href="../../blog/110722-final-prediction/#national-predictions" class="link">
@@ -440,9 +855,68 @@
   </a>National Predictions
 </h2><p>Using the two models above, and the newest data for the 2022 midterms, I predict that the House incumbent (Democratic Party) two-party vote share will be <strong>48.56%</strong> (47.36, 49.83) and the seat count will be <strong>209</strong> (198, 221).</p>
 <p>The GDP data comes from <a href="https://fred.stlouisfed.org/series/GDPC1" title="FRED" target="_blank" rel="nofollow noopener">FRED</a>, the generic ballot data comes from <a href="https://projects.fivethirtyeight.com/polls/generic-ballot/" title="FiveThirtyEight" target="_blank" rel="nofollow noopener">FiveThirtyEight</a>, and the congressional approval numbers come from <a href="https://news.gallup.com/poll/1600/congress-public.aspx" title="Gallup" target="_blank" rel="nofollow noopener">Gallup</a>.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/nat_model_viz.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/nat_model_viz_hu3e2fdc75092ae6bc965e76dc13231658_219747_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/nat_model_viz_hu3e2fdc75092ae6bc965e76dc13231658_219747_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/nat_model_viz_hu3e2fdc75092ae6bc965e76dc13231658_219747_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/nat_model_viz_hu3e2fdc75092ae6bc965e76dc13231658_219747_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="nat_model_viz.png"
+          height="577"
+          width="796"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <h1 id="district-models" class="link-owner">
   <a href="../../blog/110722-final-prediction/#district-models" class="link">
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
@@ -458,7 +932,7 @@
 
 
   
-  Competitive District Model Formula.
+  
 
   
   
@@ -501,8 +975,8 @@
         />
 
         <img
-          alt="Competitive District Model Formula."
-          title="Competitive District Model Formula."
+          alt=""
+          title=""
           src="dist_formula.png"
           height="54"
           width="1046"
@@ -511,7 +985,7 @@
       </picture>
     </a>
     <figcaption class="text-sm italic">
-      Competitive District Model Formula.
+      
     </figcaption>
   </figure>
 
@@ -519,12 +993,73 @@
 
 These models ended up with an average R-squared of 0.88 and average adjusted R-squared of 0.49.</p>
 <p>Developing models for the non-competitive models was a journey - over the weeks, I realized that good district-level data is hard to come by, and with Election Day drawing near, I felt there was a choice between building out a self-made model and building a highly predictive one to be made. In the end, I decided to go with the former, in the name of learning. The models then are fundamentals-based than the competitive ones, using the major vote share of the last Democrat candidate in addition to the incumbency of the current candidate.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/dist_NC_formula.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/dist_NC_formula_hu2cdf7b1f18d1ad8c24c5b74ef98743d4_28032_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/dist_NC_formula_hu2cdf7b1f18d1ad8c24c5b74ef98743d4_28032_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/dist_NC_formula_hu2cdf7b1f18d1ad8c24c5b74ef98743d4_28032_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/dist_NC_formula_hu2cdf7b1f18d1ad8c24c5b74ef98743d4_28032_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="dist_NC_formula.png"
+          height="94"
+          width="1720"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>I chose to use these variables because House elections have historically favored incumbent candidates, and I believe that how the Democrat performed in each district in previous years can tell us a lot about how the Democratic candidate will perform this year.</p>
 <p>
 
   
-  Coefficients for Incumbent Variable.
+  
 
   
   
@@ -567,8 +1102,8 @@ These models ended up with an average R-squared of 0.88 and average adjusted R-s
         />
 
         <img
-          alt="Coefficients for Incumbent Variable."
-          title="Coefficients for Incumbent Variable."
+          alt=""
+          title=""
           src="dist_incumb_coef.png"
           height="422"
           width="682"
@@ -577,7 +1112,7 @@ These models ended up with an average R-squared of 0.88 and average adjusted R-s
       </picture>
     </a>
     <figcaption class="text-sm italic">
-      Coefficients for Incumbent Variable.
+      
     </figcaption>
   </figure>
 
@@ -587,7 +1122,7 @@ The histogram above illustrates the coefficient values for the incumbent variabl
 <p>
 
   
-  Coefficients for Last Democrat Vote Share Variable.
+  
 
   
   
@@ -630,8 +1165,8 @@ The histogram above illustrates the coefficient values for the incumbent variabl
         />
 
         <img
-          alt="Coefficients for Last Democrat Vote Share Variable."
-          title="Coefficients for Last Democrat Vote Share Variable."
+          alt=""
+          title=""
           src="dist_VS_coef.png"
           height="437"
           width="696"
@@ -640,7 +1175,7 @@ The histogram above illustrates the coefficient values for the incumbent variabl
       </picture>
     </a>
     <figcaption class="text-sm italic">
-      Coefficients for Last Democrat Vote Share Variable.
+      
     </figcaption>
   </figure>
 
@@ -654,11 +1189,2489 @@ This histogram shows the coefficient values for the last Democrat’s vote share
   </a>District Predictions
 </h2><p>Below are my predictions for the 94 most competitive districts, using expert ratings and incumbency:</p>
 <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>Both my national and district-level work has indicated that the Republicans are likely to win the House back once the votes have all been counted. We will see soon if these predictions are correct, and precisely how correct or incorrect they were. Below you can find the rest of the district predictions, complete with 95% confidence intervals.</p>
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r1.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r1_hu7e5634e4b47021ad0bc7474ba8b31dc5_138222_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r1_hu7e5634e4b47021ad0bc7474ba8b31dc5_138222_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r1_hu7e5634e4b47021ad0bc7474ba8b31dc5_138222_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r1_hu7e5634e4b47021ad0bc7474ba8b31dc5_138222_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r1.png"
+          height="940"
+          width="930"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r2.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r2_hu59578fcd927d8fb3bb6215606d6d8c12_130454_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r2_hu59578fcd927d8fb3bb6215606d6d8c12_130454_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r2_hu59578fcd927d8fb3bb6215606d6d8c12_130454_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r2_hu59578fcd927d8fb3bb6215606d6d8c12_130454_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r2.png"
+          height="952"
+          width="910"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r3.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r3_hu09e0aca5b43db70f377e896a06ebc5f8_133246_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r3_hu09e0aca5b43db70f377e896a06ebc5f8_133246_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r3_hu09e0aca5b43db70f377e896a06ebc5f8_133246_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r3_hu09e0aca5b43db70f377e896a06ebc5f8_133246_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r3.png"
+          height="946"
+          width="906"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r4.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r4_hu450be9dd1c9a791a8da2fb3b0eea73d2_149759_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r4_hu450be9dd1c9a791a8da2fb3b0eea73d2_149759_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r4_hu450be9dd1c9a791a8da2fb3b0eea73d2_149759_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r4_hu450be9dd1c9a791a8da2fb3b0eea73d2_149759_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r4.png"
+          height="936"
+          width="898"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r5.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r5_hu4260c1a43db3428b32ac5b31c2fec70e_139149_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r5_hu4260c1a43db3428b32ac5b31c2fec70e_139149_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r5_hu4260c1a43db3428b32ac5b31c2fec70e_139149_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r5_hu4260c1a43db3428b32ac5b31c2fec70e_139149_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r5.png"
+          height="944"
+          width="908"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r6.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r6_hu3117915d5fd5ee2af6392796dff0a55c_133217_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r6_hu3117915d5fd5ee2af6392796dff0a55c_133217_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r6_hu3117915d5fd5ee2af6392796dff0a55c_133217_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r6_hu3117915d5fd5ee2af6392796dff0a55c_133217_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r6.png"
+          height="944"
+          width="892"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r7.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r7_hu3117915d5fd5ee2af6392796dff0a55c_145493_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r7_hu3117915d5fd5ee2af6392796dff0a55c_145493_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r7_hu3117915d5fd5ee2af6392796dff0a55c_145493_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r7_hu3117915d5fd5ee2af6392796dff0a55c_145493_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r7.png"
+          height="944"
+          width="892"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/r8.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/r8_hub70a96023744b5d317334e1de2037f3c_37588_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/r8_hub70a96023744b5d317334e1de2037f3c_37588_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/r8_hub70a96023744b5d317334e1de2037f3c_37588_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/r8_hub70a96023744b5d317334e1de2037f3c_37588_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="r8.png"
+          height="254"
+          width="908"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
+<p>And the non-competitive district predictions, using past election results and incumbency:</p>
+<p>
+
+  
+  Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/dist_viz.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/dist_viz_hud46242741a38f8be5476b18a4c6cdfc5_85827_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/dist_viz_hud46242741a38f8be5476b18a4c6cdfc5_85827_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/dist_viz_hud46242741a38f8be5476b18a4c6cdfc5_85827_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/dist_viz_hud46242741a38f8be5476b18a4c6cdfc5_85827_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly"
+          title="Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly"
+          src="dist_viz.png"
+          height="410"
+          width="722"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Note: Visualization of District-Level Predictions; Several Districts Mapped Imperfectly
+    </figcaption>
+  </figure>
+
+
+
+Both my national and district-level work has indicated that the Republicans are likely to win the House back once the votes have all been counted. We will see soon if these predictions are correct, and precisely how correct or incorrect they were. Below you can find the rest of the district predictions, complete with 95% confidence intervals.</p>
 <p>It’s been a great 8 weeks, see you on the other side of the 2022 midterms!</p>
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/1.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/1_hu91009426a060eb0d129e29ac03838e57_259019_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/1_hu91009426a060eb0d129e29ac03838e57_259019_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/1_hu91009426a060eb0d129e29ac03838e57_259019_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/1_hu91009426a060eb0d129e29ac03838e57_259019_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="1.png"
+          height="948"
+          width="1560"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/2.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/2_hu40d9f00e6bf1f75c9988d94dd2572348_267878_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/2_hu40d9f00e6bf1f75c9988d94dd2572348_267878_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/2_hu40d9f00e6bf1f75c9988d94dd2572348_267878_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/2_hu40d9f00e6bf1f75c9988d94dd2572348_267878_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="2.png"
+          height="948"
+          width="1544"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/3.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/3_hu1310f9702a02eb5500ce14f2540df961_267887_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/3_hu1310f9702a02eb5500ce14f2540df961_267887_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/3_hu1310f9702a02eb5500ce14f2540df961_267887_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/3_hu1310f9702a02eb5500ce14f2540df961_267887_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="3.png"
+          height="946"
+          width="1548"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/4.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/4_hu6f12a1fa7bbf1c680f48199f6918eee0_267948_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/4_hu6f12a1fa7bbf1c680f48199f6918eee0_267948_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/4_hu6f12a1fa7bbf1c680f48199f6918eee0_267948_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/4_hu6f12a1fa7bbf1c680f48199f6918eee0_267948_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="4.png"
+          height="940"
+          width="1544"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/5.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/5_hu50ff9802622b3a3eef82294ea6c9c21c_268000_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/5_hu50ff9802622b3a3eef82294ea6c9c21c_268000_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/5_hu50ff9802622b3a3eef82294ea6c9c21c_268000_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/5_hu50ff9802622b3a3eef82294ea6c9c21c_268000_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="5.png"
+          height="942"
+          width="1542"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/6.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/6_hu15a13b5403c76ac3f3e89d75bfc65233_266152_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/6_hu15a13b5403c76ac3f3e89d75bfc65233_266152_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/6_hu15a13b5403c76ac3f3e89d75bfc65233_266152_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/6_hu15a13b5403c76ac3f3e89d75bfc65233_266152_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="6.png"
+          height="942"
+          width="1540"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/7.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/7_huc421fa71daa5acc6300a39bb4e7f0dec_259804_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/7_huc421fa71daa5acc6300a39bb4e7f0dec_259804_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/7_huc421fa71daa5acc6300a39bb4e7f0dec_259804_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/7_huc421fa71daa5acc6300a39bb4e7f0dec_259804_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="7.png"
+          height="946"
+          width="1566"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/8.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/8_hu68ee3596440990374b5a1e9778d4ae75_265011_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/8_hu68ee3596440990374b5a1e9778d4ae75_265011_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/8_hu68ee3596440990374b5a1e9778d4ae75_265011_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/8_hu68ee3596440990374b5a1e9778d4ae75_265011_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="8.png"
+          height="948"
+          width="1550"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/9.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/9_hu83c18fac1efa2cc54e5e8a5fb72188fe_261581_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/9_hu83c18fac1efa2cc54e5e8a5fb72188fe_261581_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/9_hu83c18fac1efa2cc54e5e8a5fb72188fe_261581_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/9_hu83c18fac1efa2cc54e5e8a5fb72188fe_261581_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="9.png"
+          height="946"
+          width="1544"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/10.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/10_hu3d5a7b59a400453d574e1ac069a88bfd_262101_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/10_hu3d5a7b59a400453d574e1ac069a88bfd_262101_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/10_hu3d5a7b59a400453d574e1ac069a88bfd_262101_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/10_hu3d5a7b59a400453d574e1ac069a88bfd_262101_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="10.png"
+          height="942"
+          width="1556"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/11.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/11_hu26d625c135aebaa367876ddf5ac2012f_257679_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/11_hu26d625c135aebaa367876ddf5ac2012f_257679_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/11_hu26d625c135aebaa367876ddf5ac2012f_257679_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/11_hu26d625c135aebaa367876ddf5ac2012f_257679_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="11.png"
+          height="950"
+          width="1558"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/12.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/12_hudb40f928378848d74f2305e75832ef44_258547_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/12_hudb40f928378848d74f2305e75832ef44_258547_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/12_hudb40f928378848d74f2305e75832ef44_258547_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/12_hudb40f928378848d74f2305e75832ef44_258547_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="12.png"
+          height="946"
+          width="1562"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/13.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/13_hu855bbf350ab2bb1acfa9e93b3b27b8aa_265522_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/13_hu855bbf350ab2bb1acfa9e93b3b27b8aa_265522_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/13_hu855bbf350ab2bb1acfa9e93b3b27b8aa_265522_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/13_hu855bbf350ab2bb1acfa9e93b3b27b8aa_265522_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="13.png"
+          height="944"
+          width="1564"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/14.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/14_hu121217a445c8cf26b2124e27cc66147c_266179_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/14_hu121217a445c8cf26b2124e27cc66147c_266179_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/14_hu121217a445c8cf26b2124e27cc66147c_266179_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/14_hu121217a445c8cf26b2124e27cc66147c_266179_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="14.png"
+          height="946"
+          width="1552"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/15.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/15_hub653ef878fafdd5d17913a4b6bfbc6db_272587_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/15_hub653ef878fafdd5d17913a4b6bfbc6db_272587_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/15_hub653ef878fafdd5d17913a4b6bfbc6db_272587_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/15_hub653ef878fafdd5d17913a4b6bfbc6db_272587_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="15.png"
+          height="952"
+          width="1546"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/16.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/16_hu95fa3e57358f4f3df7baa7c6a7b6886b_264734_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/16_hu95fa3e57358f4f3df7baa7c6a7b6886b_264734_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/16_hu95fa3e57358f4f3df7baa7c6a7b6886b_264734_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/16_hu95fa3e57358f4f3df7baa7c6a7b6886b_264734_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="16.png"
+          height="944"
+          width="1530"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/17.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/17_hu91009426a060eb0d129e29ac03838e57_237337_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/17_hu91009426a060eb0d129e29ac03838e57_237337_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/17_hu91009426a060eb0d129e29ac03838e57_237337_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/17_hu91009426a060eb0d129e29ac03838e57_237337_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="17.png"
+          height="948"
+          width="1560"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/18.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/18_huee8c18e11f258de1644a455d0baecbb4_267027_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/18_huee8c18e11f258de1644a455d0baecbb4_267027_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/18_huee8c18e11f258de1644a455d0baecbb4_267027_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/18_huee8c18e11f258de1644a455d0baecbb4_267027_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="18.png"
+          height="960"
+          width="1552"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/19.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/19_hub9997d37eec109c156ca7d10c47b58a8_266620_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/19_hub9997d37eec109c156ca7d10c47b58a8_266620_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/19_hub9997d37eec109c156ca7d10c47b58a8_266620_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/19_hub9997d37eec109c156ca7d10c47b58a8_266620_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="19.png"
+          height="946"
+          width="1550"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/20.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/20_hu5f21c3cce8b230c425f72b7f0bc3544a_264978_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/20_hu5f21c3cce8b230c425f72b7f0bc3544a_264978_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/20_hu5f21c3cce8b230c425f72b7f0bc3544a_264978_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/20_hu5f21c3cce8b230c425f72b7f0bc3544a_264978_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="20.png"
+          height="950"
+          width="1540"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/21.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/21_huaf8b860bad2762646b81f22f1e9ef10a_274908_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/21_huaf8b860bad2762646b81f22f1e9ef10a_274908_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/21_huaf8b860bad2762646b81f22f1e9ef10a_274908_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/21_huaf8b860bad2762646b81f22f1e9ef10a_274908_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="21.png"
+          height="952"
+          width="1580"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/22.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/22_hu5f38a6a54499ed8adc7a2d6c4341f743_265412_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/22_hu5f38a6a54499ed8adc7a2d6c4341f743_265412_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/22_hu5f38a6a54499ed8adc7a2d6c4341f743_265412_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/22_hu5f38a6a54499ed8adc7a2d6c4341f743_265412_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="22.png"
+          height="936"
+          width="1542"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/23.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/23_huecdd75c908a4761e11f2d643d431103e_253308_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/23_huecdd75c908a4761e11f2d643d431103e_253308_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/23_huecdd75c908a4761e11f2d643d431103e_253308_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/23_huecdd75c908a4761e11f2d643d431103e_253308_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="23.png"
+          height="938"
+          width="1528"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/24.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/24_hu04de7da716e1c145699bb811cea979fa_266775_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/24_hu04de7da716e1c145699bb811cea979fa_266775_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/24_hu04de7da716e1c145699bb811cea979fa_266775_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/24_hu04de7da716e1c145699bb811cea979fa_266775_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="24.png"
+          height="944"
+          width="1560"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/25.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/25_hu49598603f565739d29ad5d46349b1c6f_267503_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/25_hu49598603f565739d29ad5d46349b1c6f_267503_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/25_hu49598603f565739d29ad5d46349b1c6f_267503_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/25_hu49598603f565739d29ad5d46349b1c6f_267503_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="25.png"
+          height="948"
+          width="1546"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/26.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/26_hu073dccf8c6d6dcbffec19a0e3ed0850d_260246_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/26_hu073dccf8c6d6dcbffec19a0e3ed0850d_260246_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/26_hu073dccf8c6d6dcbffec19a0e3ed0850d_260246_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/26_hu073dccf8c6d6dcbffec19a0e3ed0850d_260246_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="26.png"
+          height="946"
+          width="1554"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/27.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/27_hu57e534f2aa799b5bbfd02d667da3e3b6_250444_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/27_hu57e534f2aa799b5bbfd02d667da3e3b6_250444_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/27_hu57e534f2aa799b5bbfd02d667da3e3b6_250444_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/27_hu57e534f2aa799b5bbfd02d667da3e3b6_250444_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="27.png"
+          height="946"
+          width="1538"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/28.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/28_hu1310f9702a02eb5500ce14f2540df961_248058_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/28_hu1310f9702a02eb5500ce14f2540df961_248058_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/28_hu1310f9702a02eb5500ce14f2540df961_248058_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/28_hu1310f9702a02eb5500ce14f2540df961_248058_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="28.png"
+          height="946"
+          width="1548"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/29.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/29_hu1728381bb76d2816ee8f07d21262d763_259546_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/29_hu1728381bb76d2816ee8f07d21262d763_259546_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/29_hu1728381bb76d2816ee8f07d21262d763_259546_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/29_hu1728381bb76d2816ee8f07d21262d763_259546_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="29.png"
+          height="940"
+          width="1534"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/30.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/30_hu07034a6b97634f42769c2b607c6970d6_273094_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/30_hu07034a6b97634f42769c2b607c6970d6_273094_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/30_hu07034a6b97634f42769c2b607c6970d6_273094_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/30_hu07034a6b97634f42769c2b607c6970d6_273094_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="30.png"
+          height="952"
+          width="1550"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/110722-final-prediction/31.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/110722-final-prediction/31_hu2496fc376c670b8275de54efc73927d9_189828_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/110722-final-prediction/31_hu2496fc376c670b8275de54efc73927d9_189828_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/110722-final-prediction/31_hu2496fc376c670b8275de54efc73927d9_189828_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/110722-final-prediction/31_hu2496fc376c670b8275de54efc73927d9_189828_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="31.png"
+          height="670"
+          width="1536"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <!-- raw HTML omitted -->
 <hr>
 <p><strong>References</strong></p>

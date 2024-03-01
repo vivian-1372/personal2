@@ -1,8 +1,13 @@
----title: "COVID-19 Concern and Citizen Trust in Different Institutions"author: "Vivian Nguyen"date: "2021-12-16"tags: ["COVID", "trust", "CDC", "partisanship", "politicization", "vaccine"]categories:   - Political Psychology---
+---
+title: "COVID-19 Concern and Citizen Trust in Different Institutions"
+author: "Vivian Nguyen"
+date: "2021-12-16"
+tags: ["COVID", "trust", "CDC", "partisanship", "politicization", "vaccine"]
+categories: 
+  - Political Psychology
+---
 
 ## Overview
-
-February 2022
 
 Note: I wrote this paper for Government 1372: Political Psychology, a
 data science in the Harvard Government department. At this point, I was
@@ -144,8 +149,8 @@ institutions.
 trust in all four bodies (CDC, national health advisors, federal
 government, and state government).
 
-*H*<sub>2</sub> : Partisan identification (as Democrat or Republican)
-has at least as much predictive power as COVID-19 concern in determining
+*H*<sub>2</sub> : Partisan identification (Democrat or Republican) has
+at least as much predictive power as COVID-19 concern in determining
 respondent trust in the COVID-19 information sources.
 
 *H*<sub>2.1</sub> : Respondents who identify as Democrats are more
@@ -198,18 +203,18 @@ you with accurate information about coronavirus or COVID-19?”
 3.) “How much trust do you have in \[your state government\] to provide
 you with accurate information about coronavirus or COVID-19?”
 
-Same answer options as above
+\[Same answer options as above\]
 
 4.) “How much trust do you have in \[the Centers for Disease Control, or
 CDC\] to provide you with accurate information about coronavirus or
 COVID-19?”
 
-Same answer options as above
+\[Same answer options as above\]
 
 5.) “How much trust do you have in \[national public health officials\]
 to provide you with accurate information about coronavirus or COVID-19?”
 
-Same answer options as above
+\[Same answer options as above\]
 
 We also used the responses to demographic questions as control
 variables, including respondent age, education level, gender, income,
@@ -238,7 +243,7 @@ COVID concern. The coefficient plot visually demonstrates the
 relationships between each predictor variable and respondents’ trust,
 including the effect of COVID concern on trust.
 
-To test *H*<sub>2</sub> , “Partisan identification has at least as much
+To test *H*<sub>2</sub>, “Partisan identification has at least as much
 predictive power as COVID-19 concern in determining respondent trust in
 the COVID-19 information sources,” I again ran the four linear
 regression models. In order to compare the ability of party
@@ -269,9 +274,7 @@ variables, with 95% confidence intervals around each coefficient
 estimate.
 
 The control variables of gender, ethnicity, and age had near-zero
-coefficients in each model.  
-![Predictor Variable Regression Coefficients for
-Trust](images/plot1.png)
+coefficients in each model. Figure 1: ![](images/plot1.png)
 
 For trust in the federal government, the regression coefficient of COVID
 concern was 0.112, meaning that holding all else constant, an increase
@@ -298,12 +301,7 @@ scales – 1 through 4 for concern and 1 through 3 for party – are now
 standardized, making the variables’ regression coefficients directly
 comparable.
 
-<figure>
-<img src="images/plot2.png"
-alt="Scaled Regression Coefficients and Trust" />
-<figcaption aria-hidden="true">Scaled Regression Coefficients and
-Trust</figcaption>
-</figure>
+Figure 2: ![](images/plot2.png)
 
 From Figure 2, which presents the scaled regression coefficients of
 COVID concern and party alongside other control variable coefficients,
@@ -330,12 +328,7 @@ officials about COVID-19 information and partisanship reveals that
 different party identification is tied to to different levels of
 predicted trust in the Centers for Disease Control and Prevention.
 
-<figure>
-<img src="images/plot3.png"
-alt="Predicted CDC Trust due to COVID Concern, by Party" />
-<figcaption aria-hidden="true">Predicted CDC Trust due to COVID Concern,
-by Party</figcaption>
-</figure>
+Figure 3: ![](images/plot3.png)
 
 Figure 3 shows the predicted level of trust in the CDC by members of
 each party as COVID concern rises. Both parties appear to follow the

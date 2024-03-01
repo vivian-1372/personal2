@@ -164,7 +164,7 @@ predict(model7, data2022, interval = "confidence")
 
 ```{r stargazer table, include = FALSE}
 # 
-# # trying to get table to export to github
+# trying to get table to export to github
 # stargazer(model1, model2, model3, model4, model5,
 #           type = 'html',
 #           title = "National Economic Variables (Q8) and Generic Ballot Polls (1948-2020)",

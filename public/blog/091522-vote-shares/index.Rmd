@@ -13,13 +13,13 @@ This is blog post #1 in a series of analytical posts about the 2022 midterms. Th
 Over the next several weeks, I will be exploring previous U.S. elections data to analyze voter trends and behavior. This exploration will aide in my ultimate goal of forecasting the 2022 midterm election results. For this first blog, I focus on the House vote shares from 2016 to 2020 and how they changed over the course of Donald J. Trump's term. I compare the results of 2016 House election, specifically the House Democratic Party vote share at the state level, to those of the 2018 midterm House election to see the extent to which the common theme of incumbent disadvantage applied to the House election results. I then compare the House Democratic vote share of the 2018 election to the 2020 House election, which saw the election of Joseph R. Biden. **My hope is to identify the trends in House election swings in the Trump era. As we near the 2022 midterms, where the Democratic president's party is campaigning hard to retain House control, it'll be increasingly important to know which states have shown increased support for House Democrats in recent years.**
 
 # House Races in 2016, 2018, and 2020
-To answer this question, I pulled data about the House party vote shares for 2016, 2018, and 2020. I show 2018-2016 and 2020-2018 comparison maps, which consist of states colored by the quantity $\frac{D_y}{D_y + R_y} - \frac{D_{y - 2}}{D_{y - 2} + R_{y - 2}}$. This quantity is a measure of state swing in Democratic Party vote share for that House election, since the previous one. Below is the 2018-2016 swing map - negative (red) values show a decline in (D) House vote share in a given state since 2016, positive (blue) values show the opposite, and near-zero (white) values represent no change in (D) House vote. 
+To answer this question, I pulled data about the House party vote shares for 2016, 2018, and 2020. I show 2018-2016 and 2020-2018 comparison maps, which consist of states colored by the quantity $$\frac{D_y}{D_y + R_y} - \frac{D_{y - 2}}{D_{y - 2} + R_{y - 2}}$$. This quantity is a measure of state swing in Democratic Party vote share for that House election, since the previous one. Below is the 2018-2016 swing map - negative (red) values show a decline in (D) House vote share in a given state since 2016, positive (blue) values show the opposite, and near-zero (white) values represent no change in (D) House vote. 
 
 ```{r, echo = FALSE, results='hide',fig.keep='all', message=FALSE}
 
 ## Set up
 
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 library(tidyverse)
 library(usmap)
@@ -105,7 +105,7 @@ for (index in 1:length(states)){
 
 ```
 
-```{r, echo = FALSE, results='hide',fig.keep='all', message=FALSE}
+```{r, echo = FALSE, message=FALSE}
 
 ## Combining datasets for graphing
 
@@ -120,10 +120,9 @@ data_2018l <- subset(h, raceYear = 2018, select = "State")
 r0_18 = rbind(state, swing18_16)
 rfinal_18 = as.data.frame(t(as.data.frame(r0_18)))
 rfinal_18$swing <- as.numeric(rfinal_18$swing18_16)
-
 ```
 
-```{r, echo = FALSE, results='hide',fig.keep='all', message=FALSE}
+```{r, echo = FALSE, message=FALSE}
 
 ## Plot 1, 2016 to 2018
 plot_usmap(data = rfinal_18, regions = "state", values = "swing") + 
@@ -133,11 +132,14 @@ plot_usmap(data = rfinal_18, regions = "state", values = "swing") +
   theme(panel.background = element_rect(color = "black", fill = "lightblue1"))
 
 ```
+
+![Swings between 2018 and 2016](plot1.png)
 My analysis confirms that the House elections of the 2018 midterms followed the traditional pattern of the president's party performing rather poorly -- With the exception of Connecticut, Hawaii, Massachusetts, Vermont, and Wyoming, the Democrats gained vote share in every state in comparison to the 2016 House elections. This pattern of president's party disadvantage in midterms has been upheld at an incredibly high rate throughout the 20th and 21st century, and it is expected to hold in this year's midterm elections.
 
 However, this swing against the executive party may reverse by the next House elections, and this was indeed true in 2020.
 
-```{r, echo = FALSE, results='hide',fig.keep='all', message=FALSE}
+![Swings between 2020 and 2018](plot2.png)
+```{r, echo = FALSE, message=FALSE}
 
 ## Plot 2, 2018 to 2020
 plot_usmap(data = rfinal_20, regions = "state", values = "swing") + 
@@ -153,7 +155,6 @@ Unlike the previous swing comparison, the 2020-2018 comparison reveals that most
 My dive into the 2018 and 2020 House election results and swings has revealed several observations: (1) Because the president's party has always been known to suffer during midterms, and this tradition remained true in the 2018 midterms, it should be expected that the Democrats see this same poor performance in November. (2) Looking beyond the midterms, Democrats may be relieved to hear that the president's party does seem to get some of their vote share back in House elections by the next general election. We saw that in 2020, House vote shares declined for Democrats in nearly all states. (3) It is important to study swings and temporally relative party performance to see how voters move in preference over different House elections, but it is also very important to study the House elections move in absolute terms -- although observation (2) recognized that the president's party does gain a lot of its lost House vote share back by the general election, 2020 showed us that this gain was ultimately not enough, with the challenger party taking the House, the Senate (by a hair), and the presidency. 
 
 ---
-
 
 **References**
 

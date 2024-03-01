@@ -1,7 +1,7 @@
 ---
 title: "Campaign Narrative"
 author: "Vivian Nguyen"
-date: '2022-12-07'
+date: '2022-12-08'
 categories: 
   - Election Analytics
 tags: ["Washington 8", "Kim Schrier", "Matt Larkin", "campaign", "messaging"]

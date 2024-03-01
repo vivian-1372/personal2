@@ -34,14 +34,18 @@ My development of Model 1 finds that GDP, RDI, and unemployment all influence Ho
 
 These results are again fascinating, as they are counter-intuitive and don't follow the traditional knowledge political scientists lean on concerning retrospective voting, economic performance, and incumbent success. That said, Model 1 has an R-squared value of 0.386, which is much higher than the univariate R-squared values previously found. 
 
+![Model 1](plot1.png)
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" />
 
 To evaluate the performance of my model and choice of model, I check the residuals. As shown below, they are roughly normally distributed around a center point of 0. This tells me that the form of Model 1 (linear) is adequate.
+
+![Residuals](plot2.png)
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" />
 
 
 
+![OOS Residuals](plot3.png)
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" />
 After checking that Model 1 performs well after being tested with 1,000 runs of cross-validation, with a mean-error of roughly 0, I move to applying Model 1 to the most recent data available for the national economic variables in the model. This data comes from Q2 2022, which is equivalent to Q6 of the current House. The reports indicate that in Q2 (or Q6), there was a -0.6% change in GDP, -0.6% change in RDI, -28.453 absolute change in GDPC1 (Real GDP, measured in billions of chained 2012 Dollars), and 3.6 national unemployment rate. **With these inputs, Model 1 predicts that the incumbent party in the House (the Democratic Party) will have a vote share of 52.92% (50.20, 55.64).** 
 

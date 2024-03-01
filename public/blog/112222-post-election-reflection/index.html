@@ -335,13 +335,197 @@ Link My Final Model and Predictions Link National Model My national modeling add
 <p>A quick glance tells us that my national model’s national vote share prediction was within 0.5 percentage points of the actual, and seat count prediction was off by 4 seats.</p>
 <p>The table below provides a more detailed report on the accuracy of my national and district-level models, with measures of root mean squared error (RMSE), number of miscalled districts, classification accuracy, and the average margin by which the predicted vote shares were inaccurate.</p>
 <!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/112222-post-election-reflection/rmse.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/112222-post-election-reflection/rmse_hu3a2b9aac6d0a15a3e4548691d7293504_86817_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/112222-post-election-reflection/rmse_hu3a2b9aac6d0a15a3e4548691d7293504_86817_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/112222-post-election-reflection/rmse_hu3a2b9aac6d0a15a3e4548691d7293504_86817_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/112222-post-election-reflection/rmse_hu3a2b9aac6d0a15a3e4548691d7293504_86817_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="rmse.png"
+          height="458"
+          width="1584"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>My national vote-share prediction was considerably close, with a somewhat tight confidence interval of (47.36, 49.83) and center of 48.56%. As shown above, the RMSE of my national prediction is very small. That said, it was the simpler half of my modeling, with no purview into how each district-level race would play out.</p>
 <p>The performance of my district-level models was a little less impressive, with RMSEs of 13.47 and 12.03 for the non-competitive and competitive models respectively. Though the non-competitive models had higher RMSE and average inaccuracy margin (which I define as the average difference between the actual Democratic candidate vote share and my prediction), they have a much higher classification accuracy than the competitive models. This was initially counterintuitive, but ultimately makes sense considering that the competitive models have a much harder classification task, with each race being close - even very small swings in vote share can alter each district’s outcome and classification. In contrast, the non-competitive models can afford to be less accurate in vote-share prediction so long as they correctly call the outcome. Indeed, over 90% of incumbents win re-election, so the inclusion of incumbency was expected to help call the non-competitive races accurately (OpenSecrets). Though, in retrospect, the incumbency variable wasn’t informative enough to accurately predict <em>vote share</em> with high accuracy in these districts, as reflected by their large RMSEs and inaccuracy margins.</p>
 <p>Below are maps of the congressional districts I made predictions for, the first being colored according to how close (or far) my two-party vote share predictions were, and the second being colored by correct-call or miscall status.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/112222-post-election-reflection/mv1.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/112222-post-election-reflection/mv1_hub8a2eaaf895aab31a06ebc3429b700de_94441_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/112222-post-election-reflection/mv1_hub8a2eaaf895aab31a06ebc3429b700de_94441_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/112222-post-election-reflection/mv1_hub8a2eaaf895aab31a06ebc3429b700de_94441_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/112222-post-election-reflection/mv1_hub8a2eaaf895aab31a06ebc3429b700de_94441_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="mv1.png"
+          height="331"
+          width="536"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>Overall, it seems I tend to overpredict the Democratic candidate’s vote share, especially in the South. However, my single largest inaccuracy was in Maryland 6, where I severely underpredicted the (D) vote share and overpredicted the (R) vote share. Other than that miscall, my underpredictions of (D) performance were concentrated in southern California and western Arizona. In fact, 16 of my 25 non-competitive misclassifications come from California and Arizona, with 14 from California alone.</p>
 <p>I produced the map below to help evaluate my models’ classification performances at a glance. Red denotes a miscalled or misclassified district, and green denotes a correct call.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/112222-post-election-reflection/mv2.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/112222-post-election-reflection/mv2_hu0bc007048bfa93c663bddaf4b12f821d_110044_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/112222-post-election-reflection/mv2_hu0bc007048bfa93c663bddaf4b12f821d_110044_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/112222-post-election-reflection/mv2_hu0bc007048bfa93c663bddaf4b12f821d_110044_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/112222-post-election-reflection/mv2_hu0bc007048bfa93c663bddaf4b12f821d_110044_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="mv2.png"
+          height="331"
+          width="536"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>My models had the most trouble predicting the outcomes and vote shares of districts in the Southwest and West, located in California, Nevada, Arizona, and New Mexico. There are also pockets of misclassification across the Great Lakes states, but they don’t appear particularly concentrated in any one area.
 Interestingly, my models did particularly well in New York, which was a state of difficulty for both FiveThirtyEight and The Economist. Both models miscalled NY-3, NY-4, NY-17, NY-19, and NY-22, but mine only did so for NY-4 and NY-17, with inaccuracy margins of just 5.5 and 0.9 percentage points.</p>
 <h2 id="inaccuracy-sources" class="link-owner">
@@ -400,9 +584,68 @@ Interestingly, my models did particularly well in New York, which was a state of
       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Link</title><path fill="none" d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
   </a>Looking Forward
 </h1><p>I have several ideas for improvement in model performance and creation should I do this again (which I probably will, because this has been great fun and very intellectually rewarding).</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/112222-post-election-reflection/election24.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/112222-post-election-reflection/election24_hue614a91e1defec7cea690eb39661c3e2_7236795_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/112222-post-election-reflection/election24_hue614a91e1defec7cea690eb39661c3e2_7236795_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/112222-post-election-reflection/election24_hue614a91e1defec7cea690eb39661c3e2_7236795_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/112222-post-election-reflection/election24_hue614a91e1defec7cea690eb39661c3e2_7236795_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt=""
+          title=""
+          src="election24.png"
+          height="2513"
+          width="4000"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      
+    </figcaption>
+  </figure>
+
+
+</p>
 <p>Broadly, I’d make a few changes on the approach-side: split national vote share and national seat count into two different linear regression projects (allowing for different predictors in each model), spend more time tuning my district-level models with expert ratings and fundamental predictors, and study the experts’ models more closely. I tried my best to use the literature and lectures reviewed in Gov 1347, as well as my own insights, to build out this year’s models with the primary goal of learning, but next time, I plan to improve more directly on models from professional forecasters like The Economist and FiveThirtyEight with heavier prioritization on model performance and prediction accuracy.</p>
 <h2 id="model-choice" class="link-owner">
   <a href="../../blog/112222-post-election-reflection/#model-choice" class="link">

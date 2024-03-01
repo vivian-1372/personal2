@@ -153,6 +153,7 @@ My development of Model 1 finds that GDP, RDI, and unemployment all influence Ho
 
 These results are again fascinating, as they are counter-intuitive and don't follow the traditional knowledge political scientists lean on concerning retrospective voting, economic performance, and incumbent success. That said, Model 1 has an R-squared value of 0.386, which is much higher than the univariate R-squared values previously found. 
 
+![Model 1](plot1.png)
 ```{r, fig.align='center'}
 
 # My model
@@ -164,10 +165,12 @@ plot(newdf$year, newdf$H_incumbent_party_majorvote_pct,
      xlab = "Year",
      ylab = "House Incumbent Party Vote Share")
 points(newdf$year, predict(lm_model, newdf), col = "red", pch = 18)
-
+ 
 ```
 
 To evaluate the performance of my model and choice of model, I check the residuals. As shown below, they are roughly normally distributed around a center point of 0. This tells me that the form of Model 1 (linear) is adequate.
+
+![Residuals](plot2.png)
 
 ```{r, fig.align='center'}
 # Residual distribution of my model
@@ -189,6 +192,7 @@ outsamp_errors <- sapply(1:1000, function(i){
 })
 ```
 
+![OOS Residuals](plot3.png)
 ```{r, fig.align='center'}
 hist(outsamp_errors,
      xlab = "",

@@ -33,11 +33,11 @@ A quick glance tells us that my national model’s national vote share predictio
 
 The table below provides a more detailed report on the accuracy of my national and district-level models, with measures of root mean squared error (RMSE), number of miscalled districts, classification accuracy, and the average margin by which the predicted vote shares were inaccurate.
 
-<div id="oqzmrnikdp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mxlilwqpjp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
-&#10;#oqzmrnikdp .gt_table {
+&#10;#mxlilwqpjp .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -61,7 +61,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_heading {
+&#10;#mxlilwqpjp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -72,11 +72,11 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_caption {
+&#10;#mxlilwqpjp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#oqzmrnikdp .gt_title {
+&#10;#mxlilwqpjp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -87,7 +87,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#oqzmrnikdp .gt_subtitle {
+&#10;#mxlilwqpjp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -98,12 +98,12 @@ The table below provides a more detailed report on the accuracy of my national a
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#oqzmrnikdp .gt_bottom_border {
+&#10;#mxlilwqpjp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_col_headings {
+&#10;#mxlilwqpjp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -117,7 +117,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_col_heading {
+&#10;#mxlilwqpjp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -136,7 +136,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#oqzmrnikdp .gt_column_spanner_outer {
+&#10;#mxlilwqpjp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -147,13 +147,13 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#oqzmrnikdp .gt_column_spanner_outer:first-child {
+&#10;#mxlilwqpjp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#oqzmrnikdp .gt_column_spanner_outer:last-child {
+&#10;#mxlilwqpjp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#oqzmrnikdp .gt_column_spanner {
+&#10;#mxlilwqpjp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -164,7 +164,7 @@ The table below provides a more detailed report on the accuracy of my national a
   display: inline-block;
   width: 100%;
 }
-&#10;#oqzmrnikdp .gt_group_heading {
+&#10;#mxlilwqpjp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -189,7 +189,7 @@ The table below provides a more detailed report on the accuracy of my national a
   vertical-align: middle;
   text-align: left;
 }
-&#10;#oqzmrnikdp .gt_empty_group_heading {
+&#10;#mxlilwqpjp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -203,13 +203,13 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#oqzmrnikdp .gt_from_md > :first-child {
+&#10;#mxlilwqpjp .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#oqzmrnikdp .gt_from_md > :last-child {
+&#10;#mxlilwqpjp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#oqzmrnikdp .gt_row {
+&#10;#mxlilwqpjp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -227,7 +227,7 @@ The table below provides a more detailed report on the accuracy of my national a
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#oqzmrnikdp .gt_stub {
+&#10;#mxlilwqpjp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -239,7 +239,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#oqzmrnikdp .gt_stub_row_group {
+&#10;#mxlilwqpjp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -252,10 +252,10 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#oqzmrnikdp .gt_row_group_first td {
+&#10;#mxlilwqpjp .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#oqzmrnikdp .gt_summary_row {
+&#10;#mxlilwqpjp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -264,14 +264,14 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#oqzmrnikdp .gt_first_summary_row {
+&#10;#mxlilwqpjp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_first_summary_row.thick {
+&#10;#mxlilwqpjp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#oqzmrnikdp .gt_last_summary_row {
+&#10;#mxlilwqpjp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -280,7 +280,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_grand_summary_row {
+&#10;#mxlilwqpjp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -289,7 +289,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#oqzmrnikdp .gt_first_grand_summary_row {
+&#10;#mxlilwqpjp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -298,10 +298,10 @@ The table below provides a more detailed report on the accuracy of my national a
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_striped {
+&#10;#mxlilwqpjp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#oqzmrnikdp .gt_table_body {
+&#10;#mxlilwqpjp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -309,7 +309,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_footnotes {
+&#10;#mxlilwqpjp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -322,7 +322,7 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_footnote {
+&#10;#mxlilwqpjp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -330,7 +330,7 @@ The table below provides a more detailed report on the accuracy of my national a
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#oqzmrnikdp .gt_sourcenotes {
+&#10;#mxlilwqpjp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -343,58 +343,58 @@ The table below provides a more detailed report on the accuracy of my national a
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#oqzmrnikdp .gt_sourcenote {
+&#10;#mxlilwqpjp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#oqzmrnikdp .gt_left {
+&#10;#mxlilwqpjp .gt_left {
   text-align: left;
 }
-&#10;#oqzmrnikdp .gt_center {
+&#10;#mxlilwqpjp .gt_center {
   text-align: center;
 }
-&#10;#oqzmrnikdp .gt_right {
+&#10;#mxlilwqpjp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#oqzmrnikdp .gt_font_normal {
+&#10;#mxlilwqpjp .gt_font_normal {
   font-weight: normal;
 }
-&#10;#oqzmrnikdp .gt_font_bold {
+&#10;#mxlilwqpjp .gt_font_bold {
   font-weight: bold;
 }
-&#10;#oqzmrnikdp .gt_font_italic {
+&#10;#mxlilwqpjp .gt_font_italic {
   font-style: italic;
 }
-&#10;#oqzmrnikdp .gt_super {
+&#10;#mxlilwqpjp .gt_super {
   font-size: 65%;
 }
-&#10;#oqzmrnikdp .gt_footnote_marks {
+&#10;#mxlilwqpjp .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
-&#10;#oqzmrnikdp .gt_asterisk {
+&#10;#mxlilwqpjp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#oqzmrnikdp .gt_indent_1 {
+&#10;#mxlilwqpjp .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#oqzmrnikdp .gt_indent_2 {
+&#10;#mxlilwqpjp .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#oqzmrnikdp .gt_indent_3 {
+&#10;#mxlilwqpjp .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#oqzmrnikdp .gt_indent_4 {
+&#10;#mxlilwqpjp .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#oqzmrnikdp .gt_indent_5 {
+&#10;#mxlilwqpjp .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -433,25 +433,21 @@ The table below provides a more detailed report on the accuracy of my national a
   &#10;</table>
 </div>
 
+![](rmse.png)
+
 My national vote-share prediction was considerably close, with a somewhat tight confidence interval of (47.36, 49.83) and center of 48.56%. As shown above, the RMSE of my national prediction is very small. That said, it was the simpler half of my modeling, with no purview into how each district-level race would play out.
 
 The performance of my district-level models was a little less impressive, with RMSEs of 13.47 and 12.03 for the non-competitive and competitive models respectively. Though the non-competitive models had higher RMSE and average inaccuracy margin (which I define as the average difference between the actual Democratic candidate vote share and my prediction), they have a much higher classification accuracy than the competitive models. This was initially counterintuitive, but ultimately makes sense considering that the competitive models have a much harder classification task, with each race being close - even very small swings in vote share can alter each district’s outcome and classification. In contrast, the non-competitive models can afford to be less accurate in vote-share prediction so long as they correctly call the outcome. Indeed, over 90% of incumbents win re-election, so the inclusion of incumbency was expected to help call the non-competitive races accurately (OpenSecrets). Though, in retrospect, the incumbency variable wasn’t informative enough to accurately predict *vote share* with high accuracy in these districts, as reflected by their large RMSEs and inaccuracy margins.
 
 Below are maps of the congressional districts I made predictions for, the first being colored according to how close (or far) my two-party vote share predictions were, and the second being colored by correct-call or miscall status.
 
-<figure>
-<img src="mv1.png" alt="Margins" />
-<figcaption aria-hidden="true">Margins</figcaption>
-</figure>
+![](mv1.png)
 
 Overall, it seems I tend to overpredict the Democratic candidate’s vote share, especially in the South. However, my single largest inaccuracy was in Maryland 6, where I severely underpredicted the (D) vote share and overpredicted the (R) vote share. Other than that miscall, my underpredictions of (D) performance were concentrated in southern California and western Arizona. In fact, 16 of my 25 non-competitive misclassifications come from California and Arizona, with 14 from California alone.
 
 I produced the map below to help evaluate my models’ classification performances at a glance. Red denotes a miscalled or misclassified district, and green denotes a correct call.
 
-<figure>
-<img src="mv2.png" alt="Classification" />
-<figcaption aria-hidden="true">Classification</figcaption>
-</figure>
+![](mv2.png)
 
 My models had the most trouble predicting the outcomes and vote shares of districts in the Southwest and West, located in California, Nevada, Arizona, and New Mexico. There are also pockets of misclassification across the Great Lakes states, but they don’t appear particularly concentrated in any one area.
 Interestingly, my models did particularly well in New York, which was a state of difficulty for both FiveThirtyEight and The Economist. Both models miscalled NY-3, NY-4, NY-17, NY-19, and NY-22, but mine only did so for NY-4 and NY-17, with inaccuracy margins of just 5.5 and 0.9 percentage points.
@@ -502,14 +498,7 @@ After adding in an indicator variable for un/contested seat in both the competit
 
 I have several ideas for improvement in model performance and creation should I do this again (which I probably will, because this has been great fun and very intellectually rewarding).
 
-<div class="figure">
-
-<img src="election24.png" alt="Source: Election Analytics 2022." width="95%" />
-<p class="caption">
-Figure 1: Source: Election Analytics 2022.
-</p>
-
-</div>
+![](election24.png)
 
 Broadly, I’d make a few changes on the approach-side: split national vote share and national seat count into two different linear regression projects (allowing for different predictors in each model), spend more time tuning my district-level models with expert ratings and fundamental predictors, and study the experts’ models more closely. I tried my best to use the literature and lectures reviewed in Gov 1347, as well as my own insights, to build out this year’s models with the primary goal of learning, but next time, I plan to improve more directly on models from professional forecasters like The Economist and FiveThirtyEight with heavier prioritization on model performance and prediction accuracy.
 

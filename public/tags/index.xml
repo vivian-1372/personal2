@@ -9,18 +9,9 @@
     <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
     <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>thank you</title>
-      <link>/tags/thank-you/</link>
-      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/thank-you/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>campaign</title>
       <link>/tags/campaign/</link>
-      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/campaign/</guid>
       <description></description>
@@ -29,7 +20,7 @@
     <item>
       <title>Kim Schrier</title>
       <link>/tags/kim-schrier/</link>
-      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/kim-schrier/</guid>
       <description></description>
@@ -38,7 +29,7 @@
     <item>
       <title>Matt Larkin</title>
       <link>/tags/matt-larkin/</link>
-      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/matt-larkin/</guid>
       <description></description>
@@ -47,7 +38,7 @@
     <item>
       <title>messaging</title>
       <link>/tags/messaging/</link>
-      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/messaging/</guid>
       <description></description>
@@ -56,9 +47,18 @@
     <item>
       <title>Washington 8</title>
       <link>/tags/washington-8/</link>
-      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/washington-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thank you</title>
+      <link>/tags/thank-you/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/thank-you/</guid>
       <description></description>
     </item>
     

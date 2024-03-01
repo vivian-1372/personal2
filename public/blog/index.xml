@@ -9,22 +9,22 @@
     <copyright>Copyright © 2024, Vivian Nguyen, all rights reserved.</copyright>
     <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Campaign Narrative</title>
+      <link>/blog/120722-campaign-narrative/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/120722-campaign-narrative/</guid>
+      <description>Link Overview After months of studying the midterm elections at the national and district levels, we&amp;rsquo;ve gained a more complete understanding of the factors that predict incumbent party performance in terms of two-party vote share and seat wins. This week, I will take a deep dive into Washington&amp;rsquo;s 8th congressional district to carefully analyze how its House race went after a brief review of the general characteristics of the district (including geography, demographics, candidates, electoral history) and its forecasted outcome per my models and those of the experts.</description>
+    </item>
+    
+    <item>
       <title>Final Remarks</title>
       <link>/blog/120622-final-remarks/</link>
-      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/blog/120622-final-remarks/</guid>
       <description>Link The Plan Today I couldn&amp;rsquo;t end this series without saying a few final remarks, so here we are! It&amp;rsquo;s been a long and rewarding journey of learning and adapting, so I wanted to summarize a few of the top lessons learned, give thanks, and look forward.
 Source: The Economist and Lucy Ding Source: The Economist and Lucy Ding Link Final Remarks I&amp;rsquo;ve learned a lot this semester, and much of it has been through guided trial-and-error.</description>
-    </item>
-    
-    <item>
-      <title>Campaign Narrative</title>
-      <link>/blog/120722-campaign-narrative/</link>
-      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/120722-campaign-narrative/</guid>
-      <description>Link Overview After months of studying the midterm elections at the national and district levels, we&amp;rsquo;ve gained a more complete understanding of the factors that predict incumbent party performance in terms of two-party vote share and seat wins. This week, I will take a deep dive into Washington&amp;rsquo;s 8th congressional district to carefully analyze how its House race went after a brief review of the general characteristics of the district (including geography, demographics, candidates, electoral history) and its forecasted outcome per my models and those of the experts.</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@ Over the next several weeks, I will be exploring previous U.S. elections data to
       
       <guid>/blog/052022-playlist-producer/</guid>
       <description>Link The Spotify Playlist Producer For project files, see the GitHub repository.
-Link Overview Hello! This is my &amp;ldquo;Playlist Producer.&amp;rdquo; I developed this project over the course of several weeks in my Spring 2022 semester as a sophomore. At this point, I have newly rediscovered my love for computational thinking and problem solving, and want to apply my Python skills to a fun problem I&amp;rsquo;ve had for a while &amp;ndash; my lack of new music.</description>
+Source: AudioHype Source: AudioHype Link Overview Hello! This is my &amp;ldquo;Playlist Producer.&amp;rdquo; I developed this project over the course of several weeks in my Spring 2022 semester as a sophomore. At this point, I have newly rediscovered my love for computational thinking and problem solving, and want to apply my Python skills to a fun problem I&amp;rsquo;ve had for a while &amp;ndash; my lack of new music.</description>
     </item>
     
     <item>
@@ -121,8 +121,7 @@ Link Overview Hello! This is my &amp;ldquo;Playlist Producer.&amp;rdquo; I devel
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/121621-covid-trust/</guid>
-      <description>Link Overview February 2022
-Note: I wrote this paper for Government 1372: Political Psychology, a data science in the Harvard Government department. At this point, I was gaining proficiency in R, but had not developed a sophisticated understanding of statistics and causal inference yet. That said, this paper was one of my first large data science projects, and was driven by my newfound passion for applying data science techniques and programming experience to (what I deem to be) relevant real-world problems.</description>
+      <description>Link Overview Note: I wrote this paper for Government 1372: Political Psychology, a data science in the Harvard Government department. At this point, I was gaining proficiency in R, but had not developed a sophisticated understanding of statistics and causal inference yet. That said, this paper was one of my first large data science projects, and was driven by my newfound passion for applying data science techniques and programming experience to (what I deem to be) relevant real-world problems.</description>
     </item>
     
     <item>

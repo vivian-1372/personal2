@@ -8,8 +8,6 @@ categories:
 ---
 
 ## Overview
-February 2022 
-
 Note: I wrote this paper for Government 1372: Political Psychology, a data science in the Harvard Government department. At this point, I was gaining proficiency in R, but had not developed a sophisticated understanding of statistics and causal inference yet. That said, this paper was one of my first large data science projects, and was driven by my newfound passion for applying data science techniques and programming experience to (what I deem to be) relevant real-world problems. In Fall 2021, the pandemic was still a large public health concern, but the public was battling a mixture of fear and desire for a return to normalcy. I was very interested in what sources people trusted to provide them information about the pandemic, and how that related to their COVID anxieties -- additionally, how does partisan alignment interact with these variables? 
 
 ## Abstract
@@ -34,7 +32,7 @@ In this research paper, I aim to analyze the correlative relationship between an
 ## Hypotheses
 $H_1$ : Concern about COVID-19 is positively correlated with trust in all four bodies (CDC, national health advisors, federal government, and state government).  
 
-$H_2$ : Partisan identification (as Democrat or Republican) has at least as much predictive power as COVID-19 concern in determining respondent trust in the COVID-19 information sources. 
+$H_2$ : Partisan identification (Democrat or Republican) has at least as much predictive power as COVID-19 concern in determining respondent trust in the COVID-19 information sources. 
 
 $H_{2.1}$ : Respondents who identify as Democrats are more likely to trust the CDC for pandemic information than those who identify as Republicans. 
 
@@ -69,15 +67,15 @@ Each week, the poll collected responses about Americans’ behaviors, risk perce
 
 3.) “How much trust do you have in [your state government] to provide you with accurate information about coronavirus or COVID-19?” 
 
-Same answer options as above
+[Same answer options as above] 
 
 4.) “How much trust do you have in [the Centers for Disease Control, or CDC] to provide you with accurate information about coronavirus or COVID-19?”
 
-Same answer options as above
+[Same answer options as above]
 
 5.) “How much trust do you have in [national public health officials] to provide you with accurate information about coronavirus or COVID-19?”
 
-Same answer options as above
+[Same answer options as above]
 
 We also used the responses to demographic questions as control variables, including respondent age, education level, gender, income, and party identification. 
 
@@ -86,27 +84,30 @@ We recoded the COVID concern, trust, and some control variables to make them mor
 ## Methods
 To test $H_1$ , “Concern about COVID-19 is positively correlated with trust in all four bodies (CDC, national health advisors, federal government, and state government),” I ran four linear regression models, each with one of the four trust variables as the outcome variable and dependent variables such as COVID-19 concern, age, education, ethnicity, gender, and party. To show the regression results, I plotted the regression coefficients of each dependent variable for each trust outcome variable. This analytical method and plot combination was chosen for this hypothesis because the linear regression modelling reveals a presence, or lack of, positive correlative relationship between each trust outcome variable and explanatory variables such as COVID concern. The coefficient plot visually demonstrates the relationships between each predictor variable and respondents’ trust, including the effect of COVID concern on trust. 
 
-To test $H_2$ , “Partisan identification has at least as much predictive power as COVID-19 concern in determining respondent trust in the COVID-19 information sources,” I again ran the four linear regression models. In order to compare the ability of party identification versus COVID concern to explain the variance in trust in different institutions and actors, I used the `scale()` function to standardize the previously different scales of the explanatory variables. This method is appropriate to test $H_2$ because it allows direct comparison of the regression coefficients associated with COVID concern and party identification. Thus, the variable tied to the larger scaled coefficient can be interpreted as the dependent variable with more predictive power for trust in coronavirus information sources.
+To test $H_2$, “Partisan identification has at least as much predictive power as COVID-19 concern in determining respondent trust in the COVID-19 information sources,” I again ran the four linear regression models. In order to compare the ability of party identification versus COVID concern to explain the variance in trust in different institutions and actors, I used the `scale()` function to standardize the previously different scales of the explanatory variables. This method is appropriate to test $H_2$ because it allows direct comparison of the regression coefficients associated with COVID concern and party identification. Thus, the variable tied to the larger scaled coefficient can be interpreted as the dependent variable with more predictive power for trust in coronavirus information sources.
 
 To test $H_{2.1}$ , “Respondents who identify as Democrats are more likely to trust the CDC than those who identify as Republicans,” I plotted the predicted trust in the CDC for Democrats versus the predicted CDC trust for Republicans using the `predict()` function. This analytical methodology was chosen because it reveals respondents’ predicted trust in the CDC by party.
 
 ## Results 
 For all trust outcomes (trust in the federal government, trust in state governments, trust in the CDC, and trust in national health officials), changes in COVID concern, education, and party were found to have statistically significant effects on trust. The plots below show the regression coefficients of each predictor variable for the trust outcome variables, with 95% confidence intervals around each coefficient estimate.
 
-The control variables of gender, ethnicity, and age had near-zero coefficients in each model.   
-![Predictor Variable Regression Coefficients for Trust](images/plot1.png)
+The control variables of gender, ethnicity, and age had near-zero coefficients in each model.
+Figure 1:
+![](images/plot1.png)
 
 For trust in the federal government, the regression coefficient of COVID concern was 0.112, meaning that holding all else constant, an increase of 1 in COVID concern (which is on a scale of 1 through 4) was accompanied by an increase in federal government trust by 0.112 (on a scale of 1 through 4). For the remaining regression model results, an increase of 1 in COVID concern meant: an increase of 0.209 in state government trust, an increase of 0.290 in CDC trust, and an increase of 0.281 in national health official trust. These results from the linear regression models and coefficient plots support $H_1$, as it is shown that across all four measures of trust, concern about COVID-19 is positively (and statistically significantly) correlated with trust. These results are consistent with previous research that examined the relationship between increased anxiety about public health issues and increased trust in health and public officials.
 
 Figure 1 reveals that party and COVID concern have the regression coefficients of the largest magnitude. Which is more impactful in regards to trust? To directly compare the regression coefficients of COVID concern and party identification as they contribute to changes in trust, the linear regressions were run again, but this time the aforementioned predictor variables were scaled. The previously different scales -- 1 through 4 for concern and 1 through 3 for party -- are now standardized, making the variables’ regression coefficients directly comparable. 
 
-![Scaled Regression Coefficients and Trust](images/plot2.png)
+Figure 2:
+![](images/plot2.png)
 
 From Figure 2, which presents the scaled regression coefficients of COVID concern and party alongside other control variable coefficients, it is evident that for each trust measure, COVID concern is tied to a larger scaled coefficient than party ID. The larger coefficient of COVID concern indicates that when on the same scale as party identification, COVID concern affects respondent trust in the different expert sources more than party does. Thus, contrary to $H_2$, COVID concern actually has more predictive power than party identification in determining respondent trust across the information sources. This finding was rather intriguing, as it revealed the truth of a balance that seemed could have tipped either way (towards coronavirus concern or partisan identity); the perceived politicization of the COVID-19 pandemic in the United States made it seem plausible that partisanship determined trust in relevant public health officials to an even larger degree than concern about the pandemic itself. Evidently, though partisanship had some effect on trust (as party identification had notably large regression coefficients in relation to the trust outcome variables), it was still trumped by the effect of concern about the pandemic.   
 
 Further examining the non-negligible relationship between trust in officials about COVID-19 information and partisanship reveals that different party identification is tied to to different levels of predicted trust in the Centers for Disease Control and Prevention. 
 
-![Predicted CDC Trust due to COVID Concern, by Party](images/plot3.png)
+Figure 3:
+![](images/plot3.png)
 
 Figure 3 shows the predicted level of trust in the CDC by members of each party as COVID concern rises. Both parties appear to follow the same trend of increased trust in the Centers for Disease Control and Prevention as COVID concern increases in respondents, but CDC trust begins and ends at higher values for Democrats. $H_{2.1}$  stated that “Respondents who identify as Democrats are more likely to trust the CDC than those who identify as Republicans” and was supported, as Democrats are shown to have higher predicted trust in the CDC than Republicans across all values of COVID concern. This result is somewhat expected, as Democrats have been more worried about containing the coronavirus pandemic and open to the advisory of health advisory such as the works that come from the CDC. Additionally, it is expected that Republicans would have less comparative trust in the CDC due to Donald Trump’s attitudes towards the organization: U.S. President from 2016 to late 2020 and popular amongst Republicans, Trump publicly undercut the credibility of the CDC several times, claiming the organization’s vaccine announcements were “just incorrect information,” calling the Director “confused,” and contradicting the advisory messages put out by the CDC. 
 
@@ -121,7 +122,7 @@ This project makes contributions to the growing body of work on the study of the
 **References**
 
 
-[1] Albertson, & Gadarian, S. K. (2015). Anxious politics: Democratic Citizenship in a Threatening World. Cambridge University Press.
+[1] Albertson, & Gadarian, S. K. (2015). Anxious politics: Democratic Citizenship in a Threatening World. Cambridge University Press. 
 
 
 [2] Albertson, B., & Gadarian, S. K. (2020, March 20). Analysis | This is who Americans trust about coronavirus information. The Washington Post. Retrieved from https://www.washingtonp ost.com/politics/2020/03/20/were-all-anxious-about-pandemic-who-do-americans-want-hear 

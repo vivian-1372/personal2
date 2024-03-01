@@ -10,7 +10,7 @@ tags: ["polls", "FiveThirtyEight", "The Economist", "expert ratings"]
 ```{r setup, include = FALSE}
 
 # Set up
-knitr::opts_chunk$set(echo = TRUE)
+# knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(janitor)
 library(readr)
@@ -113,7 +113,8 @@ To conduct this week's investigation, I compare the actual results of the 2018 m
 ## Actual Vote Share in 2018, by District
 
 Below is the actual (D) vote share in the 2018 midterm elections at the district level.
-```{r plotting actual 2018 vote share results, include = FALSE}
+
+```{r plotting actual 2018 vote share results, echo = FALSE}
 
 # require(tidyverse)
 # require(ggplot2)
@@ -174,12 +175,14 @@ Below is the actual (D) vote share in the 2018 midterm elections at the district
 # 
 
 ```
-![Actual 2018 (D) Vote Share.](actual_2018_results.png)
+
+![](actual_2018_results.png) 
 
 Most of the map is either red or white, which seems to suggest that most district vote share results were in the Republican party's favor or close between the two major parties. However, it is important to remember that for the House of Representatives, land is not proportional to representation, population is. Also, the president's party often performs poorly in midterm years, as discussed in detail in the [first blog post](https://vivian-1372.github.io/Election-Analytics/post/2022-09-15-analzying-2020-house-vote-shares/) of this series. Those two reminders considered, it then makes sense that the Democrats actually took the House in the 2018 midterms, with 235 seats going to Democrats and 199 going to Republicans (New York Times 2018).
 
-## Expert Predictions for Vote Share in 2018, by District
-```{r plotting expert predictions for 2018 midterms, include=FALSE}
+## Expert Predictions for Vote Share in 2018, by District 
+
+```{r plotting expert predictions for 2018 midterms, echo=FALSE}
 
 # 
 # require(tidyverse)
@@ -243,7 +246,8 @@ Most of the map is either red or white, which seems to suggest that most distric
 
 ```
 Below are the expert ratings for the 2018 midterms, which I call predictions because the ratings reflect what the experts believed would happen in each congressional district election. Red areas represent high expert confidence that the region will go to Republicans, while blue areas represent high confidence that the region will go to Democrats. 
-![Expert Ratings for 2018 Midterms.](expert_ratings_2018.png)
+
+![](expert_ratings_2018.png)
 
 ## Evaluation
 For the most part, the predictions are pretty accurate via visual investigation. Most of the areas that actually had majority-Republican vote shares in the 2018 elections were predicted to be likely or solidly Republican by the experts on average. The blue districts of the 2018 midterms, like the ones along the west coast of Washington, Oregon, and California, in Arizona and New Mexico, in southern Texas, and scattered throughout the Rust Belt, were impressively predicted by the experts and their ratings, reflected in the standout blue coloring in the plot above. The experts were also able to pin down the close races, like the ones in southern New Mexico and in Maine. Overall, I think the average expert ratings predicted the congressional races at the district level very well, despite being just one predictor (that is a culmination of many predictors considered by the experts) in my model.
@@ -305,6 +309,16 @@ Below are my models' predictions for the major vote share taken by Democrats for
 export_table(pred_2022, format = "html")
 
 ```
+
+![](r1.png)
+![](r2.png)
+![](r3.png)
+![](r4.png)
+![](r5.png)
+![](r6.png)
+![](r7.png)
+![](r8.png)
+
 ---
 
 **References**

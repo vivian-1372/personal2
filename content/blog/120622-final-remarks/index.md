@@ -1,7 +1,7 @@
 ---
 title: "Final Remarks"
 author: "Vivian Nguyen"
-date: '2022-12-08'
+date: '2022-12-07'
 categories: 
   - Election Analytics
 tags: ["thank you"]

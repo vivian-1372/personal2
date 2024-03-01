@@ -109,7 +109,7 @@ This week, I temporarily move away from cyclical election study to delve into on
     },
     "image": "/favicon-32x32.png",
     "url" : "\/blog\/091922-economy\/",
-    "wordCount" : "813",
+    "wordCount" : "942",
     "genre" : [ "Election Analytics" ],
     "keywords" : [ "economy" , "incumbent" , "national model" ]
 }
@@ -298,7 +298,7 @@ This week, I temporarily move away from cyclical election study to delve into on
   
 
 
-        4 minute read
+        5 minute read
       </span>
     </div>
     
@@ -446,10 +446,197 @@ This week, I temporarily move away from cyclical election study to delve into on
   </a>Model 1
 </h1><p>My development of Model 1 finds that GDP, RDI, and unemployment all influence House incumbent vote share, but in varying directions and with varying levels of statistical significance. For GDP growth (%), Model 1 anticipates that as it grows by 1, House incumbent vote share will too by 2.9, which makes more sense. However, for GDP growth (absolute) and unemployment rate, increases in these are still associated with decreases in incumbent vote share.</p>
 <p>These results are again fascinating, as they are counter-intuitive and don&rsquo;t follow the traditional knowledge political scientists lean on concerning retrospective voting, economic performance, and incumbent success. That said, Model 1 has an R-squared value of 0.386, which is much higher than the univariate R-squared values previously found.</p>
-<!-- raw HTML omitted -->
+<p>
+
+  
+  Model 1
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/091922-economy/plot1.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/091922-economy/plot1_hu9a1192be20a9fe573646833ed8ae04f3_145229_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/091922-economy/plot1_hu9a1192be20a9fe573646833ed8ae04f3_145229_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/091922-economy/plot1_hu9a1192be20a9fe573646833ed8ae04f3_145229_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/091922-economy/plot1_hu9a1192be20a9fe573646833ed8ae04f3_145229_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Model 1"
+          title="Model 1"
+          src="plot1.png"
+          height="852"
+          width="1420"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Model 1
+    </figcaption>
+  </figure>
+
+
+
+<!-- raw HTML omitted --></p>
 <p>To evaluate the performance of my model and choice of model, I check the residuals. As shown below, they are roughly normally distributed around a center point of 0. This tells me that the form of Model 1 (linear) is adequate.</p>
+<p>
+
+  
+  Residuals
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/091922-economy/plot2.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/091922-economy/plot2_hua7b23344a2733bf56b35939255114774_71465_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/091922-economy/plot2_hua7b23344a2733bf56b35939255114774_71465_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/091922-economy/plot2_hua7b23344a2733bf56b35939255114774_71465_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/091922-economy/plot2_hua7b23344a2733bf56b35939255114774_71465_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="Residuals"
+          title="Residuals"
+          src="plot2.png"
+          height="858"
+          width="1406"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      Residuals
+    </figcaption>
+  </figure>
+
+
+</p>
 <!-- raw HTML omitted -->
+<p>
+
+  
+  OOS Residuals
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  <figure>
+    <a href="../../blog/091922-economy/plot3.png">
+      <picture>
+        <source
+          media="(max-width: 376px)"
+          srcset="../../blog/091922-economy/plot3_hud8fdb0113227de5d838b4fecbca346ff_72924_500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 992px)"
+          srcset="../../blog/091922-economy/plot3_hud8fdb0113227de5d838b4fecbca346ff_72924_800x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(max-width: 1400px)"
+          srcset="../../blog/091922-economy/plot3_hud8fdb0113227de5d838b4fecbca346ff_72924_1200x0_resize_q75_h2_box_3.webp"
+        />
+
+        <source
+          media="(min-width: 1600px)"
+          srcset="../../blog/091922-economy/plot3_hud8fdb0113227de5d838b4fecbca346ff_72924_1500x0_resize_q75_h2_box_3.webp"
+        />
+
+        <img
+          alt="OOS Residuals"
+          title="OOS Residuals"
+          src="plot3.png"
+          height="784"
+          width="1414"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <figcaption class="text-sm italic">
+      OOS Residuals
+    </figcaption>
+  </figure>
+
+
+
 <!-- raw HTML omitted -->
+After checking that Model 1 performs well after being tested with 1,000 runs of cross-validation, with a mean-error of roughly 0, I move to applying Model 1 to the most recent data available for the national economic variables in the model. This data comes from Q2 2022, which is equivalent to Q6 of the current House. The reports indicate that in Q2 (or Q6), there was a -0.6% change in GDP, -0.6% change in RDI, -28.453 absolute change in GDPC1 (Real GDP, measured in billions of chained 2012 Dollars), and 3.6 national unemployment rate. <strong>With these inputs, Model 1 predicts that the incumbent party in the House (the Democratic Party) will have a vote share of 52.92% (50.20, 55.64).</strong></p>
 <p>This prediction is probably an overestimate given the fact that Model 1 did not account for the negative incumbent-midterm effect. Additionally, Model 1 should be used again once Q8 (so, Q4 of 2022) data becomes available to maximize its predictive power. The model can also be improved with wider purview into House incumbent seat share and totals. Lastly, Wright found that worsened (so, increased) unemployment affects Democrats differently than it does Republicans. Given more time, I would expore if this finding holds when we focus specifically on House elections.</p>
 <hr>
 <p><strong>References</strong></p>
